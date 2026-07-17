@@ -1,0 +1,120 @@
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.text-stroke {
+    -webkit-text-stroke: 1px currentColor;
+    color: transparent;
+}
+
+.hero-grid {
+    background-image:
+        linear-gradient(#e5e7eb 1px, transparent 1px),
+        linear-gradient(90deg, #e5e7eb 1px, transparent 1px);
+    background-size: 40px 40px;
+}
+
+.projects-carousel__track {
+    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.projects-carousel__dot {
+    width: 2.5rem;
+    height: 0.25rem;
+    background-color: #F1F1F1;
+    border: 1px solid #0F0F0F;
+    transition: background-color 200ms ease, width 200ms ease;
+}
+
+.projects-carousel__dot.is-active {
+    width: 4rem;
+    background-color: #FF9933;
+}
+
+.nav-dropdown {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 150ms ease, visibility 150ms ease;
+}
+
+.nav-dropdown.is-open,
+[data-nav-dropdown]:focus-within .nav-dropdown {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+@media (min-width: 1024px) {
+    [data-nav-dropdown]:hover .nav-dropdown {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+}
+
+.nav-dropdown__link {
+    display: block;
+    padding: 0.75rem 1.25rem;
+    font-size: 16px;
+    line-height: 26px;
+    color: #1a1c1c;
+    transition: color 150ms ease, background-color 150ms ease;
+}
+
+.nav-dropdown__link:hover,
+.nav-dropdown__link:focus {
+    color: #FF9933;
+    background-color: #F1F1F1;
+    outline: none;
+}
+
+.nav-mobile__link {
+    display: block;
+    padding: 0.75rem 0.25rem;
+    font-weight: 500;
+    color: #1a1c1c;
+    transition: color 150ms ease;
+}
+
+.nav-mobile__link:hover,
+.nav-mobile__link:focus {
+    color: #FF9933;
+    outline: none;
+}
+
+.nav-mobile__sublink {
+    display: block;
+    padding: 0.625rem 0.25rem 0.625rem 1rem;
+    font-size: 16px;
+    line-height: 26px;
+    color: #1a1c1c;
+    transition: color 150ms ease;
+}
+
+.nav-mobile__sublink:hover,
+.nav-mobile__sublink:focus {
+    color: #FF9933;
+    outline: none;
+}
+
+.nav-mobile__cta {
+    display: block;
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #222222;
+    color: #ffffff;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-align: center;
+    transition: background-color 150ms ease;
+}
+
+.nav-mobile__cta:hover,
+.nav-mobile__cta:focus {
+    background-color: #FF9933;
+    outline: none;
+}

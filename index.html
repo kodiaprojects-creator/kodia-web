@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="ca">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KODIA | Disseny web a Girona per fer créixer el teu negoci</title>
+    <meta name="description" content="Disseny web a Girona sense plantilles. Webs a mida, ràpides i amb intenció per fer créixer el teu negoci.">
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="js/tailwind-config.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700;800;900&family=JetBrains+Mono:wght@400;500;700&family=Karla:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-kodia-bg text-kodia-black font-body-md selection:bg-secondary selection:text-white overflow-x-hidden">
+
+    <!-- TopNavBar -->
+    <header class="sticky top-0 w-full z-50 bg-background border-b border-primary" data-site-header>
+        <div class="flex justify-between items-center px-margin-edge py-gutter max-w-full mx-auto">
+            <a href="/" class="font-headline-lg text-headline-lg-mobile md:text-headline-lg font-black tracking-tighter text-primary shrink-0">KODIA</a>
+            <nav class="hidden lg:flex items-center gap-8" aria-label="Navegació principal">
+                <div class="relative" data-nav-dropdown>
+                    <button type="button" id="nav-serveis-btn" class="flex items-center gap-1 text-on-surface font-medium hover:text-secondary transition-colors duration-150 py-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2" aria-expanded="false" aria-haspopup="true" aria-controls="nav-serveis-menu" data-nav-dropdown-trigger>
+                        Serveis
+                        <span class="material-symbols-outlined text-base" aria-hidden="true">expand_more</span>
+                    </button>
+                    <div id="nav-serveis-menu" class="nav-dropdown absolute left-0 top-full pt-2" role="menu" aria-labelledby="nav-serveis-btn" data-nav-dropdown-menu>
+                        <div class="bg-background border border-primary shadow-sm py-2 min-w-[220px]">
+                            <a href="/web-one-page/" class="nav-dropdown__link" role="menuitem">Web One Page</a>
+                            <a href="/web-corporativa/" class="nav-dropdown__link" role="menuitem">Web corporativa</a>
+                            <a href="/web-a-mida/" class="nav-dropdown__link" role="menuitem">Web a mida</a>
+                        </div>
+                    </div>
+                </div>
+                <a class="text-on-surface font-medium hover:text-secondary transition-colors duration-150 py-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2" href="/projectes/">Projectes</a>
+                <a class="text-on-surface font-medium hover:text-secondary transition-colors duration-150 py-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2" href="/preus-pagina-web/">Preus</a>
+                <a class="text-on-surface font-medium hover:text-secondary transition-colors duration-150 py-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2" href="/revisio-digital/">Revisió digital</a>
+                <a class="text-on-surface font-medium hover:text-secondary transition-colors duration-150 py-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2" href="/contacte/">Contacte</a>
+            </nav>
+            <div class="flex items-center gap-3">
+                <a href="/contacte/" class="hidden lg:inline-flex bg-kodia-bg-dark text-on-primary px-6 py-3 font-label-mono text-label-mono hover:bg-secondary transition-colors duration-150 uppercase tracking-widest">
+                    Explica'ns el teu projecte
+                </a>
+                <button type="button" class="lg:hidden flex items-center justify-center w-12 h-12 border border-primary text-primary hover:bg-kodia-gray transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary" aria-expanded="false" aria-controls="nav-mobile-menu" data-nav-mobile-toggle>
+                    <span class="sr-only">Obrir menú de navegació</span>
+                    <span class="material-symbols-outlined text-2xl" data-nav-icon-menu aria-hidden="true">menu</span>
+                    <span class="material-symbols-outlined text-2xl hidden" data-nav-icon-close aria-hidden="true">close</span>
+                </button>
+            </div>
+        </div>
+        <nav id="nav-mobile-menu" class="nav-mobile lg:hidden hidden border-t border-primary bg-background px-margin-edge py-6" aria-label="Navegació mòbil" data-nav-mobile-menu>
+            <div class="space-y-1">
+                <p class="font-label-mono text-xs uppercase tracking-widest text-kodia-black/50 px-1 py-2">Serveis</p>
+                <a href="/web-one-page/" class="nav-mobile__sublink">Web One Page</a>
+                <a href="/web-corporativa/" class="nav-mobile__sublink">Web corporativa</a>
+                <a href="/web-a-mida/" class="nav-mobile__sublink">Web a mida</a>
+                <a href="/projectes/" class="nav-mobile__link">Projectes</a>
+                <a href="/preus-pagina-web/" class="nav-mobile__link">Preus</a>
+                <a href="/revisio-digital/" class="nav-mobile__link">Revisió digital</a>
+                <a href="/contacte/" class="nav-mobile__link">Contacte</a>
+                <a href="/contacte/" class="nav-mobile__cta">Explica'ns el teu projecte</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Section 1: Hero + Manifest -->
+        <section class="min-h-screen pt-20 px-margin-edge bg-white">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-start">
+                <div class="md:col-span-8">
+                    <h1 class="font-display-lg text-[64px] md:text-display-lg leading-tight mb-12">
+                        Disseny web a Girona per fer créixer el teu <span class="text-secondary">negoci</span>
+                    </h1>
+                </div>
+            </div>
+
+            <!-- Abstract Visual -->
+            <div class="relative w-full h-[500px] bg-kodia-gray border border-kodia-black/10 overflow-hidden hero-grid">
+                <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                    <div class="w-2/3 h-2/3 border border-kodia-black p-4 bg-white relative animate-pulse shadow-[10px_10px_0px_#0F0F0F]">
+                        <div class="w-full h-8 bg-kodia-gray border-b border-kodia-black flex gap-2 items-center px-2">
+                            <div class="w-2 h-2 rounded-full bg-kodia-bg-dark"></div>
+                            <div class="w-2 h-2 rounded-full bg-kodia-bg-dark"></div>
+                        </div>
+                        <div class="grid grid-cols-3 gap-4 p-4">
+                            <div class="h-24 bg-secondary"></div>
+                            <div class="h-24 border border-kodia-black"></div>
+                            <div class="h-24 border border-kodia-black"></div>
+                        </div>
+                        <div class="absolute -top-10 -right-10 transform rotate-12 bg-white border border-kodia-black p-2 font-label-mono text-xs">
+                            cursor: pointer;
+                        </div>
+                        <span class="material-symbols-outlined absolute top-1/2 left-1/4 text-secondary text-5xl" style="font-variation-settings: 'FILL' 1;">near_me</span>
+                    </div>
+                </div>
+                <div class="absolute top-10 left-10 w-32 h-32 border border-dashed border-kodia-black/20"></div>
+                <div class="absolute bottom-10 right-20 w-48 h-12 border border-kodia-black bg-white flex items-center px-4 font-label-mono text-[10px]">div.content_block</div>
+            </div>
+
+            <!-- Manifest -->
+            <div class="mt-24 grid grid-cols-1 md:grid-cols-12 gap-gutter border-t border-kodia-black pt-12 pb-32">
+                <div class="md:col-span-5">
+                    <h2 class="font-headline-lg text-headline-lg">La majoria de webs no serveixen per a res.</h2>
+                </div>
+                <div class="md:col-span-7 md:self-end">
+                    <p class="font-body-lg text-body-lg">
+                        Són lentes, no s'entenen o estan fetes a partir d'una plantilla que s'ha venut mil vegades. A KODIA construïm eines digitals amb intenció.
+                    </p>
+                </div>
+                <div class="md:col-span-12 mt-8">
+                    <div class="flex flex-col md:flex-row gap-12 text-kodia-black font-label-mono tracking-tighter text-xl">
+                        <div class="flex items-center gap-2">
+                            <div class="w-4 h-4 bg-secondary"></div>
+                            Sense plantilles.
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-4 h-4 bg-secondary"></div>
+                            Sense complicacions.
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-4 h-4 bg-secondary"></div>
+                            Sense deixar-te sol.
+                        </div>
+                    </div>
+                </div>
+                <div class="md:col-span-12 mt-8">
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button type="button" class="bg-kodia-bg-dark text-white px-8 py-4 font-bold hover:bg-secondary transition-all">Explica'ns el teu projecte</button>
+                        <button type="button" class="border border-kodia-black px-8 py-4 font-bold hover:bg-kodia-gray transition-all">Demana una revisió digital gratuïta</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Post-its & Words -->
+        <section class="bg-surface-secondary pt-section-padding pb-16 md:pb-20 px-margin-edge relative overflow-hidden">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+                <div class="md:col-span-6">
+                    <h2 class="font-display-lg text-5xl md:text-6xl mb-24 max-w-lg leading-tight">
+                        Una web no hauria de donar-te més feina
+                    </h2>
+                    <div class="relative h-64">
+                        <div class="absolute top-0 left-0 bg-white p-6 border border-kodia-black shadow-[4px_4px_0px_#FF9933] transform -rotate-3 max-w-[240px]">
+                            <p class="font-label-mono text-sm uppercase">Per on començo?</p>
+                        </div>
+                        <div class="absolute top-12 left-48 bg-white p-6 border border-kodia-black shadow-[4px_4px_0px_#0F0F0F] transform rotate-6 max-w-[240px]">
+                            <p class="font-label-mono text-sm uppercase">Qui escriurà els textos?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:col-span-6 flex flex-col gap-4 text-right">
+                    <span class="font-display-lg text-6xl md:text-8xl text-[#B3B3B3] hover:text-secondary transition-colors duration-300 cursor-default">Estructura.</span>
+                    <span class="font-display-lg text-6xl md:text-8xl text-[#B3B3B3] hover:text-secondary transition-colors duration-300 cursor-default">Textos.</span>
+                    <span class="font-display-lg text-6xl md:text-8xl text-[#B3B3B3] hover:text-secondary transition-colors duration-300 cursor-default">Disseny.</span>
+                    <span class="font-display-lg text-6xl md:text-8xl text-[#B3B3B3] hover:text-secondary transition-colors duration-300 cursor-default">Desenvolupament.</span>
+                    <span class="font-display-lg text-6xl md:text-8xl text-[#B3B3B3] hover:text-secondary transition-colors duration-300 cursor-default">Publicació.</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: No Plantilles -->
+        <section class="bg-kodia-gray py-section-padding px-margin-edge">
+            <div class="mb-24">
+                <h2 class="font-headline-lg text-headline-lg mb-4">No adaptem el teu negoci a una plantilla</h2>
+                <div class="text-4xl md:text-6xl font-black bg-secondary inline-block px-4 py-2">
+                    Adaptem la web al teu negoci.
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 items-stretch">
+                <div class="bg-white p-8 border border-kodia-black relative flex flex-col justify-between h-full min-h-[400px]">
+                    <div class="font-label-mono text-4xl text-secondary">01</div>
+                    <div>
+                        <h3 class="font-headline-lg text-2xl mb-4 uppercase">Anàlisi</h3>
+                        <p class="font-body-md">Entenem qui ets, què fas i per què el teu client t'ha de triar a tu i no a la competència.</p>
+                    </div>
+                    <div class="absolute bottom-0 right-0 w-12 h-12 bg-kodia-gray border-t border-l border-kodia-black"></div>
+                </div>
+                <div class="bg-white p-8 border border-kodia-black relative flex flex-col justify-between h-full min-h-[400px]">
+                    <div class="font-label-mono text-4xl text-secondary">02</div>
+                    <div>
+                        <h3 class="font-headline-lg text-2xl mb-4 uppercase">Estratègia</h3>
+                        <p class="font-body-md">Dissenyem el camí que seguirà l'usuari des que entra a la web fins que et contacta.</p>
+                    </div>
+                </div>
+                <div class="bg-white p-8 border border-kodia-black relative flex flex-col justify-between h-full min-h-[400px]">
+                    <div class="font-label-mono text-4xl text-secondary">03</div>
+                    <div>
+                        <h3 class="font-headline-lg text-2xl mb-4 uppercase">Execució</h3>
+                        <p class="font-body-md">Codi net, disseny a mida i una velocitat que faria plorar a la teva antiga plantilla.</p>
+                    </div>
+                </div>
+                <div class="bg-secondary p-8 border border-kodia-black relative flex flex-col justify-between h-full min-h-[400px]">
+                    <div class="font-label-mono text-4xl text-kodia-black">04</div>
+                    <div>
+                        <h3 class="font-headline-lg text-2xl mb-4 uppercase">Acompanyament</h3>
+                        <p class="font-body-md text-kodia-black">No desapareixem. Som el teu departament digital per a tot el que puguis necessitar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Services -->
+        <section id="serveis" class="bg-kodia-bg-dark text-white py-section-padding px-margin-edge">
+            <h2 id="preus" class="font-display-lg text-5xl md:text-7xl mb-24">Quin tipus de web necessites?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-secondary p-12 text-kodia-black relative group hover:-translate-y-4 transition-transform duration-300">
+                    <span class="absolute top-4 right-4 bg-kodia-bg-dark text-white px-3 py-1 font-label-mono text-xs uppercase">Oferta actual</span>
+                    <h3 class="font-headline-lg text-3xl mb-8">Web One Page</h3>
+                    <p class="font-body-md mb-12 h-24">Ideal per a llançaments de productes o serveis molt concrets. Tot el que necessites en una sola pàgina d'alt impacte.</p>
+                    <div class="border-t border-kodia-black pt-6">
+                        <span class="font-label-mono text-sm uppercase block mb-2">Des de</span>
+                        <span class="font-display-lg text-5xl font-black">300€</span>
+                    </div>
+                </div>
+                <div class="bg-white p-12 text-kodia-black relative group hover:-translate-y-4 transition-transform duration-300">
+                    <h3 class="font-headline-lg text-3xl mb-8">Web corporativa</h3>
+                    <p class="font-body-md mb-12 h-24">L'aparador digital perfecte per al teu negoci. Múltiples seccions, blog i gestió de continguts fàcil.</p>
+                    <div class="border-t border-kodia-black pt-6">
+                        <span class="font-label-mono text-sm uppercase block mb-2">Des de</span>
+                        <span class="font-display-lg text-5xl font-black">600€</span>
+                    </div>
+                </div>
+                <div class="bg-kodia-dark-gray p-12 text-white relative group hover:-translate-y-4 transition-transform duration-300">
+                    <h3 class="font-headline-lg text-3xl mb-8">Web a mida</h3>
+                    <p class="font-body-md mb-12 h-24">Estructures complexes, integracions amb el teu CRM o necessitats tècniques que surten del normal.</p>
+                    <div class="border-t border-white/20 pt-6">
+                        <span class="font-label-mono text-sm uppercase block mb-2">Des de</span>
+                        <span class="font-display-lg text-5xl font-black">900€</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Girona -->
+        <section class="bg-white py-section-padding px-margin-edge relative">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+                <div class="md:col-span-6">
+                    <h2 class="font-headline-lg text-headline-lg mb-8">Disseny web a Girona, però oferint el servei a tot Catalunya.</h2>
+                    <p class="font-body-lg text-body-lg text-kodia-black/70">
+                        Ens agrada el cafè de Girona, la llum de l'Eixample i treballar cara a cara si cal. Però hem fet créixer negocis des de l'Empordà fins a qualsevol punt on hi hagi wifi i ganes de fer les coses bé.
+                    </p>
+                </div>
+                <div class="md:col-span-6 relative h-[400px] flex items-center justify-center">
+                    <div class="w-64 h-64 border border-kodia-black rounded-full flex items-center justify-center animate-spin-slow">
+                        <div class="w-2 h-2 bg-secondary rounded-full absolute top-0 left-1/2 -translate-x-1/2"></div>
+                        <span class="font-label-mono text-xs uppercase tracking-widest">Girona &amp; Beyond</span>
+                    </div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <span class="material-symbols-outlined text-kodia-black text-6xl">location_on</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Process -->
+        <section class="bg-kodia-gray py-section-padding px-margin-edge">
+            <div class="flex flex-col gap-24">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter border-b border-kodia-black/10 pb-12">
+                    <div class="md:col-span-2 font-display-lg text-8xl text-secondary">01</div>
+                    <div class="md:col-span-4 self-center">
+                        <h3 class="font-headline-lg text-3xl uppercase">Parlem</h3>
+                    </div>
+                    <div class="md:col-span-6 self-center">
+                        <p class="font-body-md">Cafè o videotrucada. Ens expliques què necessites i analitzem si som la parella adequada.</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter border-b border-kodia-black/10 pb-12">
+                    <div class="md:col-span-2 font-display-lg text-8xl text-secondary">02</div>
+                    <div class="md:col-span-4 self-center">
+                        <h3 class="font-headline-lg text-3xl uppercase">Proposta</h3>
+                    </div>
+                    <div class="md:col-span-6 self-center">
+                        <p class="font-body-md">Pressupost tancat i timing clar. Sense sorpreses d'última hora ni lletra petita.</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter border-b border-kodia-black/10 pb-12">
+                    <div class="md:col-span-2 font-display-lg text-8xl text-secondary">03</div>
+                    <div class="md:col-span-4 self-center">
+                        <h3 class="font-headline-lg text-3xl uppercase">Recopilació</h3>
+                    </div>
+                    <div class="md:col-span-6 self-center">
+                        <p class="font-body-md">Et fem preguntes, a través d'un formulari o una reunió, per entendre bé el teu negoci i recopilar el material i la informació necessaris per crear la web.</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter border-b border-kodia-black/10 pb-12">
+                    <div class="md:col-span-2 font-display-lg text-8xl text-secondary">04</div>
+                    <div class="md:col-span-4 self-center">
+                        <h3 class="font-headline-lg text-3xl uppercase">Disseny i Codi</h3>
+                    </div>
+                    <div class="md:col-span-6 self-center">
+                        <p class="font-body-md">Veus com cobra vida la teva web a través d'un enllaç de prova privat.</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter border-b border-kodia-black/10 pb-12">
+                    <div class="md:col-span-2 font-display-lg text-8xl text-secondary">05</div>
+                    <div class="md:col-span-4 self-center">
+                        <h3 class="font-headline-lg text-3xl uppercase">Llançament</h3>
+                    </div>
+                    <div class="md:col-span-6 self-center">
+                        <p class="font-body-md">Premem el botó vermell. Ens encarreguem de tota la part tècnica de servidors.</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+                    <div class="md:col-span-2 font-display-lg text-8xl text-secondary">06</div>
+                    <div class="md:col-span-4 self-center">
+                        <h3 class="font-headline-lg text-3xl uppercase">Millora</h3>
+                    </div>
+                    <div class="md:col-span-6 self-center">
+                        <p class="font-body-md">Una web és un organisme viu. Et seguim ajudant per optimitzar-la segons el feedback real.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Projects -->
+        <section id="projectes" class="bg-white py-section-padding px-margin-edge">
+            <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-12 md:mb-16">
+                <h2 class="font-display-lg text-5xl md:text-7xl max-w-3xl">Hem fet webs per negocis molt diferents</h2>
+                <div class="flex gap-3">
+                    <button type="button" class="projects-carousel__btn w-14 h-14 border border-kodia-black bg-white hover:bg-secondary hover:text-white transition-colors duration-200 flex items-center justify-center" data-projects-prev aria-label="Projecte anterior">
+                        <span class="material-symbols-outlined" aria-hidden="true">arrow_back</span>
+                    </button>
+                    <button type="button" class="projects-carousel__btn w-14 h-14 border border-kodia-black bg-kodia-bg-dark text-white hover:bg-secondary transition-colors duration-200 flex items-center justify-center" data-projects-next aria-label="Projecte següent">
+                        <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="border border-kodia-black overflow-hidden" data-projects-carousel>
+                <div class="overflow-hidden">
+                    <div class="projects-carousel__track flex" data-projects-track>
+                        <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="projects-carousel__slide group min-w-full grid grid-cols-1 md:grid-cols-2" data-projects-slide>
+                            <div class="aspect-video md:aspect-auto md:min-h-[28rem] bg-kodia-gray overflow-hidden border-b md:border-b-0 md:border-r border-kodia-black">
+                                <img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMhP-gOjXaBFBxORlDOZiq2TpGi_8Tqewd-WiAOKlmLBfMTSj9f-rKXLcP-Tod2K49essqM0tNfFYSGc8N21m8flPZkTA9UK6fdTVs3qTQItn5rBs7CwuqDHOQqhNMc_WYYw9qj44IE3TWQkF8cLbM6yZoTvqyIO0MtE8uQaofe5i6JMvxVazpT5LeJVOdrb8TJ6Lp2P4U97kRGcm6TRvDbXhPpVHO7t4k-W_mrMvoX16zbroyn8db36ikOWfZGxom9bkvI9dER8Yl" alt="Disseny web per a un estudi d'arquitectura" loading="lazy">
+                            </div>
+                            <div class="p-8 md:p-12 flex flex-col justify-between gap-8 bg-kodia-gray">
+                                <div>
+                                    <p class="font-label-mono text-secondary uppercase tracking-widest mb-4">Disseny Web + SEO</p>
+                                    <h3 class="font-headline-lg text-3xl md:text-4xl mb-4">Estudi d'Arquitectura</h3>
+                                    <p class="font-body-md text-kodia-black/70 max-w-md">Web editorial amb imatge de marca contundent, pensada per convertir visites en contactes de projectes d'alta gamma.</p>
+                                </div>
+                                <span class="font-label-mono text-sm uppercase tracking-widest inline-flex items-center gap-2 group-hover:text-secondary transition-colors">Visitar web <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" aria-hidden="true">open_in_new</span></span>
+                            </div>
+                        </a>
+                        <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="projects-carousel__slide group min-w-full grid grid-cols-1 md:grid-cols-2" data-projects-slide>
+                            <div class="aspect-video md:aspect-auto md:min-h-[28rem] bg-kodia-gray overflow-hidden border-b md:border-b-0 md:border-r border-kodia-black">
+                                <img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQiwvgD8ptqqEDQMpVbBJtBy8mAqdXltJAstM3hFr_obIIYddnxOezO-ChS2rkFvc2kwIDKL6AMiaXxIvOI5df8NQ2WUUGxf-KO5zUzLDfReRQpySseJxSDUUiN6WdJfolUYA3tmYWD_0AKxRX97ZoaoJhAvfcrAFH_o80GL_zx8sXiMIzHzsKjXi3tdyrhqixOZss3XsJFUIiUMvqaOpEjEa9OC2MbGUc8-eGt7PxN2pcPhHJxZt69aU1oAGE7MeYlakiVzzuY0Xk" alt="Web d'ecommerce per a una torradora de cafè de l'Empordà" loading="lazy">
+                            </div>
+                            <div class="p-8 md:p-12 flex flex-col justify-between gap-8 bg-kodia-gray">
+                                <div>
+                                    <p class="font-label-mono text-secondary uppercase tracking-widest mb-4">Ecommerce</p>
+                                    <h3 class="font-headline-lg text-3xl md:text-4xl mb-4">Cafè de l'Empordà</h3>
+                                    <p class="font-body-md text-kodia-black/70 max-w-md">Botiga online amb catàleg clar, storytelling de producte i un procés de compra ràpid des de qualsevol dispositiu.</p>
+                                </div>
+                                <span class="font-label-mono text-sm uppercase tracking-widest inline-flex items-center gap-2 group-hover:text-secondary transition-colors">Visitar web <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" aria-hidden="true">open_in_new</span></span>
+                            </div>
+                        </a>
+                        <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="projects-carousel__slide group min-w-full grid grid-cols-1 md:grid-cols-2" data-projects-slide>
+                            <div class="aspect-video md:aspect-auto md:min-h-[28rem] bg-kodia-gray overflow-hidden border-b md:border-b-0 md:border-r border-kodia-black">
+                                <img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCGNH25ePZ6BWANa7q3kqTWkgCHqhaVnxMyHK4hEHG8yVSklEntDIxhnUTJupLKDULQ3jD6WI3QVe18AfuKvggd77vfAHitQYaGieWSXwYeToZwZ10shgSqshC-xr3X2y57q1mm0jPFp9pCrmMJf3XtTmveO_2YBQg12bJorhfThzRHXjwpmwY8LBUFAxSG0Es3LAfKTklrBsrK9U5dhzmwzyezy97xsfnXepsSnqo3W92_b3S22zg12lsq-pqj827lBnUgXxkmgJI" alt="Landing page per a una startup de software a Girona" loading="lazy">
+                            </div>
+                            <div class="p-8 md:p-12 flex flex-col justify-between gap-8 bg-kodia-gray">
+                                <div>
+                                    <p class="font-label-mono text-secondary uppercase tracking-widest mb-4">Custom Development</p>
+                                    <h3 class="font-headline-lg text-3xl md:text-4xl mb-4">Software Girona</h3>
+                                    <p class="font-body-md text-kodia-black/70 max-w-md">Landing tècnica per a producte SaaS, amb missatge directe, demos i captures de leads integrades amb el seu CRM.</p>
+                                </div>
+                                <span class="font-label-mono text-sm uppercase tracking-widest inline-flex items-center gap-2 group-hover:text-secondary transition-colors">Visitar web <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" aria-hidden="true">open_in_new</span></span>
+                            </div>
+                        </a>
+                        <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="projects-carousel__slide group min-w-full grid grid-cols-1 md:grid-cols-2" data-projects-slide>
+                            <div class="aspect-video md:aspect-auto md:min-h-[28rem] bg-kodia-gray overflow-hidden border-b md:border-b-0 md:border-r border-kodia-black">
+                                <img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMhP-gOjXaBFBxORlDOZiq2TpGi_8Tqewd-WiAOKlmLBfMTSj9f-rKXLcP-Tod2K49essqM0tNfFYSGc8N21m8flPZkTA9UK6fdTVs3qTQItn5rBs7CwuqDHOQqhNMc_WYYw9qj44IE3TWQkF8cLbM6yZoTvqyIO0MtE8uQaofe5i6JMvxVazpT5LeJVOdrb8TJ6Lp2P4U97kRGcm6TRvDbXhPpVHO7t4k-W_mrMvoX16zbroyn8db36ikOWfZGxom9bkvI9dER8Yl" alt="Web corporativa per a una clínica dental" loading="lazy">
+                            </div>
+                            <div class="p-8 md:p-12 flex flex-col justify-between gap-8 bg-kodia-gray">
+                                <div>
+                                    <p class="font-label-mono text-secondary uppercase tracking-widest mb-4">Web Corporativa</p>
+                                    <h3 class="font-headline-lg text-3xl md:text-4xl mb-4">Clínica Dental Balmès</h3>
+                                    <p class="font-body-md text-kodia-black/70 max-w-md">Web de confiança amb serveis ben estructurats, reserves online i una arquitectura pensada per captar nous pacients.</p>
+                                </div>
+                                <span class="font-label-mono text-sm uppercase tracking-widest inline-flex items-center gap-2 group-hover:text-secondary transition-colors">Visitar web <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" aria-hidden="true">open_in_new</span></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex justify-center gap-2 py-6 bg-white border-t border-kodia-black" data-projects-dots></div>
+            </div>
+        </section>
+
+        <!-- Section 8: Digital Review -->
+        <section id="revisio" class="bg-secondary py-section-padding px-margin-edge overflow-hidden relative">
+            <div class="absolute top-10 right-10 opacity-10 font-display-xl text-[200px] leading-none select-none" aria-hidden="true">REVISIÓ</div>
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter relative z-10 items-center">
+                <div class="md:col-span-7">
+                    <h2 class="font-headline-lg text-headline-lg md:text-5xl mb-8 leading-tight">No tens clar què necessita el teu negoci?</h2>
+                    <div class="space-y-4 mb-10 max-w-2xl">
+                        <p class="font-body-lg text-body-lg">L'anàlisi digital de KODIA no és un formulari automàtic.</p>
+                        <p class="font-body-lg text-body-lg">Un professional revisarà la teva presència actual i t'entregarà un full de ruta personalitzat per guanyar visibilitat.</p>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 mb-12 max-w-xl">
+                        <div class="bg-white/40 border border-kodia-black/10 p-5 flex flex-col gap-3">
+                            <span class="material-symbols-outlined text-kodia-black" aria-hidden="true">public</span>
+                            <div>
+                                <p class="font-label-mono text-xs uppercase tracking-widest text-kodia-black/60 mb-1">Anàlisi</p>
+                                <p class="font-headline-lg text-lg font-bold">Pàgina web</p>
+                            </div>
+                        </div>
+                        <div class="bg-white/40 border border-kodia-black/10 p-5 flex flex-col gap-3">
+                            <span class="material-symbols-outlined text-kodia-black" aria-hidden="true">share</span>
+                            <div>
+                                <p class="font-label-mono text-xs uppercase tracking-widest text-kodia-black/60 mb-1">Impacte</p>
+                                <p class="font-headline-lg text-lg font-bold">Xarxes socials</p>
+                            </div>
+                        </div>
+                        <div class="bg-white/40 border border-kodia-black/10 p-5 flex flex-col gap-3">
+                            <span class="material-symbols-outlined text-kodia-black" aria-hidden="true">location_on</span>
+                            <div>
+                                <p class="font-label-mono text-xs uppercase tracking-widest text-kodia-black/60 mb-1">Visibilitat</p>
+                                <p class="font-headline-lg text-lg font-bold">Google Business</p>
+                            </div>
+                        </div>
+                        <div class="bg-white/40 border border-kodia-black/10 p-5 flex flex-col gap-3">
+                            <span class="material-symbols-outlined text-kodia-black" aria-hidden="true">account_tree</span>
+                            <div>
+                                <p class="font-label-mono text-xs uppercase tracking-widest text-kodia-black/60 mb-1">Procés</p>
+                                <p class="font-headline-lg text-lg font-bold">Estudi de processos</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="bg-kodia-bg-dark text-white px-10 py-5 font-bold uppercase tracking-widest hover:translate-x-2 hover:-translate-y-2 transition-transform shadow-[6px_6px_0px_white] inline-flex items-center gap-3">
+                        Demana la teva revisió digital gratuïta
+                        <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+                    </button>
+                </div>
+                <div class="md:col-span-5 hidden md:flex flex-col items-center justify-center">
+                    <div class="w-64 h-64 bg-kodia-bg-dark text-white flex items-center justify-center transform rotate-6 shadow-[12px_12px_0px_rgba(15,15,15,0.2)]">
+                        <span class="material-symbols-outlined text-[7rem]" style="font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 48;" aria-hidden="true">search_insights</span>
+                    </div>
+                    <p class="font-label-mono text-sm mt-8 -rotate-3 text-kodia-black/80">100% Gratuït</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 9: Final CTA -->
+        <section class="bg-kodia-bg-dark text-white py-section-padding px-margin-edge text-center">
+            <h2 class="font-display-lg text-5xl md:text-7xl mb-8">Parlem de la web que necessita el teu negoci</h2>
+            <p class="font-body-lg text-2xl md:text-3xl mb-16 text-white/80">
+                <span class="text-secondary">Explica'ns què fas.</span> Explica'ns què necessites.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-6">
+                <button type="button" class="bg-white text-kodia-black px-12 py-6 font-black uppercase text-xl hover:bg-secondary hover:text-white transition-colors duration-300">
+                    Explica'ns el teu projecte
+                </button>
+                <button type="button" class="border border-white/30 text-white px-12 py-6 font-black uppercase text-xl hover:border-secondary hover:text-secondary transition-colors duration-300">
+                    Demana una revisió digital gratuïta
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contacte" class="bg-kodia-bg-dark text-on-primary py-section-padding px-margin-edge border-t border-primary">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter w-full">
+            <div class="md:col-span-4 flex flex-col justify-between">
+                <div>
+                    <div class="font-display-lg text-display-lg font-black text-on-primary mb-6">KODIA</div>
+                    <p class="font-body-md text-tertiary-fixed-dim max-w-xs">© 2026 KODIA.cat — Studio for technical precision and artisanal soul. Disseny web honest des de Girona.</p>
+                </div>
+                <div class="flex gap-4 mt-12">
+                    <a class="text-tertiary-fixed-dim hover:text-white transition-all duration-200" href="#">Instagram</a>
+                    <a class="text-tertiary-fixed-dim hover:text-white transition-all duration-200" href="#">LinkedIn</a>
+                    <a class="text-tertiary-fixed-dim hover:text-white transition-all duration-200" href="#">Behance</a>
+                </div>
+            </div>
+            <div class="md:col-span-2">
+                <h4 class="font-label-mono text-secondary uppercase mb-8">Serveis</h4>
+                <ul class="space-y-4">
+                    <li><a class="text-tertiary-fixed-dim hover:text-on-primary transition-all" href="#serveis">Web One Page</a></li>
+                    <li><a class="text-tertiary-fixed-dim hover:text-on-primary transition-all" href="#serveis">Web Corporativa</a></li>
+                    <li><a class="text-tertiary-fixed-dim hover:text-on-primary transition-all" href="#serveis">Web a Mida</a></li>
+                    <li><a class="text-tertiary-fixed-dim hover:text-on-primary transition-all" href="#revisio">Revisió Digital</a></li>
+                </ul>
+            </div>
+            <div class="md:col-span-2">
+                <h4 class="font-label-mono text-secondary uppercase mb-8">KODIA</h4>
+                <ul class="space-y-4">
+                    <li><a class="text-tertiary-fixed-dim hover:text-on-primary transition-all" href="#projectes">Projectes</a></li>
+                    <li><a class="text-tertiary-fixed-dim hover:text-on-primary transition-all" href="#">Manifest</a></li>
+                    <li><a class="text-tertiary-fixed-dim hover:text-on-primary transition-all" href="#">Privadesa</a></li>
+                    <li><a class="text-tertiary-fixed-dim hover:text-on-primary transition-all" href="#">TOS</a></li>
+                </ul>
+            </div>
+            <div class="md:col-span-4">
+                <h4 class="font-label-mono text-secondary uppercase mb-8">Contacte</h4>
+                <p class="font-headline-lg text-3xl mb-8">
+                    <a href="mailto:hola@kodia.cat" class="hover:text-secondary transition-colors">hola@kodia.cat</a>
+                </p>
+                <div class="bg-kodia-dark-gray p-6 border border-white/10">
+                    <p class="font-label-mono text-xs uppercase text-white/50 mb-2">Location</p>
+                    <p class="font-body-md">Girona, Catalunya</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/nav.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="ca">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projectes de disseny web | Portfolio KODIA</title>
+    <meta name="description" content="Descobreix alguns dels projectes de disseny i desenvolupament web a mida creats per KODIA per a negocis de diferents sectors.">
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="../js/tailwind-config.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700;800;900&family=JetBrains+Mono:wght@400;500;700&family=Karla:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="bg-kodia-bg text-kodia-black font-body-md selection:bg-secondary selection:text-white overflow-x-hidden">
+
+    <!-- TopNavBar -->
+    <header class="sticky top-0 w-full z-50 bg-background border-b border-primary" data-site-header>
+        <div class="flex justify-between items-center px-margin-edge py-gutter max-w-full mx-auto">
+            <a href="../" class="font-headline-lg text-headline-lg-mobile md:text-headline-lg font-black tracking-tighter text-primary shrink-0">KODIA</a>
+            <nav class="hidden lg:flex items-center gap-8" aria-label="Navegació principal">
+                <div class="relative" data-nav-dropdown>
+                    <button type="button" id="nav-serveis-btn" class="flex items-center gap-1 text-on-surface font-medium hover:text-secondary transition-colors duration-150 py-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2" aria-expanded="false" aria-haspopup="true" aria-controls="nav-serveis-menu" data-nav-dropdown-trigger>
+                        Serveis
+                        <span class="material-symbols-outlined text-base" aria-hidden="true">expand_more</span>
+                    </button>
+                    <div id="nav-serveis-menu" class="nav-dropdown absolute left-0 top-full pt-2" role="menu" aria-labelledby="nav-serveis-btn" data-nav-dropdown-menu>
+                        <div class="bg-background border border-primary shadow-sm py-2 min-w-[220px]">
+                            <a href="../web-one-page/" class="nav-dropdown__link" role="menuitem">Web One Page</a>
+                            <a href="../web-corporativa/" class="nav-dropdown__link" role="menuitem">Web corporativa</a>
+                            <a href="../web-a-mida/" class="nav-dropdown__link" role="menuitem">Web a mida</a>
+                        </div>
+                    </div>
+                </div>
+                <a class="text-secondary font-bold border-b-2 border-secondary hover:text-secondary transition-colors duration-150 py-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2" href="../projectes/">Projectes</a>
+                <a class="text-on-surface font-medium hover:text-secondary transition-colors duration-150 py-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2" href="../preus-pagina-web/">Preus</a>
+                <a class="text-on-surface font-medium hover:text-secondary transition-colors duration-150 py-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2" href="../revisio-digital/">Revisió digital</a>
+                <a class="text-on-surface font-medium hover:text-secondary transition-colors duration-150 py-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2" href="../contacte/">Contacte</a>
+            </nav>
+            <div class="flex items-center gap-3">
+                <a href="../contacte/" class="hidden lg:inline-flex bg-kodia-bg-dark text-on-primary px-6 py-3 font-label-mono text-label-mono hover:bg-secondary transition-colors duration-150 uppercase tracking-widest">
+                    Explica'ns el teu projecte
+                </a>
+                <button type="button" class="lg:hidden flex items-center justify-center w-12 h-12 border border-primary text-primary hover:bg-kodia-gray transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary" aria-expanded="false" aria-controls="nav-mobile-menu" data-nav-mobile-toggle>
+                    <span class="sr-only">Obrir menú de navegació</span>
+                    <span class="material-symbols-outlined text-2xl" data-nav-icon-menu aria-hidden="true">menu</span>
+                    <span class="material-symbols-outlined text-2xl hidden" data-nav-icon-close aria-hidden="true">close</span>
+                </button>
+            </div>
+        </div>
+        <nav id="nav-mobile-menu" class="nav-mobile lg:hidden hidden border-t border-primary bg-background px-margin-edge py-6" aria-label="Navegació mòbil" data-nav-mobile-menu>
+            <div class="space-y-1">
+                <p class="font-label-mono text-xs uppercase tracking-widest text-kodia-black/50 px-1 py-2">Serveis</p>
+                <a href="../web-one-page/" class="nav-mobile__sublink">Web One Page</a>
+                <a href="../web-corporativa/" class="nav-mobile__sublink">Web corporativa</a>
+                <a href="../web-a-mida/" class="nav-mobile__sublink">Web a mida</a>
+                <a href="../projectes/" class="nav-mobile__link">Projectes</a>
+                <a href="../preus-pagina-web/" class="nav-mobile__link">Preus</a>
+                <a href="../revisio-digital/" class="nav-mobile__link">Revisió digital</a>
+                <a href="../contacte/" class="nav-mobile__link">Contacte</a>
+                <a href="../contacte/" class="nav-mobile__cta">Explica'ns el teu projecte</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="pt-32 pb-20 px-margin-edge bg-white border-b border-kodia-black/10">
+            <div class="max-w-4xl">
+                <h1 class="font-display-lg text-[48px] md:text-display-lg leading-tight mb-8">
+                    Projectes de disseny web
+                </h1>
+                <div class="space-y-6">
+                    <p class="font-body-lg text-body-lg">
+                        Cada projecte parteix d'un negoci diferent i necessita una solució diferent.
+                    </p>
+                    <p class="font-body-lg text-body-lg">
+                        Dissenyem webs a mida per a projectes de sectors molt diversos, sempre partint dels seus objectius, públic i manera de comunicar-se.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projectes -->
+        <section class="py-section-padding px-margin-edge bg-kodia-bg">
+            <div class="max-w-5xl mb-12 md:mb-16">
+                <h2 class="font-headline-lg text-headline-lg mb-8">Projectes pensats per a negocis molt diferents</h2>
+                <div class="space-y-6 max-w-3xl">
+                    <p class="font-body-lg text-body-lg">
+                        Hem treballat amb projectes de formació, negocis locals, alimentació animal, oci, perruqueria i esport.
+                    </p>
+                    <p class="font-body-lg text-body-lg">
+                        No adaptem un mateix disseny a tots els clients. Cada web es construeix des de zero perquè representi el negoci i faciliti que les persones trobin la informació que necessiten.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap gap-3 mb-16 md:mb-24" role="group" aria-label="Filtrar projectes">
+                <button type="button" class="portfolio-filter px-5 py-2 font-label-mono text-label-mono uppercase tracking-widest border border-kodia-black bg-kodia-bg-dark text-white transition-colors" data-portfolio-filter="all" aria-pressed="true">Tots</button>
+                <button type="button" class="portfolio-filter px-5 py-2 font-label-mono text-label-mono uppercase tracking-widest border border-kodia-black bg-white hover:bg-kodia-gray transition-colors" data-portfolio-filter="one-page" aria-pressed="false">One Page</button>
+                <button type="button" class="portfolio-filter px-5 py-2 font-label-mono text-label-mono uppercase tracking-widest border border-kodia-black bg-white hover:bg-kodia-gray transition-colors" data-portfolio-filter="corporativa" aria-pressed="false">Webs corporatives</button>
+                <button type="button" class="portfolio-filter px-5 py-2 font-label-mono text-label-mono uppercase tracking-widest border border-kodia-black bg-white hover:bg-kodia-gray transition-colors" data-portfolio-filter="a-mida" aria-pressed="false">Webs a mida</button>
+            </div>
+
+            <div class="space-y-24 md:space-y-32">
+                <!-- Projecte 1 — gran -->
+                <article class="group" data-portfolio-item data-category="corporativa">
+                    <a href="./academia-formacio/" class="block">
+                        <div class="w-full aspect-[16/9] md:aspect-[21/9] bg-kodia-gray border border-kodia-black overflow-hidden mb-8">
+                            <img
+                                class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMhP-gOjXaBFBxORlDOZiq2TpGi_8Tqewd-WiAOKlmLBfMTSj9f-rKXLcP-Tod2K49essqM0tNfFYSGc8N21m8flPZkTA9UK6fdTVs3qTQItn5rBs7CwuqDHOQqhNMc_WYYw9qj44IE3TWQkF8cLbM6yZoTvqyIO0MtE8uQaofe5i6JMvxVazpT5LeJVOdrb8TJ6Lp2P4U97kRGcm6TRvDbXhPpVHO7t4k-W_mrMvoX16zbroyn8db36ikOWfZGxom9bkvI9dER8Yl"
+                                alt="Captura de la web d'una acadèmia de formació"
+                                loading="lazy"
+                            >
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-end">
+                            <div class="md:col-span-8">
+                                <h3 class="font-headline-lg text-4xl md:text-5xl mb-3 group-hover:text-secondary transition-colors">Acadèmia Nord</h3>
+                                <p class="font-label-mono text-secondary uppercase tracking-widest text-sm">Formació · Web corporativa</p>
+                            </div>
+                            <div class="md:col-span-4 md:text-right">
+                                <span class="font-label-mono text-sm uppercase inline-flex items-center gap-2 group-hover:translate-x-2 transition-transform">Veure projecte <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Projecte 2 i 3 — asimètric -->
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter gap-y-16">
+                    <article class="md:col-span-7 group md:mt-24" data-portfolio-item data-category="one-page">
+                        <a href="./forn-pa-artesa/" class="block">
+                            <div class="w-full aspect-[4/5] bg-kodia-gray border border-kodia-black overflow-hidden mb-6">
+                                <img
+                                    class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQiwvgD8ptqqEDQMpVbBJtBy8mAqdXltJAstM3hFr_obIIYddnxOezO-ChS2rkFvc2kwIDKL6AMiaXxIvOI5df8NQ2WUUGxf-KO5zUzLDfReRQpySseJxSDUUiN6WdJfolUYA3tmYWD_0AKxRX97ZoaoJhAvfcrAFH_o80GL_zx8sXiMIzHzsKjXi3tdyrhqixOZss3XsJFUIiUMvqaOpEjEa9OC2MbGUc8-eGt7PxN2pcPhHJxZt69aU1oAGE7MeYlakiVzzuY0Xk"
+                                    alt="Captura de la web d'un forn de pa artesà"
+                                    loading="lazy"
+                                >
+                            </div>
+                            <h3 class="font-headline-lg text-3xl mb-2 group-hover:text-secondary transition-colors">Forn de Pa Artesà</h3>
+                            <p class="font-label-mono text-secondary uppercase tracking-widest text-sm">Negoci local · One Page</p>
+                        </a>
+                    </article>
+
+                    <article class="md:col-span-5 group" data-portfolio-item data-category="a-mida">
+                        <a href="./nutricio-animal/" class="block">
+                            <div class="w-full aspect-square bg-kodia-gray border border-kodia-black overflow-hidden mb-6">
+                                <img
+                                    class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCGNH25ePZ6BWANa7q3kqTWkgCHqhaVnxMyHK4hEHG8yVSklEntDIxhnUTJupLKDULQ3jD6WI3QVe18AfuKvggd77vfAHitQYaGieWSXwYeToZwZ10shgSqshC-xr3X2y57q1mm0jPFp9pCrmMJf3XtTmveO_2YBQg12bJorhfThzRHXjwpmwY8LBUFAxSG0Es3LAfKTklrBsrK9U5dhzmwzyezy97xsfnXepsSnqo3W92_b3S22zg12lsq-pqj827lBnUgXxkmgJI"
+                                    alt="Captura de la web d'una marca d'alimentació animal"
+                                    loading="lazy"
+                                >
+                            </div>
+                            <h3 class="font-headline-lg text-2xl mb-2 group-hover:text-secondary transition-colors">Nutrició Animal Empordà</h3>
+                            <p class="font-label-mono text-secondary uppercase tracking-widest text-sm">Alimentació animal · Web a mida</p>
+                        </a>
+                    </article>
+                </div>
+
+                <!-- Projecte 4 — gran -->
+                <article class="group" data-portfolio-item data-category="corporativa">
+                    <a href="./club-esportiu-emporda/" class="block">
+                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+                            <div class="lg:col-span-8 order-2 lg:order-1">
+                                <h3 class="font-headline-lg text-4xl md:text-6xl mb-4 group-hover:text-secondary transition-colors">Club Esportiu Empordà</h3>
+                                <p class="font-label-mono text-secondary uppercase tracking-widest text-sm mb-8">Esport · Web corporativa</p>
+                                <span class="font-label-mono text-sm uppercase inline-flex items-center gap-2 group-hover:translate-x-2 transition-transform">Veure projecte <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></span>
+                            </div>
+                            <div class="lg:col-span-4 order-1 lg:order-2">
+                                <div class="w-full aspect-[3/4] bg-kodia-gray border border-kodia-black overflow-hidden">
+                                    <img
+                                        class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMhP-gOjXaBFBxORlDOZiq2TpGi_8Tqewd-WiAOKlmLBfMTSj9f-rKXLcP-Tod2K49essqM0tNfFYSGc8N21m8flPZkTA9UK6fdTVs3qTQItn5rBs7CwuqDHOQqhNMc_WYYw9qj44IE3TWQkF8cLbM6yZoTvqyIO0MtE8uQaofe5i6JMvxVazpT5LeJVOdrb8TJ6Lp2P4U97kRGcm6TRvDbXhPpVHO7t4k-W_mrMvoX16zbroyn8db36ikOWfZGxom9bkvI9dER8Yl"
+                                        alt="Captura de la web d'un club esportiu"
+                                        loading="lazy"
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Projecte 5 i 6 -->
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter gap-y-16">
+                    <article class="md:col-span-5 group md:col-start-2" data-portfolio-item data-category="one-page">
+                        <a href="./perruqueria-eixample/" class="block">
+                            <div class="w-full aspect-[4/3] bg-kodia-gray border border-kodia-black overflow-hidden mb-6 -rotate-1 group-hover:rotate-0 transition-transform duration-500">
+                                <img
+                                    class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQiwvgD8ptqqEDQMpVbBJtBy8mAqdXltJAstM3hFr_obIIYddnxOezO-ChS2rkFvc2kwIDKL6AMiaXxIvOI5df8NQ2WUUGxf-KO5zUzLDfReRQpySseJxSDUUiN6WdJfolUYA3tmYWD_0AKxRX97ZoaoJhAvfcrAFH_o80GL_zx8sXiMIzHzsKjXi3tdyrhqixOZss3XsJFUIiUMvqaOpEjEa9OC2MbGUc8-eGt7PxN2pcPhHJxZt69aU1oAGE7MeYlakiVzzuY0Xk"
+                                    alt="Captura de la web d'una perruqueria"
+                                    loading="lazy"
+                                >
+                            </div>
+                            <h3 class="font-headline-lg text-2xl mb-2 group-hover:text-secondary transition-colors">Perruqueria Eixample</h3>
+                            <p class="font-label-mono text-secondary uppercase tracking-widest text-sm">Perruqueria · One Page</p>
+                        </a>
+                    </article>
+
+                    <article class="md:col-span-6 group md:mt-32" data-portfolio-item data-category="a-mida">
+                        <a href="./espai-oci-girona/" class="block">
+                            <div class="w-full aspect-video bg-kodia-gray border border-kodia-black overflow-hidden mb-6 rotate-1 group-hover:rotate-0 transition-transform duration-500">
+                                <img
+                                    class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCGNH25ePZ6BWANa7q3kqTWkgCHqhaVnxMyHK4hEHG8yVSklEntDIxhnUTJupLKDULQ3jD6WI3QVe18AfuKvggd77vfAHitQYaGieWSXwYeToZwZ10shgSqshC-xr3X2y57q1mm0jPFp9pCrmMJf3XtTmveO_2YBQg12bJorhfThzRHXjwpmwY8LBUFAxSG0Es3LAfKTklrBsrK9U5dhzmwzyezy97xsfnXepsSnqo3W92_b3S22zg12lsq-pqj827lBnUgXxkmgJI"
+                                    alt="Captura de la web d'un espai d'oci"
+                                    loading="lazy"
+                                >
+                            </div>
+                            <h3 class="font-headline-lg text-3xl mb-2 group-hover:text-secondary transition-colors">Espai Oci Girona</h3>
+                            <p class="font-label-mono text-secondary uppercase tracking-widest text-sm">Oci · Web a mida</p>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Final -->
+        <section class="bg-kodia-bg-dark text-white py-section-padding px-margin-edge text-center">
+            <button type="button" class="bg-white text-kodia-black px-12 py-6 font-black uppercase text-xl hover:bg-secondary hover:text-white transition-colors duration-300">
+                Explica'ns el teu projecte
+            </button>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contacte" class="bg-kodia-bg-dark text-on-primary py-section-padding px-margin-edge border-t border-primary">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter w-full">
+            <div class="md:col-span-4 flex flex-col justify-between">
+                <div>
+                    <div class="font-display-lg text-display-lg font-black text-on-primary mb-6">KODIA</div>
+                    <p class="font-body-md text-tertiary-fixed-dim max-w-xs">© 2026 KODIA.cat — Studio for technical precision and artisanal soul. Disseny web honest des de Girona.</p>
+                </div>
+                <div class="flex gap-4 mt-12">
+                    <a class="text-tertiary-fixed-dim hover:text-white transition-all duration-200" href="#">Instagram</a>
+                    <a class="text-tertiary-fixed-dim hover:text-white transition-all duration-200" href="#">LinkedIn</a>
+                    <a class="text-tertiary-fixed-dim hover:text-white transition-all duration-200" href="#">Behance</a>
+                </div>
+            </div>
+            <div class="md:col-span-2">
+                <h4 class="font-label-mono text-secondary uppercase mb-8">Serveis</h4>
+                <ul class="space-y-4">
+                    <li><a class="text-tertiary-fixed-dim hover:text-on-primary transition-all" href="../web-one-page/">Web One Page</a></li>
+                    <li><a class="text-tertiary-fixed-dim hover:text-on-primary transition-all" href="../web-corporativa/">Web Corporativa</a></li>
+                    <li><a class="text-tertiary-fixed-dim hover:text-on-primary transition-all" href="../web-a-mida/">Web a Mida</a></li>
+                    <li><a class="text-tertiary-fixed-dim hover:text-on-primary transition-all" href="../#revisio">Revisió Digital</a></li>
+                </ul>
+            </div>
+            <div class="md:col-span-2">
+                <h4 class="font-label-mono text-secondary uppercase mb-8">KODIA</h4>
+                <ul class="space-y-4">
+                    <li><a class="text-tertiary-fixed-dim hover:text-on-primary transition-all" href="./">Projectes</a></li>
+                    <li><a class="text-tertiary-fixed-dim hover:text-on-primary transition-all" href="#">Manifest</a></li>
+                    <li><a class="text-tertiary-fixed-dim hover:text-on-primary transition-all" href="#">Privadesa</a></li>
+                    <li><a class="text-tertiary-fixed-dim hover:text-on-primary transition-all" href="#">TOS</a></li>
+                </ul>
+            </div>
+            <div class="md:col-span-4">
+                <h4 class="font-label-mono text-secondary uppercase mb-8">Contacte</h4>
+                <p class="font-headline-lg text-3xl mb-8">
+                    <a href="mailto:hola@kodia.cat" class="hover:text-secondary transition-colors">hola@kodia.cat</a>
+                </p>
+                <div class="bg-kodia-dark-gray p-6 border border-white/10">
+                    <p class="font-label-mono text-xs uppercase text-white/50 mb-2">Location</p>
+                    <p class="font-body-md">Girona, Catalunya</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/nav.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/portfolio-filters.js"></script>
+</body>
+</html>

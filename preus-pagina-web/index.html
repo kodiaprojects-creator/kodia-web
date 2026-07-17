@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="ca">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preu pàgina web | Demana pressupost web — KODIA</title>
+    <meta name="description" content="Descobreix quant costa crear una pàgina web. One Page, webs corporatives i desenvolupaments a mida amb preus clars i pressupost personalitzat.">
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="../js/tailwind-config.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700;800;900&family=JetBrains+Mono:wght@400;500;700&family=Karla:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="bg-kodia-bg text-kodia-black font-body-md selection:bg-secondary selection:text-white overflow-x-hidden">
+
+    <!-- TopNavBar -->
+    <header class="sticky top-0 w-full z-50 bg-background border-b border-primary" data-site-header>
+        <div class="flex justify-between items-center px-margin-edge py-gutter max-w-full mx-auto">
+            <a href="../" class="font-headline-lg text-headline-lg-mobile md:text-headline-lg font-black tracking-tighter text-primary shrink-0">KODIA</a>
+            <nav class="hidden lg:flex items-center gap-8" aria-label="Navegació principal">
+                <div class="relative" data-nav-dropdown>
+                    <button type="button" id="nav-serveis-btn" class="flex items-center gap-1 text-on-surface font-medium hover:text-secondary transition-colors duration-150 py-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2" aria-expanded="false" aria-haspopup="true" aria-controls="nav-serveis-menu" data-nav-dropdown-trigger>
+                        Serveis
+                        <span class="material-symbols-outlined text-base" aria-hidden="true">expand_more</span>
+                    </button>
+                    <div id="nav-serveis-menu" class="nav-dropdown absolute left-0 top-full pt-2" role="menu" aria-labelledby="nav-serveis-btn" data-nav-dropdown-menu>
+                        <div class="bg-background border border-primary shadow-sm py-2 min-w-[220px]">
+                            <a href="../web-one-page/" class="nav-dropdown__link" role="menuitem">Web One Page</a>
+                            <a href="../web-corporativa/" class="nav-dropdown__link" role="menuitem">Web corporativa</a>
+                            <a href="../web-a-mida/" class="nav-dropdown__link" role="menuitem">Web a mida</a>
+                        </div>
+                    </div>
+                </div>
+                <a class="text-on-surface font-medium hover:text-secondary transition-colors duration-150 py-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2" href="../projectes/">Projectes</a>
+                <a class="text-secondary font-bold border-b-2 border-secondary hover:text-secondary transition-colors duration-150 py-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2" href="../preus-pagina-web/">Preus</a>
+                <a class="text-on-surface font-medium hover:text-secondary transition-colors duration-150 py-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2" href="../revisio-digital/">Revisió digital</a>
+                <a class="text-on-surface font-medium hover:text-secondary transition-colors duration-150 py-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2" href="../contacte/">Contacte</a>
+            </nav>
+            <div class="flex items-center gap-3">
+                <a href="../contacte/" class="hidden lg:inline-flex bg-kodia-bg-dark text-on-primary px-6 py-3 font-label-mono text-label-mono hover:bg-secondary transition-colors duration-150 uppercase tracking-widest">
+                    Explica'ns el teu projecte
+                </a>
+                <button type="button" class="lg:hidden flex items-center justify-center w-12 h-12 border border-primary text-primary hover:bg-kodia-gray transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary" aria-expanded="false" aria-controls="nav-mobile-menu" data-nav-mobile-toggle>
+                    <span class="sr-only">Obrir menú de navegació</span>
+                    <span class="material-symbols-outlined text-2xl" data-nav-icon-menu aria-hidden="true">menu</span>
+                    <span class="material-symbols-outlined text-2xl hidden" data-nav-icon-close aria-hidden="true">close</span>
+                </button>
+            </div>
+        </div>
+        <nav id="nav-mobile-menu" class="nav-mobile lg:hidden hidden border-t border-primary bg-background px-margin-edge py-6" aria-label="Navegació mòbil" data-nav-mobile-menu>
+            <div class="space-y-1">
+                <p class="font-label-mono text-xs uppercase tracking-widest text-kodia-black/50 px-1 py-2">Serveis</p>
+                <a href="../web-one-page/" class="nav-mobile__sublink">Web One Page</a>
+                <a href="../web-corporativa/" class="nav-mobile__sublink">Web corporativa</a>
+                <a href="../web-a-mida/" class="nav-mobile__sublink">Web a mida</a>
+                <a href="../projectes/" class="nav-mobile__link">Projectes</a>
+                <a href="../preus-pagina-web/" class="nav-mobile__link">Preus</a>
+                <a href="../revisio-digital/" class="nav-mobile__link">Revisió digital</a>
+                <a href="../contacte/" class="nav-mobile__link">Contacte</a>
+                <a href="../contacte/" class="nav-mobile__cta">Explica'ns el teu projecte</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="pt-32 pb-20 px-margin-edge bg-white border-b border-kodia-black/10">
+            <div class="max-w-4xl">
+                <h1 class="font-display-lg text-[40px] md:text-display-lg leading-tight mb-8">
+                    Quant costa una pàgina web? Preus i pressupostos
+                </h1>
+                <div class="space-y-6 max-w-3xl">
+                    <p class="font-body-lg text-body-lg">
+                        El preu d'una pàgina web depèn principalment de la quantitat de contingut, l'estructura i les funcionalitats que necessita.
+                    </p>
+                    <p class="font-body-lg text-body-lg">
+                        A KODIA treballem amb tres punts de partida perquè puguis entendre fàcilment quin tipus de projecte encaixa millor amb el teu negoci.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Web One Page -->
+        <section id="one-page" class="bg-secondary py-section-padding px-margin-edge border-b border-kodia-black/10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+                <div class="lg:col-span-5">
+                    <h2 class="font-headline-lg text-headline-lg mb-8">Preu d'una Web One Page</h2>
+                    <p class="font-body-lg text-body-lg max-w-md">
+                        Una única pàgina amb tota la informació essencial del negoci. Inclou disseny a mida, estructura, textos, adaptació mòbil, SEO bàsic, publicació i 3 rondes de canvis.
+                    </p>
+                </div>
+                <div class="lg:col-span-7 lg:text-right">
+                    <p class="font-label-mono text-sm uppercase tracking-widest mb-4 text-kodia-black/60">Preu habitual</p>
+                    <p class="font-display-lg text-4xl md:text-5xl line-through text-kodia-black/40 mb-8">450 €</p>
+                    <p class="font-label-mono text-sm uppercase tracking-widest mb-2 text-kodia-black">Oferta actual</p>
+                    <p class="font-display-lg text-[72px] md:text-[96px] leading-none font-black text-kodia-black">300 €</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Web Corporativa -->
+        <section id="corporativa" class="bg-white py-section-padding px-margin-edge border-b border-kodia-black/10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+                <div class="lg:col-span-7 order-2 lg:order-1">
+                    <p class="font-display-lg text-6xl md:text-8xl font-black leading-none">Des de 600 €</p>
+                </div>
+                <div class="lg:col-span-5 order-1 lg:order-2">
+                    <h2 class="font-headline-lg text-headline-lg mb-8">Preu d'una web corporativa</h2>
+                    <p class="font-body-lg text-body-lg">
+                        Pensada per a empreses que necessiten una estructura més completa. Inclou portada, fins a 4 pàgines interiors, disseny a mida, textos, adaptació mòbil, SEO bàsic i publicació.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Web a mida -->
+        <section id="a-mida" class="bg-kodia-gray py-section-padding px-margin-edge border-b border-kodia-black/10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+                <div class="lg:col-span-6">
+                    <h2 class="font-headline-lg text-headline-lg mb-8">Preu d'una pàgina web a mida</h2>
+                    <p class="font-body-lg text-body-lg max-w-xl">
+                        Per a projectes que necessiten CMS, integracions, reserves, contingut dinàmic o funcionalitats específiques. El pressupost s'adapta a la complexitat real del projecte.
+                    </p>
+                </div>
+                <div class="lg:col-span-6 lg:text-right">
+                    <p class="font-display-lg text-6xl md:text-8xl font-black leading-none">Des de 900 €</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Què fa variar el preu? -->
+        <section class="bg-white py-section-padding px-margin-edge">
+            <h2 class="font-headline-lg text-headline-lg mb-16 max-w-3xl">Què pot fer variar el pressupost d'una pàgina web?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-gutter gap-y-8 max-w-5xl">
+                <div class="border-l-4 border-secondary pl-6 py-2">
+                    <p class="font-headline-lg text-xl font-bold">Nombre de pàgines</p>
+                </div>
+                <div class="border-l-4 border-kodia-black pl-6 py-2 md:mt-8">
+                    <p class="font-headline-lg text-xl font-bold">Quantitat de contingut</p>
+                </div>
+                <div class="border-l-4 border-secondary pl-6 py-2">
+                    <p class="font-headline-lg text-xl font-bold">CMS o gestió de continguts</p>
+                </div>
+                <div class="border-l-4 border-kodia-black pl-6 py-2 md:mt-8">
+                    <p class="font-headline-lg text-xl font-bold">Integracions amb altres eines</p>
+                </div>
+                <div class="border-l-4 border-secondary pl-6 py-2">
+                    <p class="font-headline-lg text-xl font-bold">Migració d'una web antiga</p>
+                </div>
+                <div class="border-l-4 border-kodia-black pl-6 py-2 md:mt-8">
+                    <p class="font-headline-lg text-xl font-bold">Funcionalitats específiques</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Manteniment -->
+        <section class="bg-surface-secondary py-section-padding px-margin-edge">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+                <div class="lg:col-span-5">
+                    <h2 class="font-headline-lg text-headline-lg mb-8">Què passa després de publicar?</h2>
+                    <p class="font-body-lg text-body-lg mb-10">
+                        Totes les webs de KODIA disposen d'un pla de manteniment perquè continuïn funcionant correctament i tinguis suport quan el necessitis.
+                    </p>
+                    <button type="button" class="bg-kodia-bg-dark text-white px-8 py-4 font-bold hover:bg-secondary transition-all">
+                        Demana pressupost per a la teva pàgina web
+                    </button>
+                </div>
+                <div class="lg:col-span-7">
+                    <div class="border border-kodia-black bg-white p-8 md:p-10 space-y-6">
+                        <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-2 border-b border-kodia-black/10 pb-6">
+                            <p class="font-headline-lg text-xl font-bold">One Page</p>
+                            <p class="font-label-mono text-secondary text-lg">15 €/mes</p>
+                        </div>
+                        <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-2 border-b border-kodia-black/10 pb-6">
+                            <p class="font-headline-lg text-xl font-bold">Web corporativa</p>
+                            <p class="font-label-mono text-secondary text-lg">des de 25 €/mes</p>
+                        </div>
+                        <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-2 border-b border-kodia-black/10 pb-6">
+                            <p class="font-headline-lg text-xl font-bold">Web a mida</p>
+                            <p class="font-label-mono text-secondary text-lg">des de 40 €/mes</p>
+                        </div>
+                        <p class="font-body-md text-kodia-black/70 pt-2">
+                            El manteniment inclou la part tècnica, suport, incidències i petits canvis de textos o imatges. Els canvis estructurals o noves funcionalitats es pressuposten a part.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contacte" class="bg-kodia-bg-dark text-on-primary py-section-padding px-margin-edge border-t border-primary">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter w-full">
+            <div class="md:col-span-4 flex flex-col justify-between">
+                <div>
+                    <div class="font-display-lg text-display-lg font-black text-on-primary mb-6">KODIA</div>
+                    <p class="font-body-md text-tertiary-fixed-dim max-w-xs">© 2026 KODIA.cat — Studio for technical precision and artisanal soul. Disseny web honest des de Girona.</p>
+                </div>
+                <div class="flex gap-4 mt-12">
+                    <a class="text-tertiary-fixed-dim hover:text-white transition-all duration-200" href="#">Instagram</a>
+                    <a class="text-tertiary-fixed-dim hover:text-white transition-all duration-200" href="#">LinkedIn</a>
+                    <a class="text-tertiary-fixed-dim hover:text-white transition-all duration-200" href="#">Behance</a>
+                </div>
+            </div>
+            <div class="md:col-span-2">
+                <h4 class="font-label-mono text-secondary uppercase mb-8">Serveis</h4>
+                <ul class="space-y-4">
+                    <li><a class="text-tertiary-fixed-dim hover:text-on-primary transition-all" href="../web-one-page/">Web One Page</a></li>
+                    <li><a class="text-tertiary-fixed-dim hover:text-on-primary transition-all" href="../web-corporativa/">Web Corporativa</a></li>
+                    <li><a class="text-tertiary-fixed-dim hover:text-on-primary transition-all" href="../web-a-mida/">Web a Mida</a></li>
+                    <li><a class="text-tertiary-fixed-dim hover:text-on-primary transition-all" href="../#revisio">Revisió Digital</a></li>
+                </ul>
+            </div>
+            <div class="md:col-span-2">
+                <h4 class="font-label-mono text-secondary uppercase mb-8">KODIA</h4>
+                <ul class="space-y-4">
+                    <li><a class="text-tertiary-fixed-dim hover:text-on-primary transition-all" href="../projectes/">Projectes</a></li>
+                    <li><a class="text-tertiary-fixed-dim hover:text-on-primary transition-all" href="#">Manifest</a></li>
+                    <li><a class="text-tertiary-fixed-dim hover:text-on-primary transition-all" href="#">Privadesa</a></li>
+                    <li><a class="text-tertiary-fixed-dim hover:text-on-primary transition-all" href="#">TOS</a></li>
+                </ul>
+            </div>
+            <div class="md:col-span-4">
+                <h4 class="font-label-mono text-secondary uppercase mb-8">Contacte</h4>
+                <p class="font-headline-lg text-3xl mb-8">
+                    <a href="mailto:hola@kodia.cat" class="hover:text-secondary transition-colors">hola@kodia.cat</a>
+                </p>
+                <div class="bg-kodia-dark-gray p-6 border border-white/10">
+                    <p class="font-label-mono text-xs uppercase text-white/50 mb-2">Location</p>
+                    <p class="font-body-md">Girona, Catalunya</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/nav.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

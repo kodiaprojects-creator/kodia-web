@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="ca">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web One Page a mida | Pàgines des de 300 € — KODIA</title>
+    <meta name="description" content="Creem webs One Page a mida per a autònoms i petits negocis. Disseny, textos, adaptació mòbil i publicació. Oferta actual des de 300 €.">
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="../js/tailwind-config.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700;800;900&family=JetBrains+Mono:wght@400;500;700&family=Karla:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="bg-kodia-bg text-kodia-black font-body-md selection:bg-secondary selection:text-white overflow-x-hidden">
+
+    <!-- TopNavBar -->
+    <header class="sticky top-0 w-full z-50 bg-background border-b border-primary" data-site-header>
+        <div class="flex justify-between items-center px-margin-edge py-gutter max-w-full mx-auto">
+            <a href="../" class="font-headline-lg text-headline-lg-mobile md:text-headline-lg font-black tracking-tighter text-primary shrink-0">KODIA</a>
+            <nav class="hidden lg:flex items-center gap-8" aria-label="Navegació principal">
+                <div class="relative" data-nav-dropdown>
+                    <button type="button" id="nav-serveis-btn" class="flex items-center gap-1 text-secondary font-bold border-b-2 border-secondary hover:text-secondary transition-colors duration-150 py-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2" aria-expanded="false" aria-haspopup="true" aria-controls="nav-serveis-menu" data-nav-dropdown-trigger>
+                        Serveis
+                        <span class="material-symbols-outlined text-base" aria-hidden="true">expand_more</span>
+                    </button>
+                    <div id="nav-serveis-menu" class="nav-dropdown absolute left-0 top-full pt-2" role="menu" aria-labelledby="nav-serveis-btn" data-nav-dropdown-menu>
+                        <div class="bg-background border border-primary shadow-sm py-2 min-w-[220px]">
+                            <a href="../web-one-page/" class="nav-dropdown__link" role="menuitem">Web One Page</a>
+                            <a href="../web-corporativa/" class="nav-dropdown__link" role="menuitem">Web corporativa</a>
+                            <a href="../web-a-mida/" class="nav-dropdown__link" role="menuitem">Web a mida</a>
+                        </div>
+                    </div>
+                </div>
+                <a class="text-on-surface font-medium hover:text-secondary transition-colors duration-150 py-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2" href="../projectes/">Projectes</a>
+                <a class="text-on-surface font-medium hover:text-secondary transition-colors duration-150 py-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2" href="../preus-pagina-web/">Preus</a>
+                <a class="text-on-surface font-medium hover:text-secondary transition-colors duration-150 py-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2" href="../revisio-digital/">Revisió digital</a>
+                <a class="text-on-surface font-medium hover:text-secondary transition-colors duration-150 py-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2" href="../contacte/">Contacte</a>
+            </nav>
+            <div class="flex items-center gap-3">
+                <a href="../contacte/" class="hidden lg:inline-flex bg-kodia-bg-dark text-on-primary px-6 py-3 font-label-mono text-label-mono hover:bg-secondary transition-colors duration-150 uppercase tracking-widest">
+                    Explica'ns el teu projecte
+                </a>
+                <button type="button" class="lg:hidden flex items-center justify-center w-12 h-12 border border-primary text-primary hover:bg-kodia-gray transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary" aria-expanded="false" aria-controls="nav-mobile-menu" data-nav-mobile-toggle>
+                    <span class="sr-only">Obrir menú de navegació</span>
+                    <span class="material-symbols-outlined text-2xl" data-nav-icon-menu aria-hidden="true">menu</span>
+                    <span class="material-symbols-outlined text-2xl hidden" data-nav-icon-close aria-hidden="true">close</span>
+                </button>
+            </div>
+        </div>
+        <nav id="nav-mobile-menu" class="nav-mobile lg:hidden hidden border-t border-primary bg-background px-margin-edge py-6" aria-label="Navegació mòbil" data-nav-mobile-menu>
+            <div class="space-y-1">
+                <p class="font-label-mono text-xs uppercase tracking-widest text-kodia-black/50 px-1 py-2">Serveis</p>
+                <a href="../web-one-page/" class="nav-mobile__sublink">Web One Page</a>
+                <a href="../web-corporativa/" class="nav-mobile__sublink">Web corporativa</a>
+                <a href="../web-a-mida/" class="nav-mobile__sublink">Web a mida</a>
+                <a href="../projectes/" class="nav-mobile__link">Projectes</a>
+                <a href="../preus-pagina-web/" class="nav-mobile__link">Preus</a>
+                <a href="../revisio-digital/" class="nav-mobile__link">Revisió digital</a>
+                <a href="../contacte/" class="nav-mobile__link">Contacte</a>
+                <a href="../contacte/" class="nav-mobile__cta">Explica'ns el teu projecte</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="min-h-screen pt-20 pb-24 px-margin-edge bg-white">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+                <div class="lg:col-span-6">
+                    <h1 class="font-display-lg text-[48px] md:text-display-lg leading-tight mb-8">
+                        Web One Page a mida per al teu negoci
+                    </h1>
+                    <div class="space-y-6 mb-10 max-w-xl">
+                        <p class="font-body-lg text-body-lg">
+                            Una Web One Page concentra tota la informació important del teu negoci en una única pàgina clara, ràpida i fàcil de navegar.
+                        </p>
+                        <p class="font-body-lg text-body-lg">
+                            És una solució ideal per a autònoms, professionals i petits negocis que necessiten tenir presència online sense una estructura web complexa.
+                        </p>
+                    </div>
+                    <button type="button" class="bg-kodia-bg-dark text-white px-8 py-4 font-bold hover:bg-secondary transition-all">
+                        Vull una Web One Page
+                    </button>
+                </div>
+
+                <div class="lg:col-span-6 relative mt-16 lg:mt-0">
+                    <div class="relative bg-kodia-gray border border-kodia-black/10 p-6 md:p-8 hero-grid min-h-[520px] flex items-center justify-center overflow-hidden">
+                        <div class="w-full max-w-sm border border-kodia-black bg-white shadow-[12px_12px_0px_#0F0F0F] relative">
+                            <div class="w-full h-8 bg-kodia-gray border-b border-kodia-black flex gap-2 items-center px-3">
+                                <div class="w-2 h-2 rounded-full bg-kodia-bg-dark"></div>
+                                <div class="w-2 h-2 rounded-full bg-kodia-bg-dark"></div>
+                                <div class="w-2 h-2 rounded-full bg-kodia-bg-dark"></div>
+                                <span class="font-label-mono text-[10px] ml-2 opacity-60">one-page.html</span>
+                            </div>
+                            <div class="flex flex-col">
+                                <div class="h-16 bg-secondary border-b border-kodia-black flex items-center px-4">
+                                    <span class="font-label-mono text-[10px] uppercase">hero</span>
+                                </div>
+                                <div class="h-12 border-b border-kodia-black flex items-center px-4 bg-white">
+                                    <span class="font-label-mono text-[10px] uppercase">serveis</span>
+                                </div>
+                                <div class="h-12 border-b border-kodia-black flex items-center px-4 bg-kodia-gray/50">
+                                    <span class="font-label-mono text-[10px] uppercase">qui som</span>
+                                </div>
+                                <div class="h-12 border-b border-kodia-black flex items-center px-4 bg-white">
+                                    <span class="font-label-mono text-[10px] uppercase">projectes</span>
+                                </div>
+                                <div class="h-14 bg-kodia-bg-dark text-white flex items-center px-4">
+                                    <span class="font-label-mono text-[10px] uppercase">contacte</span>
+                                </div>
+                            </div>
+                            <div class="absolute -right-3 top-1/3 w-1 h-24 bg-kodia-black/20 rounded-full">
+                                <div class="w-3 h-8 bg-kodia-black/30 rounded-full -ml-1"></div>
+                            </div>
+                        </div>
+                        <div class="absolute top-8 right-8 bg-white border border-kodia-black p-2 font-label-mono text-[10px] transform rotate-6 hidden md:block">
+                            scroll: y;
+                        </div>
+                        <span class="material-symbols-outlined absolute bottom-12 left-12 text-secondary text-4xl" style="font-variation-settings: 'FILL' 1;" aria-hidden="true">south</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Què és una Web One Page? -->
+        <section class="bg-surface-secondary py-section-padding px-margin-edge">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+                <div class="lg:col-span-5">
+                    <h2 class="font-headline-lg text-headline-lg mb-8">Què és una Web One Page?</h2>
+                    <p class="font-body-lg text-body-lg mb-8 max-w-md">
+                        Una Web One Page és una pàgina web estructurada en diferents seccions dins d'una única URL.
+                    </p>
+                    <p class="font-body-lg text-body-lg max-w-md">
+                        L'usuari troba tota la informació sense haver de navegar per diferents pàgines.
+                    </p>
+                </div>
+                <div class="lg:col-span-7 flex justify-center lg:justify-end">
+                    <div class="w-full max-w-md border border-kodia-black bg-white p-6 md:p-8 relative">
+                        <div class="absolute -top-3 -left-3 w-6 h-6 bg-secondary border border-kodia-black"></div>
+                        <div class="space-y-0 border border-kodia-black">
+                            <div class="px-5 py-4 border-b border-kodia-black font-label-mono text-sm uppercase tracking-widest bg-secondary/20">Presentació</div>
+                            <div class="px-5 py-4 border-b border-kodia-black font-label-mono text-sm uppercase tracking-widest">Serveis</div>
+                            <div class="px-5 py-4 border-b border-kodia-black font-label-mono text-sm uppercase tracking-widest bg-kodia-gray/50">Sobre el negoci</div>
+                            <div class="px-5 py-4 border-b border-kodia-black font-label-mono text-sm uppercase tracking-widest">Avantatges</div>
+                            <div class="px-5 py-4 border-b border-kodia-black font-label-mono text-sm uppercase tracking-widest bg-kodia-gray/50">Projectes</div>
+                            <div class="px-5 py-4 border-b border-kodia-black font-label-mono text-sm uppercase tracking-widest">Preguntes freqüents</div>
+                            <div class="px-5 py-4 font-label-mono text-sm uppercase tracking-widest bg-kodia-bg-dark text-white">Contacte</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Per a qui és? -->
+        <section class="bg-white py-section-padding px-margin-edge">
+            <div class="max-w-5xl">
+                <h2 class="font-headline-lg text-headline-lg mb-6">Per a qui és una pàgina web One Page?</h2>
+                <p class="font-body-lg text-body-lg mb-16 max-w-2xl">És especialment adequada per a:</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter gap-y-8">
+                <div class="md:col-span-7">
+                    <p class="font-display-lg text-5xl md:text-7xl leading-none text-kodia-black">Autònoms</p>
+                </div>
+                <div class="md:col-span-5 md:self-end">
+                    <p class="font-display-lg text-4xl md:text-5xl leading-tight text-[#B3B3B3]">Professionals independents</p>
+                </div>
+                <div class="md:col-span-5 border-l-4 border-secondary pl-6">
+                    <p class="font-headline-lg text-3xl md:text-4xl">Negocis locals</p>
+                </div>
+                <div class="md:col-span-7 md:text-right">
+                    <p class="font-display-lg text-4xl md:text-6xl leading-tight">Projectes que estan començant</p>
+                </div>
+                <div class="md:col-span-12 pt-8 border-t border-kodia-black">
+                    <p class="font-headline-lg text-3xl md:text-5xl max-w-3xl">
+                        Empreses amb una oferta <span class="text-secondary">senzilla</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Què inclou? -->
+        <section class="bg-kodia-gray py-section-padding px-margin-edge">
+            <h2 class="font-headline-lg text-headline-lg mb-16">Què inclou la teva Web One Page?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-gutter gap-y-6 max-w-4xl">
+                <div class="flex items-center gap-4 group">
+                    <div class="w-8 h-8 border-2 border-kodia-black flex items-center justify-center shrink-0">
+                        <div class="w-4 h-4 bg-secondary opacity-100"></div>
+                    </div>
+                    <p class="font-headline-lg text-xl md:text-2xl">Disseny 100% a mida</p>
+                </div>
+                <div class="flex items-center gap-4 group">
+                    <div class="w-8 h-8 border-2 border-kodia-black flex items-center justify-center shrink-0">
+                        <div class="w-4 h-4 bg-secondary opacity-100"></div>
+                    </div>
+                    <p class="font-headline-lg text-xl md:text-2xl">Estructura del contingut</p>
+                </div>
+                <div class="flex items-center gap-4 group">
+                    <div class="w-8 h-8 border-2 border-kodia-black flex items-center justify-center shrink-0">
+                        <div class="w-4 h-4 bg-secondary opacity-100"></div>
+                    </div>
+                    <p class="font-headline-lg text-xl md:text-2xl">Redacció i adaptació dels textos</p>
+                </div>
+                <div class="flex items-center gap-4 group">
+                    <div class="w-8 h-8 border-2 border-kodia-black flex items-center justify-center shrink-0">
+                        <div class="w-4 h-4 bg-secondary opacity-100"></div>
+                    </div>
+                    <p class="font-headline-lg text-xl md:text-2xl">Desenvolupament responsive</p>
+                </div>
+                <div class="flex items-center gap-4 group">
+                    <div class="w-8 h-8 border-2 border-kodia-black flex items-center justify-center shrink-0">
+                        <div class="w-4 h-4 bg-secondary opacity-100"></div>
+                    </div>
+                    <p class="font-headline-lg text-xl md:text-2xl">SEO bàsic</p>
+                </div>
+                <div class="flex items-center gap-4 group">
+                    <div class="w-8 h-8 border-2 border-kodia-black flex items-center justify-center shrink-0">
+                        <div class="w-4 h-4 bg-secondary opacity-100"></div>
+                    </div>
+                    <p class="font-headline-lg text-xl md:text-2xl">Publicació</p>
+                </div>
+                <div class="flex items-center gap-4 group md:col-span-2">
+                    <div class="w-8 h-8 border-2 border-kodia-black flex items-center justify-center shrink-0">
+                        <div class="w-4 h-4 bg-secondary opacity-100"></div>
+                    </div>
+                    <p class="font-headline-lg text-xl md:text-2xl">3 rondes de canvis</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Preu -->
+        <section id="preu" class="bg-secondary py-section-padding px-margin-edge">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-end">
+                <div class="lg:col-span-7">
+                    <p class="font-label-mono text-sm uppercase tracking-widest mb-8 text-kodia-black/70">Preu habitual</p>
+                    <p class="font-display-lg text-5xl md:text-6xl line-through text-kodia-black/40 mb-12">450 €</p>
+                    <p class="font-label-mono text-sm uppercase tracking-widest mb-4 text-kodia-black">Oferta actual</p>
+                    <p class="font-display-lg text-[80px] md:text-[120px] leading-none font-black text-kodia-black mb-8">300 €</p>
+                    <p class="font-body-lg text-body-lg mb-12">
+                        Manteniment: <span class="font-bold">15 €/mes</span>
+                    </p>
+                    <button type="button" class="bg-kodia-bg-dark text-white px-10 py-5 font-bold uppercase tracking-widest hover:translate-x-2 hover:-translate-y-2 transition-transform shadow-[6px_6px_0px_#0F0F0F]">
+                        Vull una Web One Page
+                    </button>
+                </div>
+                <div class="lg:col-span-5 hidden lg:block">
+                    <div class="border-2 border-kodia-black p-10 bg-white/20 relative">
+                        <span class="absolute -top-4 -right-4 bg-kodia-bg-dark text-white px-4 py-2 font-label-mono text-xs uppercase">Oferta actual</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Secció final -->
+        <section class="bg-kodia-bg py-section-padding px-margin-edge">
+            <div class="max-w-4xl">
+                <h2 class="font-headline-lg text-headline-lg mb-8">Una web pensada per convertir visites en contactes</h2>
+                <div class="space-y-6">
+                    <p class="font-body-lg text-body-lg">
+                        Una One Page ben plantejada no és una web “petita”. És una web concentrada.
+                    </p>
+                    <p class="font-body-lg text-body-lg">
+                        Treballem l'ordre de la informació, els missatges i les crides a l'acció perquè una persona entengui ràpidament què fas, per què confiar en tu i com contactar-te.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Final -->
+        <section class="bg-kodia-bg-dark text-white py-section-padding px-margin-edge text-center">
+            <h2 class="font-display-lg text-5xl md:text-7xl mb-8">Parlem de la web que necessita el teu negoci</h2>
+            <p class="font-body-lg text-2xl md:text-3xl mb-16 text-white/80">
+                <span class="text-secondary">Explica'ns què fas.</span> Explica'ns què necessites.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-6">
+                <button type="button" class="bg-white text-kodia-black px-12 py-6 font-black uppercase text-xl hover:bg-secondary hover:text-white transition-colors duration-300">
+                    Explica'ns el teu projecte
+                </button>
+                <button type="button" class="border border-white/30 text-white px-12 py-6 font-black uppercase text-xl hover:border-secondary hover:text-secondary transition-colors duration-300">
+                    Demana una revisió digital gratuïta
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contacte" class="bg-kodia-bg-dark text-on-primary py-section-padding px-margin-edge border-t border-primary">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter w-full">
+            <div class="md:col-span-4 flex flex-col justify-between">
+                <div>
+                    <div class="font-display-lg text-display-lg font-black text-on-primary mb-6">KODIA</div>
+                    <p class="font-body-md text-tertiary-fixed-dim max-w-xs">© 2026 KODIA.cat — Studio for technical precision and artisanal soul. Disseny web honest des de Girona.</p>
+                </div>
+                <div class="flex gap-4 mt-12">
+                    <a class="text-tertiary-fixed-dim hover:text-white transition-all duration-200" href="#">Instagram</a>
+                    <a class="text-tertiary-fixed-dim hover:text-white transition-all duration-200" href="#">LinkedIn</a>
+                    <a class="text-tertiary-fixed-dim hover:text-white transition-all duration-200" href="#">Behance</a>
+                </div>
+            </div>
+            <div class="md:col-span-2">
+                <h4 class="font-label-mono text-secondary uppercase mb-8">Serveis</h4>
+                <ul class="space-y-4">
+                    <li><a class="text-tertiary-fixed-dim hover:text-on-primary transition-all" href="./">Web One Page</a></li>
+                    <li><a class="text-tertiary-fixed-dim hover:text-on-primary transition-all" href="../#serveis">Web Corporativa</a></li>
+                    <li><a class="text-tertiary-fixed-dim hover:text-on-primary transition-all" href="../#serveis">Web a Mida</a></li>
+                    <li><a class="text-tertiary-fixed-dim hover:text-on-primary transition-all" href="../#revisio">Revisió Digital</a></li>
+                </ul>
+            </div>
+            <div class="md:col-span-2">
+                <h4 class="font-label-mono text-secondary uppercase mb-8">KODIA</h4>
+                <ul class="space-y-4">
+                    <li><a class="text-tertiary-fixed-dim hover:text-on-primary transition-all" href="../#projectes">Projectes</a></li>
+                    <li><a class="text-tertiary-fixed-dim hover:text-on-primary transition-all" href="#">Manifest</a></li>
+                    <li><a class="text-tertiary-fixed-dim hover:text-on-primary transition-all" href="#">Privadesa</a></li>
+                    <li><a class="text-tertiary-fixed-dim hover:text-on-primary transition-all" href="#">TOS</a></li>
+                </ul>
+            </div>
+            <div class="md:col-span-4">
+                <h4 class="font-label-mono text-secondary uppercase mb-8">Contacte</h4>
+                <p class="font-headline-lg text-3xl mb-8">
+                    <a href="mailto:hola@kodia.cat" class="hover:text-secondary transition-colors">hola@kodia.cat</a>
+                </p>
+                <div class="bg-kodia-dark-gray p-6 border border-white/10">
+                    <p class="font-label-mono text-xs uppercase text-white/50 mb-2">Location</p>
+                    <p class="font-body-md">Girona, Catalunya</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/nav.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
