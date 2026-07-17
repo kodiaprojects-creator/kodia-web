@@ -22,7 +22,7 @@
     <header class="sticky top-0 w-full z-50 bg-background border-b border-primary" data-site-header>
         <div class="flex justify-between items-center px-margin-edge py-gutter max-w-full mx-auto">
             <a href="../" class="font-headline-lg text-headline-lg-mobile md:text-headline-lg font-black tracking-tighter text-primary shrink-0">KODIA</a>
-            <nav class="hidden lg:flex items-center gap-8" aria-label="Navegació principal">
+            <nav class="items-center gap-8" aria-label="Navegació principal" data-nav-desktop>
                 <div class="relative" data-nav-dropdown>
                     <button type="button" id="nav-serveis-btn" class="flex items-center gap-1 text-on-surface font-medium hover:text-secondary transition-colors duration-150 py-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2" aria-expanded="false" aria-haspopup="true" aria-controls="nav-serveis-menu" data-nav-dropdown-trigger>
                         Serveis
@@ -42,17 +42,17 @@
                 <a class="text-secondary font-bold border-b-2 border-secondary hover:text-secondary transition-colors duration-150 py-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2" href="../contacte/">Contacte</a>
             </nav>
             <div class="flex items-center gap-3">
-                <a href="../contacte/" class="hidden lg:inline-flex bg-kodia-bg-dark text-on-primary px-6 py-3 font-label-mono text-label-mono hover:bg-secondary transition-colors duration-150 uppercase tracking-widest">
+                <a href="../contacte/" class="bg-kodia-bg-dark text-on-primary px-6 py-3 font-label-mono text-label-mono hover:bg-secondary transition-colors duration-150 uppercase tracking-widest" data-nav-cta-desktop>
                     Explica'ns el teu projecte
                 </a>
-                <button type="button" class="lg:hidden flex items-center justify-center w-12 h-12 border border-primary text-primary hover:bg-kodia-gray transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary" aria-expanded="false" aria-controls="nav-mobile-menu" data-nav-mobile-toggle>
+                <button type="button" class="items-center justify-center w-12 h-12 border border-primary text-primary hover:bg-kodia-gray transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary" aria-expanded="false" aria-controls="nav-mobile-menu" data-nav-mobile-toggle>
                     <span class="sr-only">Obrir menú de navegació</span>
                     <span class="material-symbols-outlined text-2xl" data-nav-icon-menu aria-hidden="true">menu</span>
                     <span class="material-symbols-outlined text-2xl hidden" data-nav-icon-close aria-hidden="true">close</span>
                 </button>
             </div>
         </div>
-        <nav id="nav-mobile-menu" class="nav-mobile lg:hidden hidden border-t border-primary bg-background px-margin-edge py-6" aria-label="Navegació mòbil" data-nav-mobile-menu>
+        <nav id="nav-mobile-menu" class="nav-mobile hidden border-t border-primary bg-background px-margin-edge py-6" aria-label="Navegació mòbil" data-nav-mobile-menu>
             <div class="space-y-1">
                 <p class="font-label-mono text-xs uppercase tracking-widest text-kodia-black/50 px-1 py-2">Serveis</p>
                 <a href="../web-one-page/" class="nav-mobile__sublink">Web One Page</a>

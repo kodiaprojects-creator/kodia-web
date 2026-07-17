@@ -10,7 +10,7 @@ function initSiteNav() {
     const iconMenu = header.querySelector('[data-nav-icon-menu]');
     const iconClose = header.querySelector('[data-nav-icon-close]');
 
-    const desktopQuery = window.matchMedia('(min-width: 1024px)');
+    const desktopQuery = window.matchMedia('(min-width: 1280px)');
 
     function setDropdownOpen(isOpen) {
         if (!menu || !trigger) return;
@@ -35,6 +35,7 @@ function initSiteNav() {
     function setMobileOpen(isOpen) {
         if (!mobileMenu || !mobileToggle) return;
 
+        mobileMenu.classList.toggle('is-open', isOpen);
         mobileMenu.classList.toggle('hidden', !isOpen);
         mobileToggle.setAttribute('aria-expanded', String(isOpen));
         iconMenu?.classList.toggle('hidden', isOpen);

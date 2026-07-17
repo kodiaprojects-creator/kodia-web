@@ -45,11 +45,54 @@
     pointer-events: auto;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
     [data-nav-dropdown]:hover .nav-dropdown {
         opacity: 1;
         visibility: visible;
         pointer-events: auto;
+    }
+}
+
+/* Mobile / tablet: always show hamburger, hide desktop nav */
+[data-nav-desktop] {
+    display: none;
+}
+
+[data-nav-cta-desktop] {
+    display: none;
+}
+
+[data-nav-mobile-toggle] {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+[data-nav-mobile-menu] {
+    display: none;
+}
+
+[data-nav-mobile-menu].is-open {
+    display: block !important;
+}
+
+@media (min-width: 1280px) {
+    [data-nav-desktop] {
+        display: flex;
+    }
+
+    [data-nav-cta-desktop] {
+        display: inline-flex;
+    }
+
+    [data-nav-mobile-toggle] {
+        display: none !important;
+    }
+
+    [data-nav-mobile-menu],
+    [data-nav-mobile-menu].is-open {
+        display: none !important;
     }
 }
 
