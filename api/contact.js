@@ -3,7 +3,7 @@ import { Resend } from 'resend';
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 const TO_EMAIL = process.env.RESEND_TO || 'info@kodia.cat';
-const FROM_EMAIL = process.env.RESEND_FROM || 'KODIA <info@kodia.cat>';
+const FROM_EMAIL = process.env.RESEND_FROM || 'KODIA <info@formularis.kodia.cat>';
 
 function escapeHtml(value) {
   return String(value ?? '')

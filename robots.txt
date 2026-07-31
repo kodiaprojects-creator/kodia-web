@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kodia.cat/sitemap.xml
+Sitemap: https://www.kodia.cat/sitemap.xml
