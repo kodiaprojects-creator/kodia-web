@@ -90,7 +90,8 @@
 
         <!-- Formulari -->
         <section id="formulari" class="py-section-padding px-margin-edge bg-kodia-bg">
-            <form class="max-w-3xl mx-auto space-y-8" action="#" method="post">
+            <form class="max-w-3xl mx-auto space-y-8" action="/api/contact" method="post" data-contact-form="contacte">
+                <input type="text" name="website" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                         <label for="nom" class="font-label-mono text-xs uppercase tracking-widest block mb-2">Nom</label>
@@ -149,6 +150,7 @@
                     Explica'ns el teu projecte
                     <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
                 </button>
+                <p class="font-body-md mt-4" data-form-status hidden></p>
             </form>
         </section>
 
@@ -221,6 +223,7 @@
     </footer>
 
     <script src="../js/nav.js"></script>
+    <script src="../js/form.js"></script>
     <script src="../js/main.js"></script>
 </body>
 </html>
