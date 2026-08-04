@@ -16,15 +16,13 @@
     <link rel="icon" href="../favicon.svg" type="image/svg+xml">
     <link rel="icon" href="../favicon.png" type="image/png" sizes="32x32">
     <link rel="apple-touch-icon" href="../apple-touch-icon.png" sizes="180x180">
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <script src="../js/tailwind-config.js"></script>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700;800;900&family=JetBrains+Mono:wght@400;500;700&family=Karla:wght@400;500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@700;800;900&family=JetBrains+Mono:wght@500;700&family=Karla:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/kodia.css">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap"></noscript>
 </head>
 <body class="bg-kodia-bg text-kodia-black font-body-md selection:bg-secondary selection:text-white overflow-x-hidden">
 
@@ -121,12 +119,10 @@
                 <article class="group" data-portfolio-item data-category="one-page">
                     <a href="https://vetfar.com/" target="_blank" rel="noopener noreferrer" class="block">
                         <div class="w-full aspect-square max-w-xl bg-kodia-gray border border-kodia-black overflow-hidden mb-8">
-                            <img
-                                class="w-full h-full object-cover object-top"
-                                src="../images/projectes/vetfar.jpg"
-                                alt="Captura de la web de Vetfar"
-                                loading="lazy"
-                            >
+                            <picture>
+                                    <source type="image/webp" srcset="../images/projectes/vetfar.webp">
+                                    <img class="w-full h-full object-cover object-top" src="../images/projectes/vetfar.jpg" width="1024" height="1024" alt="Captura de la web de Vetfar" loading="lazy" decoding="async">
+                                </picture>
                         </div>
                         <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-end">
                             <div class="md:col-span-8">
@@ -153,12 +149,10 @@
                             </div>
                             <div class="lg:col-span-4 order-1 lg:order-2">
                                 <div class="w-full aspect-square bg-kodia-gray border border-kodia-black overflow-hidden">
-                                    <img
-                                        class="w-full h-full object-cover object-top"
-                                        src="../images/projectes/nivell-a.jpg"
-                                        alt="Captura de la web de Nivell A Acadèmia d'Oposicions"
-                                        loading="lazy"
-                                    >
+                                    <picture>
+                                    <source type="image/webp" srcset="../images/projectes/nivell-a.webp">
+                                    <img class="w-full h-full object-cover object-top" src="../images/projectes/nivell-a.jpg" width="1024" height="1024" alt="Captura de la web de Nivell A Acadèmia d'Oposicions" loading="lazy" decoding="async">
+                                </picture>
                                 </div>
                             </div>
                         </div>
@@ -169,12 +163,10 @@
                 <article class="group" data-portfolio-item data-category="one-page">
                     <a href="https://www.eleusbrand.com/" target="_blank" rel="noopener noreferrer" class="block">
                         <div class="w-full aspect-square max-w-xl bg-kodia-gray border border-kodia-black overflow-hidden mb-8 ml-auto">
-                            <img
-                                class="w-full h-full object-cover object-top"
-                                src="../images/projectes/eleus-brand.jpg"
-                                alt="Captura de la web d'Eleus Brand"
-                                loading="lazy"
-                            >
+                            <picture>
+                                    <source type="image/webp" srcset="../images/projectes/eleus-brand.webp">
+                                    <img class="w-full h-full object-cover object-top" src="../images/projectes/eleus-brand.jpg" width="1200" height="1200" alt="Captura de la web d'Eleus Brand" loading="lazy" decoding="async">
+                                </picture>
                         </div>
                         <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-end">
                             <div class="md:col-span-8 md:col-start-5 md:text-right">
@@ -244,8 +236,8 @@
         </div>
     </footer>
 
-    <script src="../js/nav.js"></script>
-    <script src="../js/main.js"></script>
-    <script src="../js/portfolio-filters.js"></script>
+    <script src="../js/nav.js" defer></script>
+    <script src="../js/main.js" defer></script>
+    <script src="../js/portfolio-filters.js" defer></script>
 </body>
 </html>
