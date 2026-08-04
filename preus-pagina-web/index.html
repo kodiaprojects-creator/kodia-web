@@ -16,9 +16,8 @@
     <link rel="icon" href="../favicon.svg" type="image/svg+xml">
     <link rel="icon" href="../favicon.png" type="image/png" sizes="32x32">
     <link rel="apple-touch-icon" href="../apple-touch-icon.png" sizes="180x180">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@700;800;900&family=JetBrains+Mono:wght@500;700&family=Karla:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/fonts/hanken-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/css/fonts.css">
     <link rel="stylesheet" href="../css/kodia.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" media="print" onload="this.media='all'">
@@ -32,7 +31,7 @@
             <a href="../" class="font-headline-lg text-headline-lg-mobile md:text-headline-lg font-black tracking-tighter text-primary shrink-0">KODIA</a>
             <nav class="items-center gap-8" aria-label="Navegació principal" data-nav-desktop>
                 <div class="relative" data-nav-dropdown>
-                    <button type="button" id="nav-serveis-btn" class="flex items-center gap-1 text-on-surface font-medium hover:text-secondary transition-colors duration-150 py-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2" aria-expanded="false" aria-haspopup="true" aria-controls="nav-serveis-menu" data-nav-dropdown-trigger>
+                    <button type="button" id="nav-serveis-btn" class="flex items-center gap-1 text-on-surface font-medium hover:text-secondary-accessible transition-colors duration-150 py-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary-accessible focus-visible:ring-offset-2" aria-expanded="false" aria-haspopup="true" aria-controls="nav-serveis-menu" data-nav-dropdown-trigger>
                         Serveis
                         <span class="material-symbols-outlined text-base" aria-hidden="true">expand_more</span>
                     </button>
@@ -44,16 +43,16 @@
                         </div>
                     </div>
                 </div>
-                <a class="text-on-surface font-medium hover:text-secondary transition-colors duration-150 py-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2" href="../projectes/">Projectes</a>
-                <a class="text-secondary font-bold border-b-2 border-secondary hover:text-secondary transition-colors duration-150 py-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2" href="../preus-pagina-web/">Preus</a>
-                <a class="text-on-surface font-medium hover:text-secondary transition-colors duration-150 py-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2" href="../revisio-digital/">Revisió digital</a>
-                <a class="text-on-surface font-medium hover:text-secondary transition-colors duration-150 py-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2" href="../contacte/">Contacte</a>
+                <a class="text-on-surface font-medium hover:text-secondary-accessible transition-colors duration-150 py-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary-accessible focus-visible:ring-offset-2" href="../projectes/">Projectes</a>
+                <a class="text-secondary-accessible font-bold border-b-2 border-secondary hover:text-secondary-accessible transition-colors duration-150 py-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary-accessible focus-visible:ring-offset-2" href="../preus-pagina-web/">Preus</a>
+                <a class="text-on-surface font-medium hover:text-secondary-accessible transition-colors duration-150 py-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary-accessible focus-visible:ring-offset-2" href="../revisio-digital/">Revisió digital</a>
+                <a class="text-on-surface font-medium hover:text-secondary-accessible transition-colors duration-150 py-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary-accessible focus-visible:ring-offset-2" href="../contacte/">Contacte</a>
             </nav>
             <div class="flex items-center gap-3">
-                <a href="../contacte/" class="bg-kodia-bg-dark text-on-primary px-6 py-3 font-label-mono text-label-mono hover:bg-secondary transition-colors duration-150 uppercase tracking-widest" data-nav-cta-desktop>
+                <a href="../contacte/" class="bg-kodia-bg-dark text-on-primary px-6 py-3 font-label-mono text-label-mono hover:bg-secondary hover:text-kodia-black transition-colors duration-150 uppercase tracking-widest" data-nav-cta-desktop>
                     Explica'ns el teu projecte
                 </a>
-                <button type="button" class="items-center justify-center w-12 h-12 border border-primary text-primary hover:bg-kodia-gray transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary" aria-expanded="false" aria-controls="nav-mobile-menu" data-nav-mobile-toggle>
+                <button type="button" class="items-center justify-center w-12 h-12 border border-primary text-primary hover:bg-kodia-gray transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary-accessible" aria-expanded="false" aria-controls="nav-mobile-menu" data-nav-mobile-toggle>
                     <span class="sr-only">Obrir menú de navegació</span>
                     <span class="material-symbols-outlined text-2xl" data-nav-icon-menu aria-hidden="true">menu</span>
                     <span class="material-symbols-outlined text-2xl hidden" data-nav-icon-close aria-hidden="true">close</span>
@@ -174,7 +173,7 @@
                     <p class="font-body-lg text-body-lg mb-10">
                         Totes les webs de KODIA disposen d'un pla de manteniment perquè continuïn funcionant correctament i tinguis suport quan el necessitis.
                     </p>
-                    <button type="button" class="bg-kodia-bg-dark text-white px-8 py-4 font-bold hover:bg-secondary transition-all">
+                    <button type="button" class="bg-kodia-bg-dark text-white px-8 py-4 font-bold hover:bg-secondary hover:text-kodia-black transition-all">
                         Demana pressupost per a la teva pàgina web
                     </button>
                 </div>
@@ -182,15 +181,15 @@
                     <div class="border border-kodia-black bg-white p-8 md:p-10 space-y-6">
                         <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-2 border-b border-kodia-black/10 pb-6">
                             <p class="font-headline-lg text-xl font-bold">One Page</p>
-                            <p class="font-label-mono text-secondary text-lg">15 €/mes</p>
+                            <p class="font-label-mono text-secondary-accessible text-lg">15 €/mes</p>
                         </div>
                         <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-2 border-b border-kodia-black/10 pb-6">
                             <p class="font-headline-lg text-xl font-bold">Web corporativa</p>
-                            <p class="font-label-mono text-secondary text-lg">des de 25 €/mes</p>
+                            <p class="font-label-mono text-secondary-accessible text-lg">des de 25 €/mes</p>
                         </div>
                         <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-2 border-b border-kodia-black/10 pb-6">
                             <p class="font-headline-lg text-xl font-bold">Web a mida</p>
-                            <p class="font-label-mono text-secondary text-lg">des de 40 €/mes</p>
+                            <p class="font-label-mono text-secondary-accessible text-lg">des de 40 €/mes</p>
                         </div>
                         <p class="font-body-md text-kodia-black/70 pt-2">
                             El manteniment inclou la part tècnica, suport, incidències i petits canvis de textos o imatges. Els canvis estructurals o noves funcionalitats es pressuposten a part.
@@ -207,36 +206,36 @@
             <div class="md:col-span-4 flex flex-col justify-between">
                 <div>
                     <div class="font-display-lg text-display-lg font-black text-on-primary mb-6">KODIA</div>
-                    <p class="font-body-md text-tertiary-fixed-dim max-w-xs">© 2026 KODIA.cat — Studio for technical precision and artisanal soul. Disseny web honest des de Girona.</p>
+                    <p class="font-body-md text-white/70 max-w-xs">© 2026 KODIA.cat — Studio for technical precision and artisanal soul. Disseny web honest des de Girona.</p>
                 </div>
                 <div class="flex gap-4 mt-12">
-                    <a class="text-tertiary-fixed-dim hover:text-white transition-all duration-200" href="#">Instagram</a>
-                    <a class="text-tertiary-fixed-dim hover:text-white transition-all duration-200" href="#">LinkedIn</a>
-                    <a class="text-tertiary-fixed-dim hover:text-white transition-all duration-200" href="#">Behance</a>
+                    <a class="text-white/70 hover:text-white transition-all duration-200" href="#">Instagram</a>
+                    <a class="text-white/70 hover:text-white transition-all duration-200" href="#">LinkedIn</a>
+                    <a class="text-white/70 hover:text-white transition-all duration-200" href="#">Behance</a>
                 </div>
             </div>
             <div class="md:col-span-2">
-                <h4 class="font-label-mono text-secondary uppercase mb-8">Serveis</h4>
+                <p class="footer-heading">Serveis</p>
                 <ul class="space-y-4">
-                    <li><a class="text-tertiary-fixed-dim hover:text-on-primary transition-all" href="../web-one-page/">Web One Page</a></li>
-                    <li><a class="text-tertiary-fixed-dim hover:text-on-primary transition-all" href="../web-corporativa/">Web Corporativa</a></li>
-                    <li><a class="text-tertiary-fixed-dim hover:text-on-primary transition-all" href="../web-a-mida/">Web a Mida</a></li>
-                    <li><a class="text-tertiary-fixed-dim hover:text-on-primary transition-all" href="../#revisio">Revisió Digital</a></li>
+                    <li><a class="text-white/70 hover:text-white transition-all" href="../web-one-page/">Web One Page</a></li>
+                    <li><a class="text-white/70 hover:text-white transition-all" href="../web-corporativa/">Web Corporativa</a></li>
+                    <li><a class="text-white/70 hover:text-white transition-all" href="../web-a-mida/">Web a Mida</a></li>
+                    <li><a class="text-white/70 hover:text-white transition-all" href="../#revisio">Revisió Digital</a></li>
                 </ul>
             </div>
             <div class="md:col-span-2">
-                <h4 class="font-label-mono text-secondary uppercase mb-8">KODIA</h4>
+                <p class="footer-heading">KODIA</p>
                 <ul class="space-y-4">
-                    <li><a class="text-tertiary-fixed-dim hover:text-on-primary transition-all" href="../projectes/">Projectes</a></li>
-                    <li><a class="text-tertiary-fixed-dim hover:text-on-primary transition-all" href="#">Manifest</a></li>
-                    <li><a class="text-tertiary-fixed-dim hover:text-on-primary transition-all" href="#">Privadesa</a></li>
-                    <li><a class="text-tertiary-fixed-dim hover:text-on-primary transition-all" href="#">TOS</a></li>
+                    <li><a class="text-white/70 hover:text-white transition-all" href="../projectes/">Projectes</a></li>
+                    <li><a class="text-white/70 hover:text-white transition-all" href="#">Manifest</a></li>
+                    <li><a class="text-white/70 hover:text-white transition-all" href="#">Privadesa</a></li>
+                    <li><a class="text-white/70 hover:text-white transition-all" href="#">TOS</a></li>
                 </ul>
             </div>
             <div class="md:col-span-4">
-                <h4 class="font-label-mono text-secondary uppercase mb-8">Contacte</h4>
+                <p class="footer-heading">Contacte</p>
                 <p class="font-headline-lg text-3xl mb-8">
-                    <a href="mailto:hola@kodia.cat" class="hover:text-secondary transition-colors">hola@kodia.cat</a>
+                    <a href="mailto:hola@kodia.cat" class="hover:text-secondary-accessible transition-colors">hola@kodia.cat</a>
                 </p>
                 <div class="bg-kodia-dark-gray p-6 border border-white/10">
                     <p class="font-label-mono text-xs uppercase text-white/50 mb-2">Location</p>

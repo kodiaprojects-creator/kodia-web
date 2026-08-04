@@ -9,6 +9,15 @@
     speak: never;
 }
 
+/* Prefer accessible orange for text/icons on light surfaces when using utility helpers */
+.text-orange-a11y {
+    color: var(--color-orange-accessible);
+}
+
+.hover\:text-orange-a11y:hover {
+    color: var(--color-orange-accessible);
+}
+
 @media (prefers-reduced-motion: reduce) {
     html {
         scroll-behavior: auto;
