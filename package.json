@@ -4,7 +4,6 @@
   "version": "1.0.0",
   "scripts": {
     "build:css": "tailwindcss -i ./css/input.css -o ./css/kodia.css --minify",
-    "build": "npm run build:css",
     "watch:css": "tailwindcss -i ./css/input.css -o ./css/kodia.css --watch"
   },
   "dependencies": {
