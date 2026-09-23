@@ -21,14 +21,20 @@
 
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
+  "@context": "https://schema.org",
+  "@graph": [
+    {
       "@type": "WebPage",
       "@id": "https://www.kodia.cat/preus-pagina-web/#page",
       "url": "https://www.kodia.cat/preus-pagina-web/",
       "name": "Preu pàgina web a Girona",
       "inLanguage": "ca",
-      "isPartOf": { "@id": "https://www.kodia.cat/#website" },
-      "about": { "@id": "https://www.kodia.cat/#business" },
+      "isPartOf": {
+        "@id": "https://www.kodia.cat/#website"
+      },
+      "about": {
+        "@id": "https://www.kodia.cat/#business"
+      },
       "description": "Orientació de preus: One Page 300 €, web corporativa des de 600 €, web a mida des de 900 €.",
       "mentions": [
         {
@@ -50,7 +56,87 @@
           "priceCurrency": "EUR"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.kodia.cat/preus-pagina-web/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Com es paga la creació de la web?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pagues el 50 % en començar el projecte i el 50 % restant en acabar-lo. Els preus que mostrem al web són sense IVA."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "El manteniment web és obligatori?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. És opcional, tot i que te'l recomanem si vols que ens ocupem de la part tècnica, les incidències i els petits canvis de contingut. Si prefereixes no contractar-lo, hauràs de disposar del teu propi domini i allotjament."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quants canvis inclou el manteniment?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Inclou fins a tres canvis de textos o imatges al mes. Si necessites més canvis, pàgines noves, seccions noves o modificacions estructurals, te'n prepararem un pressupost a part."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Puc demanar canvis si no contracto el manteniment?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Explica'ns què necessites modificar i et prepararem un pressupost per aquella feina."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qui serà el titular del domini?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El domini quedarà a nom teu. Si encara no en tens, ens podem ocupar de registrar-lo i pagar-lo per posar en marxa el projecte."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Què passa si deixo de treballar amb KODIA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pots continuar fent servir el teu domini. Si necessites traslladar la web a un altre proveïdor, et podem facilitar els arxius web. Per mantenir-la publicada fora del nostre servei, necessitaràs allotjament propi."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Què pot fer variar el pressupost d'una pàgina web?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El nombre de pàgines, la quantitat de contingut, les funcionalitats, les integracions amb altres eines o la necessitat de migrar una web existent. T'explicarem què inclou la proposta abans de començar."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Podré veure la web abans de publicar-la?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Podràs revisar-la mitjançant un enllaç de prova privat abans del llançament."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quants canvis podré demanar durant la creació?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La Web One Page i la web corporativa inclouen tres rondes de canvis abans de publicar-les. En projectes a mida, concretarem les revisions incloses a la proposta."
+          }
+        }
+      ]
     }
+  ]
+}
     </script>
 
     <link rel="icon" href="../favicon.svg" type="image/svg+xml">
@@ -124,7 +210,7 @@
                         El preu d'una pàgina web depèn principalment de la quantitat de contingut, l'estructura i les funcionalitats que necessita.
                     </p>
                     <p class="font-body-lg text-body-lg">
-                        A KODIA treballem amb tres punts de partida perquè puguis entendre fàcilment quin tipus de projecte encaixa millor amb el teu negoci.
+                        A KODIA treballem amb tres punts de partida perquè puguis entendre fàcilment quin tipus de projecte encaixa millor amb el teu negoci. Els preus que mostrem són sense IVA.
                     </p>
                 </div>
             </div>
@@ -204,12 +290,12 @@
         </section>
 
         <!-- Manteniment -->
-        <section class="bg-surface-secondary py-section-padding px-margin-edge">
+        <section id="manteniment" class="bg-surface-secondary py-section-padding px-margin-edge">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
                 <div class="lg:col-span-5">
                     <h2 class="font-headline-lg text-headline-lg mb-8">Què passa després de publicar?</h2>
                     <p class="font-body-lg text-body-lg mb-10">
-                        Totes les webs de KODIA disposen d'un pla de manteniment perquè continuïn funcionant correctament i tinguis suport quan el necessitis.
+                        Després de publicar, pots contractar un pla de manteniment opcional perquè ens ocupem de la part tècnica, les incidències i els petits canvis de contingut.
                     </p>
                     <button type="button" class="bg-kodia-bg-dark text-white px-8 py-4 font-bold hover:bg-secondary hover:text-kodia-black transition-all">
                         Demana pressupost per a la teva pàgina web
@@ -219,21 +305,112 @@
                     <div class="border border-kodia-black bg-white p-8 md:p-10 space-y-6">
                         <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-2 border-b border-kodia-black/10 pb-6">
                             <p class="font-headline-lg text-xl font-bold">One Page</p>
-                            <p class="font-label-mono text-secondary-accessible text-lg">15 €/mes</p>
+                            <p class="font-label-mono text-secondary-accessible text-lg">15 €/mes sense IVA</p>
                         </div>
                         <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-2 border-b border-kodia-black/10 pb-6">
                             <p class="font-headline-lg text-xl font-bold">Web corporativa</p>
-                            <p class="font-label-mono text-secondary-accessible text-lg">des de 25 €/mes</p>
+                            <p class="font-label-mono text-secondary-accessible text-lg">des de 25 €/mes sense IVA</p>
                         </div>
                         <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-2 border-b border-kodia-black/10 pb-6">
                             <p class="font-headline-lg text-xl font-bold">Web a mida</p>
-                            <p class="font-label-mono text-secondary-accessible text-lg">des de 40 €/mes</p>
+                            <p class="font-label-mono text-secondary-accessible text-lg">des de 40 €/mes sense IVA</p>
                         </div>
                         <p class="font-body-md text-kodia-black/70 pt-2">
-                            El manteniment inclou la part tècnica, suport, incidències i petits canvis de textos o imatges. Els canvis estructurals o noves funcionalitats es pressuposten a part.
+                            El manteniment és opcional i inclou la part tècnica, suport, incidències i fins a tres canvis de textos o imatges al mes. Els canvis estructurals o noves funcionalitats es pressuposten a part.
                         </p>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="bg-white py-section-padding px-margin-edge border-t border-kodia-black/10" aria-labelledby="faq-heading">
+            <div class="max-w-3xl">
+                <h2 id="faq-heading" class="font-headline-lg text-headline-lg mb-12">Preguntes freqüents</h2>
+                <!-- faq-list:start -->
+                <div class="faq-list">
+                    <details class="faq-item">
+                        <summary class="faq-item__summary">
+                            <span class="faq-item__question">Com es paga la creació de la web?</span>
+                            <span class="material-symbols-outlined faq-item__icon" aria-hidden="true">expand_more</span>
+                        </summary>
+                        <div class="faq-item__panel">
+                            <p class="font-body-lg text-body-lg">Pagues el 50 % en començar el projecte i el 50 % restant en acabar-lo. Els preus que mostrem al web són sense IVA.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-item__summary">
+                            <span class="faq-item__question">El manteniment web és obligatori?</span>
+                            <span class="material-symbols-outlined faq-item__icon" aria-hidden="true">expand_more</span>
+                        </summary>
+                        <div class="faq-item__panel">
+                            <p class="font-body-lg text-body-lg">No. És opcional, tot i que te'l recomanem si vols que ens ocupem de la part tècnica, les incidències i els petits canvis de contingut. Si prefereixes no contractar-lo, hauràs de disposar del teu propi domini i allotjament.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-item__summary">
+                            <span class="faq-item__question">Quants canvis inclou el manteniment?</span>
+                            <span class="material-symbols-outlined faq-item__icon" aria-hidden="true">expand_more</span>
+                        </summary>
+                        <div class="faq-item__panel">
+                            <p class="font-body-lg text-body-lg">Inclou fins a tres canvis de textos o imatges al mes. Si necessites més canvis, pàgines noves, seccions noves o modificacions estructurals, te'n prepararem un pressupost a part.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-item__summary">
+                            <span class="faq-item__question">Puc demanar canvis si no contracto el manteniment?</span>
+                            <span class="material-symbols-outlined faq-item__icon" aria-hidden="true">expand_more</span>
+                        </summary>
+                        <div class="faq-item__panel">
+                            <p class="font-body-lg text-body-lg">Sí. Explica'ns què necessites modificar i et prepararem un pressupost per aquella feina.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-item__summary">
+                            <span class="faq-item__question">Qui serà el titular del domini?</span>
+                            <span class="material-symbols-outlined faq-item__icon" aria-hidden="true">expand_more</span>
+                        </summary>
+                        <div class="faq-item__panel">
+                            <p class="font-body-lg text-body-lg">El domini quedarà a nom teu. Si encara no en tens, ens podem ocupar de registrar-lo i pagar-lo per posar en marxa el projecte.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-item__summary">
+                            <span class="faq-item__question">Què passa si deixo de treballar amb KODIA?</span>
+                            <span class="material-symbols-outlined faq-item__icon" aria-hidden="true">expand_more</span>
+                        </summary>
+                        <div class="faq-item__panel">
+                            <p class="font-body-lg text-body-lg">Pots continuar fent servir el teu domini. Si necessites traslladar la web a un altre proveïdor, et podem facilitar els arxius web. Per mantenir-la publicada fora del nostre servei, necessitaràs allotjament propi.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-item__summary">
+                            <span class="faq-item__question">Què pot fer variar el pressupost d'una pàgina web?</span>
+                            <span class="material-symbols-outlined faq-item__icon" aria-hidden="true">expand_more</span>
+                        </summary>
+                        <div class="faq-item__panel">
+                            <p class="font-body-lg text-body-lg">El nombre de pàgines, la quantitat de contingut, les funcionalitats, les integracions amb altres eines o la necessitat de migrar una web existent. T'explicarem què inclou la proposta abans de començar.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-item__summary">
+                            <span class="faq-item__question">Podré veure la web abans de publicar-la?</span>
+                            <span class="material-symbols-outlined faq-item__icon" aria-hidden="true">expand_more</span>
+                        </summary>
+                        <div class="faq-item__panel">
+                            <p class="font-body-lg text-body-lg">Sí. Podràs revisar-la mitjançant un enllaç de prova privat abans del llançament.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-item__summary">
+                            <span class="faq-item__question">Quants canvis podré demanar durant la creació?</span>
+                            <span class="material-symbols-outlined faq-item__icon" aria-hidden="true">expand_more</span>
+                        </summary>
+                        <div class="faq-item__panel">
+                            <p class="font-body-lg text-body-lg">La Web One Page i la web corporativa inclouen tres rondes de canvis abans de publicar-les. En projectes a mida, concretarem les revisions incloses a la proposta.</p>
+                        </div>
+                    </details>
+                </div>
+<!-- faq-list:end -->
             </div>
         </section>
     </main>

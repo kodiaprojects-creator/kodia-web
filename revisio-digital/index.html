@@ -21,58 +21,74 @@
 
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@graph": [
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://www.kodia.cat/revisio-digital/#service",
+      "name": "Revisió digital gratuïta a Girona",
+      "serviceType": "Auditoria digital",
+      "description": "Revisió digital gratuïta a Girona: analitzem web, xarxes, Google Business i captació, i t'enviem oportunitats de millora clares.",
+      "url": "https://www.kodia.cat/revisio-digital/",
+      "provider": {
+        "@id": "https://www.kodia.cat/#business"
+      },
+      "areaServed": [
         {
-          "@type": "Service",
-          "@id": "https://www.kodia.cat/revisio-digital/#service",
-          "name": "Revisió digital gratuïta a Girona",
-          "serviceType": "Auditoria digital",
-          "description": "Revisió digital gratuïta a Girona: analitzem web, xarxes, Google Business i captació, i t'enviem oportunitats de millora clares.",
-          "url": "https://www.kodia.cat/revisio-digital/",
-          "provider": { "@id": "https://www.kodia.cat/#business" },
-          "areaServed": [
-            { "@type": "City", "name": "Girona" },
-            { "@type": "AdministrativeArea", "name": "Catalunya" }
-          ],
-          "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "EUR"
+          "@type": "City",
+          "name": "Girona"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Catalunya"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.kodia.cat/revisio-digital/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "La revisió digital és de veritat gratuïta?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Analitzem web, xarxes socials, Google Business i captació, i t'enviem un informe amb oportunitats de millora. No hi ha compromís de contractar un projecte."
           }
         },
         {
-          "@type": "FAQPage",
-          "@id": "https://www.kodia.cat/revisio-digital/#faq",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "La revisió digital és de veritat gratuïta?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Sí. Analitzem web, xarxes socials, Google Business i captació, i t'enviem un informe amb oportunitats de millora. No hi ha compromís de contractar un projecte."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Què rebré després de demanar la revisió?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Un resum clar de punts forts, problemes detectats i oportunitats prioritzades. No és un audit tècnic de desenes de pàgines: és accionable per decidir el següent pas."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Serveix si encara no tinc web?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Sí. Si no tens web, mirem presència a Google, xarxes i com et troben els clients, i et diem si et convé una One Page, una web corporativa o un desenvolupament a mida."
-              }
-            }
-          ]
+          "@type": "Question",
+          "name": "Què rebré després de demanar la revisió?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Un resum clar de punts forts, problemes detectats i oportunitats prioritzades. No és un audit tècnic de desenes de pàgines: és accionable per decidir el següent pas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Serveix si encara no tinc web?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Si no tens web, mirem presència a Google, xarxes i com et troben els clients, i et diem si et convé una One Page, una web corporativa o un desenvolupament a mida."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "No sé per què la meva web no m'ajuda a aconseguir clients. La podeu revisar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Amb la revisió digital gratuïta analitzem la claredat i l'estructura de la web, la facilitat de contacte i altres aspectes de la teva presència digital. Després t'enviem un informe breu amb els problemes detectats i les millores que prioritzaríem. No tens cap compromís de contractar-nos."
+          }
         }
       ]
     }
+  ]
+}
     </script>
 
     <link rel="icon" href="../favicon.svg" type="image/svg+xml">
@@ -326,20 +342,46 @@
         <section class="bg-kodia-gray py-section-padding px-margin-edge border-t border-kodia-black/10" aria-labelledby="faq-heading">
             <div class="max-w-3xl">
                 <h2 id="faq-heading" class="font-headline-lg text-headline-lg mb-12">Preguntes freqüents</h2>
-                <div class="space-y-10">
-                    <article>
-                        <h3 class="font-headline-lg text-2xl font-bold mb-3">La revisió digital és de veritat gratuïta?</h3>
-                        <p class="font-body-lg text-body-lg">Sí. Analitzem web, xarxes socials, Google Business i captació, i t'enviem un informe amb oportunitats de millora. No hi ha compromís de contractar un projecte.</p>
-                    </article>
-                    <article>
-                        <h3 class="font-headline-lg text-2xl font-bold mb-3">Què rebré després de demanar la revisió?</h3>
-                        <p class="font-body-lg text-body-lg">Un resum clar de punts forts, problemes detectats i oportunitats prioritzades. No és un audit tècnic de desenes de pàgines: és accionable per decidir el següent pas.</p>
-                    </article>
-                    <article>
-                        <h3 class="font-headline-lg text-2xl font-bold mb-3">Serveix si encara no tinc web?</h3>
-                        <p class="font-body-lg text-body-lg">Sí. Si no tens web, mirem presència a Google, xarxes i com et troben els clients, i et diem si et convé una One Page, una web corporativa o un desenvolupament a mida.</p>
-                    </article>
+                <!-- faq-list:start -->
+                <div class="faq-list">
+                    <details class="faq-item">
+                        <summary class="faq-item__summary">
+                            <span class="faq-item__question">La revisió digital és de veritat gratuïta?</span>
+                            <span class="material-symbols-outlined faq-item__icon" aria-hidden="true">expand_more</span>
+                        </summary>
+                        <div class="faq-item__panel">
+                            <p class="font-body-lg text-body-lg">Sí. Analitzem web, xarxes socials, Google Business i captació, i t'enviem un informe amb oportunitats de millora. No hi ha compromís de contractar un projecte.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-item__summary">
+                            <span class="faq-item__question">Què rebré després de demanar la revisió?</span>
+                            <span class="material-symbols-outlined faq-item__icon" aria-hidden="true">expand_more</span>
+                        </summary>
+                        <div class="faq-item__panel">
+                            <p class="font-body-lg text-body-lg">Un resum clar de punts forts, problemes detectats i oportunitats prioritzades. No és un audit tècnic de desenes de pàgines: és accionable per decidir el següent pas.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-item__summary">
+                            <span class="faq-item__question">Serveix si encara no tinc web?</span>
+                            <span class="material-symbols-outlined faq-item__icon" aria-hidden="true">expand_more</span>
+                        </summary>
+                        <div class="faq-item__panel">
+                            <p class="font-body-lg text-body-lg">Sí. Si no tens web, mirem presència a Google, xarxes i com et troben els clients, i et diem si et convé una One Page, una web corporativa o un desenvolupament a mida.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-item__summary">
+                            <span class="faq-item__question">No sé per què la meva web no m'ajuda a aconseguir clients. La podeu revisar?</span>
+                            <span class="material-symbols-outlined faq-item__icon" aria-hidden="true">expand_more</span>
+                        </summary>
+                        <div class="faq-item__panel">
+                            <p class="font-body-lg text-body-lg">Sí. Amb la revisió digital gratuïta analitzem la claredat i l'estructura de la web, la facilitat de contacte i altres aspectes de la teva presència digital. Després t'enviem un informe breu amb els problemes detectats i les millores que prioritzaríem. No tens cap compromís de contractar-nos.</p>
+                        </div>
+                    </details>
                 </div>
+<!-- faq-list:end -->
             </div>
         </section>
     </main>

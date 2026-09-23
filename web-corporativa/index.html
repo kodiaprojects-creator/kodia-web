@@ -21,63 +21,95 @@
 
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@graph": [
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://www.kodia.cat/web-corporativa/#service",
+      "name": "Web corporativa a mida a Girona",
+      "serviceType": "Disseny de web corporativa",
+      "description": "Webs corporatives a mida a Girona per a empreses i negocis. Estructura, textos, disseny responsive i manteniment. Des de 600 €.",
+      "url": "https://www.kodia.cat/web-corporativa/",
+      "provider": {
+        "@id": "https://www.kodia.cat/#business"
+      },
+      "areaServed": [
         {
-          "@type": "Service",
-          "@id": "https://www.kodia.cat/web-corporativa/#service",
-          "name": "Web corporativa a mida a Girona",
-          "serviceType": "Disseny de web corporativa",
-          "description": "Webs corporatives a mida a Girona per a empreses i negocis. Estructura, textos, disseny responsive i manteniment. Des de 600 €.",
-          "url": "https://www.kodia.cat/web-corporativa/",
-          "provider": { "@id": "https://www.kodia.cat/#business" },
-          "areaServed": [
-            { "@type": "City", "name": "Girona" },
-            { "@type": "AdministrativeArea", "name": "Catalunya" }
-          ],
-          "offers": {
-            "@type": "Offer",
-            "priceCurrency": "EUR",
-            "price": "600",
-            "priceSpecification": {
-              "@type": "PriceSpecification",
-              "minPrice": "600",
-              "priceCurrency": "EUR"
-            }
+          "@type": "City",
+          "name": "Girona"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Catalunya"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "EUR",
+        "price": "600",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "minPrice": "600",
+          "priceCurrency": "EUR"
+        }
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.kodia.cat/web-corporativa/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Quan em convé una web corporativa en lloc d'una Web One Page?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Quan tens diversos serveis, molta informació o necessites explicar diferents temes en pàgines separades. Si tota la informació essencial del teu negoci es pot presentar clarament en una sola pàgina, una Web One Page pot ser suficient."
           }
         },
         {
-          "@type": "FAQPage",
-          "@id": "https://www.kodia.cat/web-corporativa/#faq",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "Quant costa una web corporativa a Girona?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Una web corporativa a mida a Girona comença des de 600 €. Inclou portada, fins a 4 pàgines interiors, disseny a mida, textos, adaptació mòbil, SEO bàsic i publicació. El manteniment comença des de 25 €/mes."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Què diferencia una web corporativa d'una One Page?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "La web corporativa té diverses pàgines per explicar serveis, equip i contacte, i posicionar millor cada tema. La One Page concentra tot en una sola pàgina; l'oferta actual és de 300 €."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Feu les webs corporatives amb plantilles?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "No. A KODIA dissenyem i desenvolupem webs corporatives a mida a Girona, amb l'estructura que necessita cada negoci, sense plantilles genèriques."
-              }
-            }
-          ]
+          "@type": "Question",
+          "name": "Què inclou una web corporativa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Inclou una portada i fins a quatre pàgines interiors, estructura i textos, disseny a mida, adaptació al mòbil, SEO bàsic, publicació i tres rondes de canvis."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quant costa una web corporativa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El preu comença a 600 € sense IVA. El manteniment és opcional i comença a 25 €/mes, sense IVA. Et prepararem un pressupost concret segons l'estructura i les necessitats del projecte."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quant trigueu a fer una web corporativa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Habitualment, unes dues setmanes un cop tenim la informació i el material necessaris per començar. El termini concret dependrà de l'abast del projecte i te'l comunicarem a la proposta."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Podré ampliar la web més endavant?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Podem començar amb les pàgines que necessites ara i ampliar la web quan el negoci ho demani. Les pàgines noves, els canvis d'estructura i les funcionalitats addicionals es valoren i pressuposten a part."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Feu servir plantilles?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No partim de plantilles genèriques. Preparem l'estructura i el disseny de la web segons el negoci, els continguts i el que necessitem que hi pugui fer el visitant."
+          }
         }
       ]
     }
+  ]
+}
     </script>
 
     <link rel="icon" href="../favicon.svg" type="image/svg+xml">
@@ -283,7 +315,7 @@
                     <div class="bg-kodia-gray border border-kodia-black p-8 md:p-12 mb-8">
                         <p class="font-display-lg text-6xl md:text-7xl font-black mb-6">Des de 600 €</p>
                         <p class="font-body-lg text-body-lg">
-                            Manteniment: <span class="font-bold">des de 25 €/mes</span>
+                            Manteniment opcional: <span class="font-bold">des de 25 €/mes sense IVA</span>
                         </p>
                     </div>
                     <button type="button" class="bg-kodia-bg-dark text-white px-8 py-4 font-bold hover:bg-secondary hover:text-kodia-black transition-all w-full md:w-auto">
@@ -359,20 +391,64 @@
         <section class="bg-white py-section-padding px-margin-edge border-t border-kodia-black/10" aria-labelledby="faq-heading">
             <div class="max-w-3xl">
                 <h2 id="faq-heading" class="font-headline-lg text-headline-lg mb-12">Preguntes freqüents</h2>
-                <div class="space-y-10">
-                    <article>
-                        <h3 class="font-headline-lg text-2xl font-bold mb-3">Quant costa una web corporativa a Girona?</h3>
-                        <p class="font-body-lg text-body-lg">Una web corporativa a mida a Girona comença des de 600 €. Inclou portada, fins a 4 pàgines interiors, disseny a mida, textos, adaptació mòbil, SEO bàsic i publicació. El manteniment comença des de 25 €/mes.</p>
-                    </article>
-                    <article>
-                        <h3 class="font-headline-lg text-2xl font-bold mb-3">Què diferencia una web corporativa d'una One Page?</h3>
-                        <p class="font-body-lg text-body-lg">La web corporativa té diverses pàgines per explicar serveis, equip i contacte, i posicionar millor cada tema. La One Page concentra tot en una sola pàgina; l'oferta actual és de 300 €.</p>
-                    </article>
-                    <article>
-                        <h3 class="font-headline-lg text-2xl font-bold mb-3">Feu les webs corporatives amb plantilles?</h3>
-                        <p class="font-body-lg text-body-lg">No. A KODIA dissenyem i desenvolupem webs corporatives a mida a Girona, amb l'estructura que necessita cada negoci, sense plantilles genèriques.</p>
-                    </article>
+                <!-- faq-list:start -->
+                <div class="faq-list">
+                    <details class="faq-item">
+                        <summary class="faq-item__summary">
+                            <span class="faq-item__question">Quan em convé una web corporativa en lloc d'una Web One Page?</span>
+                            <span class="material-symbols-outlined faq-item__icon" aria-hidden="true">expand_more</span>
+                        </summary>
+                        <div class="faq-item__panel">
+                            <p class="font-body-lg text-body-lg">Quan tens diversos serveis, molta informació o necessites explicar diferents temes en pàgines separades. Si tota la informació essencial del teu negoci es pot presentar clarament en una sola pàgina, una Web One Page pot ser suficient.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-item__summary">
+                            <span class="faq-item__question">Què inclou una web corporativa?</span>
+                            <span class="material-symbols-outlined faq-item__icon" aria-hidden="true">expand_more</span>
+                        </summary>
+                        <div class="faq-item__panel">
+                            <p class="font-body-lg text-body-lg">Inclou una portada i fins a quatre pàgines interiors, estructura i textos, disseny a mida, adaptació al mòbil, SEO bàsic, publicació i tres rondes de canvis.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-item__summary">
+                            <span class="faq-item__question">Quant costa una web corporativa?</span>
+                            <span class="material-symbols-outlined faq-item__icon" aria-hidden="true">expand_more</span>
+                        </summary>
+                        <div class="faq-item__panel">
+                            <p class="font-body-lg text-body-lg">El preu comença a 600 € sense IVA. El manteniment és opcional i comença a 25 €/mes, sense IVA. Et prepararem un pressupost concret segons l'estructura i les necessitats del projecte.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-item__summary">
+                            <span class="faq-item__question">Quant trigueu a fer una web corporativa?</span>
+                            <span class="material-symbols-outlined faq-item__icon" aria-hidden="true">expand_more</span>
+                        </summary>
+                        <div class="faq-item__panel">
+                            <p class="font-body-lg text-body-lg">Habitualment, unes dues setmanes un cop tenim la informació i el material necessaris per començar. El termini concret dependrà de l'abast del projecte i te'l comunicarem a la proposta.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-item__summary">
+                            <span class="faq-item__question">Podré ampliar la web més endavant?</span>
+                            <span class="material-symbols-outlined faq-item__icon" aria-hidden="true">expand_more</span>
+                        </summary>
+                        <div class="faq-item__panel">
+                            <p class="font-body-lg text-body-lg">Sí. Podem començar amb les pàgines que necessites ara i ampliar la web quan el negoci ho demani. Les pàgines noves, els canvis d'estructura i les funcionalitats addicionals es valoren i pressuposten a part.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-item__summary">
+                            <span class="faq-item__question">Feu servir plantilles?</span>
+                            <span class="material-symbols-outlined faq-item__icon" aria-hidden="true">expand_more</span>
+                        </summary>
+                        <div class="faq-item__panel">
+                            <p class="font-body-lg text-body-lg">No partim de plantilles genèriques. Preparem l'estructura i el disseny de la web segons el negoci, els continguts i el que necessitem que hi pugui fer el visitant.</p>
+                        </div>
+                    </details>
                 </div>
+<!-- faq-list:end -->
             </div>
         </section>
     </main>

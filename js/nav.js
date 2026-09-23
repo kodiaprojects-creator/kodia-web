@@ -121,6 +121,9 @@ function initSiteNav() {
         closeMobile();
         closeDropdown();
     });
+
+    // Ensure icons match the closed menu state on load.
+    closeMobile();
 }
 
 document.addEventListener('DOMContentLoaded', initSiteNav);

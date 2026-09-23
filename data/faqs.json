@@ -1,0 +1,234 @@
+{
+  "pages": [
+    {
+      "key": "web-one-page",
+      "file": "web-one-page/index.html",
+      "canonical": "https://www.kodia.cat/web-one-page/",
+      "faqId": "https://www.kodia.cat/web-one-page/#faq",
+      "includeSchema": true,
+      "items": [
+        {
+          "question": "Una Web One Page és suficient per al meu negoci?",
+          "answer": "Sí, si podem explicar tota la informació important en una sola pàgina clara i ben organitzada. Si tens molts serveis o necessites desenvolupar diferents temes amb més detall, t'ho direm i et proposarem una estructura amb diverses pàgines."
+        },
+        {
+          "question": "Què inclou una Web One Page?",
+          "answer": "Inclou l'estructura del contingut, la redacció i adaptació dels textos, disseny a mida, adaptació al mòbil, SEO bàsic, publicació i tres rondes de canvis."
+        },
+        {
+          "question": "Quant costa una Web One Page?",
+          "answer": "L'oferta actual és de 300 € sense IVA. El manteniment és opcional i costa 15 €/mes, sense IVA. Abans de començar t'explicarem què inclou el pressupost del teu projecte."
+        },
+        {
+          "question": "Quant trigueu a fer una Web One Page?",
+          "answer": "Habitualment, entre 7 i 10 dies un cop tenim la informació i el material necessaris per començar. Et confirmarem el calendari previst abans d'iniciar el projecte."
+        },
+        {
+          "question": "Podeu fer la web si encara no tinc els textos?",
+          "answer": "Sí. T'ajudem a ordenar la informació i a redactar o adaptar els textos. Per fer-ho, necessitarem que ens expliquis bé el negoci, els serveis i què vols transmetre."
+        },
+        {
+          "question": "Una Web One Page pot sortir a Google?",
+          "answer": "Sí. La web inclou SEO bàsic, però no et podem garantir una posició concreta als resultats de cerca. Si vols treballar diversos serveis o temes amb contingut propi, pot convenir-te una web amb pàgines separades."
+        }
+      ]
+    },
+    {
+      "key": "web-corporativa",
+      "file": "web-corporativa/index.html",
+      "canonical": "https://www.kodia.cat/web-corporativa/",
+      "faqId": "https://www.kodia.cat/web-corporativa/#faq",
+      "includeSchema": true,
+      "items": [
+        {
+          "question": "Quan em convé una web corporativa en lloc d'una Web One Page?",
+          "answer": "Quan tens diversos serveis, molta informació o necessites explicar diferents temes en pàgines separades. Si tota la informació essencial del teu negoci es pot presentar clarament en una sola pàgina, una Web One Page pot ser suficient."
+        },
+        {
+          "question": "Què inclou una web corporativa?",
+          "answer": "Inclou una portada i fins a quatre pàgines interiors, estructura i textos, disseny a mida, adaptació al mòbil, SEO bàsic, publicació i tres rondes de canvis."
+        },
+        {
+          "question": "Quant costa una web corporativa?",
+          "answer": "El preu comença a 600 € sense IVA. El manteniment és opcional i comença a 25 €/mes, sense IVA. Et prepararem un pressupost concret segons l'estructura i les necessitats del projecte."
+        },
+        {
+          "question": "Quant trigueu a fer una web corporativa?",
+          "answer": "Habitualment, unes dues setmanes un cop tenim la informació i el material necessaris per començar. El termini concret dependrà de l'abast del projecte i te'l comunicarem a la proposta."
+        },
+        {
+          "question": "Podré ampliar la web més endavant?",
+          "answer": "Sí. Podem començar amb les pàgines que necessites ara i ampliar la web quan el negoci ho demani. Les pàgines noves, els canvis d'estructura i les funcionalitats addicionals es valoren i pressuposten a part."
+        },
+        {
+          "question": "Feu servir plantilles?",
+          "answer": "No partim de plantilles genèriques. Preparem l'estructura i el disseny de la web segons el negoci, els continguts i el que necessitem que hi pugui fer el visitant."
+        }
+      ]
+    },
+    {
+      "key": "web-a-mida",
+      "file": "web-a-mida/index.html",
+      "canonical": "https://www.kodia.cat/web-a-mida/",
+      "faqId": "https://www.kodia.cat/web-a-mida/#faq",
+      "includeSchema": true,
+      "items": [
+        {
+          "question": "Quan necessito una web a mida?",
+          "answer": "Quan el projecte necessita funcions que van més enllà d'una web informativa, com ara reserves, un gestor de continguts personalitzat, contingut dinàmic, integracions o automatitzacions. Primer estudiem què necessites i després et preparem una proposta ajustada al projecte."
+        },
+        {
+          "question": "Podeu fer una web amb reserves o connectada amb altres eines?",
+          "answer": "Sí. Podem estudiar sistemes de reserves, integracions amb altres eines i funcionalitats específiques. Abans de donar-te un preu, revisarem què necessites exactament."
+        },
+        {
+          "question": "Puc gestionar jo mateix els continguts?",
+          "answer": "Si necessites modificar continguts habitualment, podem estudiar una solució amb gestor de continguts. Explica'ns què vols poder editar i et proposarem l'opció adequada per al projecte."
+        },
+        {
+          "question": "Quant costa una web a mida?",
+          "answer": "Els projectes web a mida comencen a 900 € sense IVA. El manteniment és opcional i comença a 40 €/mes, sense IVA. El pressupost final dependrà de les funcionalitats i integracions necessàries."
+        },
+        {
+          "question": "Feu botigues online?",
+          "answer": "No oferim el servei de creació de botigues online."
+        }
+      ]
+    },
+    {
+      "key": "preus-pagina-web",
+      "file": "preus-pagina-web/index.html",
+      "canonical": "https://www.kodia.cat/preus-pagina-web/",
+      "faqId": "https://www.kodia.cat/preus-pagina-web/#faq",
+      "includeSchema": true,
+      "items": [
+        {
+          "question": "Com es paga la creació de la web?",
+          "answer": "Pagues el 50 % en començar el projecte i el 50 % restant en acabar-lo. Els preus que mostrem al web són sense IVA."
+        },
+        {
+          "question": "El manteniment web és obligatori?",
+          "answer": "No. És opcional, tot i que te'l recomanem si vols que ens ocupem de la part tècnica, les incidències i els petits canvis de contingut. Si prefereixes no contractar-lo, hauràs de disposar del teu propi domini i allotjament."
+        },
+        {
+          "question": "Quants canvis inclou el manteniment?",
+          "answer": "Inclou fins a tres canvis de textos o imatges al mes. Si necessites més canvis, pàgines noves, seccions noves o modificacions estructurals, te'n prepararem un pressupost a part."
+        },
+        {
+          "question": "Puc demanar canvis si no contracto el manteniment?",
+          "answer": "Sí. Explica'ns què necessites modificar i et prepararem un pressupost per aquella feina."
+        },
+        {
+          "question": "Qui serà el titular del domini?",
+          "answer": "El domini quedarà a nom teu. Si encara no en tens, ens podem ocupar de registrar-lo i pagar-lo per posar en marxa el projecte."
+        },
+        {
+          "question": "Què passa si deixo de treballar amb KODIA?",
+          "answer": "Pots continuar fent servir el teu domini. Si necessites traslladar la web a un altre proveïdor, et podem facilitar els arxius web. Per mantenir-la publicada fora del nostre servei, necessitaràs allotjament propi."
+        },
+        {
+          "question": "Què pot fer variar el pressupost d'una pàgina web?",
+          "answer": "El nombre de pàgines, la quantitat de contingut, les funcionalitats, les integracions amb altres eines o la necessitat de migrar una web existent. T'explicarem què inclou la proposta abans de començar."
+        },
+        {
+          "question": "Podré veure la web abans de publicar-la?",
+          "answer": "Sí. Podràs revisar-la mitjançant un enllaç de prova privat abans del llançament."
+        },
+        {
+          "question": "Quants canvis podré demanar durant la creació?",
+          "answer": "La Web One Page i la web corporativa inclouen tres rondes de canvis abans de publicar-les. En projectes a mida, concretarem les revisions incloses a la proposta."
+        }
+      ]
+    },
+    {
+      "key": "revisio-digital",
+      "file": "revisio-digital/index.html",
+      "canonical": "https://www.kodia.cat/revisio-digital/",
+      "faqId": "https://www.kodia.cat/revisio-digital/#faq",
+      "includeSchema": true,
+      "items": [
+        {
+          "question": "La revisió digital és de veritat gratuïta?",
+          "answer": "Sí. Analitzem web, xarxes socials, Google Business i captació, i t'enviem un informe amb oportunitats de millora. No hi ha compromís de contractar un projecte."
+        },
+        {
+          "question": "Què rebré després de demanar la revisió?",
+          "answer": "Un resum clar de punts forts, problemes detectats i oportunitats prioritzades. No és un audit tècnic de desenes de pàgines: és accionable per decidir el següent pas."
+        },
+        {
+          "question": "Serveix si encara no tinc web?",
+          "answer": "Sí. Si no tens web, mirem presència a Google, xarxes i com et troben els clients, i et diem si et convé una One Page, una web corporativa o un desenvolupament a mida."
+        },
+        {
+          "question": "No sé per què la meva web no m'ajuda a aconseguir clients. La podeu revisar?",
+          "answer": "Sí. Amb la revisió digital gratuïta analitzem la claredat i l'estructura de la web, la facilitat de contacte i altres aspectes de la teva presència digital. Després t'enviem un informe breu amb els problemes detectats i les millores que prioritzaríem. No tens cap compromís de contractar-nos."
+        }
+      ]
+    },
+    {
+      "key": "contacte",
+      "file": "contacte/index.html",
+      "canonical": "https://www.kodia.cat/contacte/",
+      "faqId": "https://www.kodia.cat/contacte/#faq",
+      "includeSchema": true,
+      "items": [
+        {
+          "question": "On sou? Com contactar amb KODIA a Girona?",
+          "answer": "KODIA és un estudi de disseny web a Girona. Treballem amb negocis de Girona i Catalunya, en català i castellà. Escriu a hola@kodia.cat o omple el formulari d'aquesta pàgina."
+        },
+        {
+          "question": "Quant trigueu a respondre?",
+          "answer": "Responem en dies laborables amb una proposta d'enfocament (One Page, web corporativa o web a mida) i el pas següent, sense compromís."
+        },
+        {
+          "question": "He de saber quin tipus de web vull abans d'escriure?",
+          "answer": "No. Si no ho tens clar, marca «No ho sé» al formulari o demana la revisió digital gratuïta. T'ajudem a triar la solució que tingui més sentit per al negoci."
+        }
+      ]
+    },
+    {
+      "key": "projectes",
+      "file": "projectes/index.html",
+      "canonical": "https://www.kodia.cat/projectes/",
+      "faqId": "https://www.kodia.cat/projectes/#faq",
+      "includeSchema": true,
+      "items": [
+        {
+          "question": "Quins projectes de disseny web heu fet a Girona?",
+          "answer": "Al portfolio hi ha Vetfar (One Page per a una empresa de farratge), Nivell A (web corporativa per a una acadèmia d'oposicions) i Eleus Brand (One Page per a una associació). Treballem des de Girona per a negocis de Catalunya."
+        },
+        {
+          "question": "Feu servir el mateix disseny per a tots els clients?",
+          "answer": "No. Cada web es construeix des de zero segons els objectius, el públic i el sector del negoci. No adaptem una plantilla a tots els projectes."
+        },
+        {
+          "question": "Puc veure un projecte similar al meu?",
+          "answer": "Explica'ns el negoci a la pàgina de contacte i et proposem l'enfocament que encaixa: One Page, web corporativa o web a mida, amb exemples del mateix tipus de projecte."
+        }
+      ]
+    },
+    {
+      "key": "home",
+      "file": "index.html",
+      "canonical": "https://www.kodia.cat/",
+      "includeSchema": false,
+      "items": [
+        {
+          "question": "Quant costa fer una pàgina web?",
+          "answer": "T'expliquem els preus d'orientació i què pot fer variar el pressupost a la pàgina de preus.",
+          "answerHtml": "T'expliquem els preus d'orientació i què pot fer variar el pressupost a la pàgina de <a href=\"/preus-pagina-web/\" class=\"underline underline-offset-4 hover:text-secondary-accessible\">preus</a>."
+        },
+        {
+          "question": "Quin tipus de web necessito?",
+          "answer": "Depèn de si necessites una One Page, una web corporativa o una web a mida. Mira els serveis i et direm què encaixa millor.",
+          "answerHtml": "Depèn de si necessites una <a href=\"/web-one-page/\" class=\"underline underline-offset-4 hover:text-secondary-accessible\">One Page</a>, una <a href=\"/web-corporativa/\" class=\"underline underline-offset-4 hover:text-secondary-accessible\">web corporativa</a> o una <a href=\"/web-a-mida/\" class=\"underline underline-offset-4 hover:text-secondary-accessible\">web a mida</a>. Mira els serveis i et direm què encaixa millor."
+        },
+        {
+          "question": "Què passa després de publicar-la?",
+          "answer": "Pots contractar un manteniment opcional. T'ho expliquem a la secció de manteniment.",
+          "answerHtml": "Pots contractar un manteniment opcional. T'ho expliquem a la secció de <a href=\"/preus-pagina-web/#manteniment\" class=\"underline underline-offset-4 hover:text-secondary-accessible\">manteniment</a>."
+        }
+      ]
+    }
+  ]
+}

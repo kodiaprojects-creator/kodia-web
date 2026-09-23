@@ -21,63 +21,87 @@
 
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@graph": [
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://www.kodia.cat/web-a-mida/#service",
+      "name": "Desenvolupament web a mida a Girona",
+      "serviceType": "Programació web a mida",
+      "description": "Desenvolupament web a mida a Girona: CMS, reserves, integracions i funcionalitats específiques, sense plantilles.",
+      "url": "https://www.kodia.cat/web-a-mida/",
+      "provider": {
+        "@id": "https://www.kodia.cat/#business"
+      },
+      "areaServed": [
         {
-          "@type": "Service",
-          "@id": "https://www.kodia.cat/web-a-mida/#service",
-          "name": "Desenvolupament web a mida a Girona",
-          "serviceType": "Programació web a mida",
-          "description": "Desenvolupament web a mida a Girona: CMS, reserves, integracions i funcionalitats específiques, sense plantilles.",
-          "url": "https://www.kodia.cat/web-a-mida/",
-          "provider": { "@id": "https://www.kodia.cat/#business" },
-          "areaServed": [
-            { "@type": "City", "name": "Girona" },
-            { "@type": "AdministrativeArea", "name": "Catalunya" }
-          ],
-          "offers": {
-            "@type": "Offer",
-            "priceCurrency": "EUR",
-            "price": "900",
-            "priceSpecification": {
-              "@type": "PriceSpecification",
-              "minPrice": "900",
-              "priceCurrency": "EUR"
-            }
+          "@type": "City",
+          "name": "Girona"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Catalunya"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "EUR",
+        "price": "900",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "minPrice": "900",
+          "priceCurrency": "EUR"
+        }
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.kodia.cat/web-a-mida/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Quan necessito una web a mida?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Quan el projecte necessita funcions que van més enllà d'una web informativa, com ara reserves, un gestor de continguts personalitzat, contingut dinàmic, integracions o automatitzacions. Primer estudiem què necessites i després et preparem una proposta ajustada al projecte."
           }
         },
         {
-          "@type": "FAQPage",
-          "@id": "https://www.kodia.cat/web-a-mida/#faq",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "Quant costa una web a mida a Girona?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "El desenvolupament web a mida a Girona comença des de 900 €. El pressupost final depèn del CMS, el sistema de reserves, les integracions i les funcionalitats. El manteniment comença des de 40 €/mes."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Què inclou la programació web a mida?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Inclou anàlisi del projecte, disseny a mida, programació, adaptació mòbil, SEO bàsic i publicació. No partim de plantilles: desenvolupem només les funcionalitats que el negoci necessita."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Quan necessito una web a mida i no una web corporativa?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Quan el projecte necessita CMS personalitzat, reserves, contingut dinàmic, APIs o automatitzacions. Si només cal presentar l'empresa, una web corporativa (des de 600 €) sol ser suficient."
-              }
-            }
-          ]
+          "@type": "Question",
+          "name": "Podeu fer una web amb reserves o connectada amb altres eines?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Podem estudiar sistemes de reserves, integracions amb altres eines i funcionalitats específiques. Abans de donar-te un preu, revisarem què necessites exactament."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Puc gestionar jo mateix els continguts?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Si necessites modificar continguts habitualment, podem estudiar una solució amb gestor de continguts. Explica'ns què vols poder editar i et proposarem l'opció adequada per al projecte."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quant costa una web a mida?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Els projectes web a mida comencen a 900 € sense IVA. El manteniment és opcional i comença a 40 €/mes, sense IVA. El pressupost final dependrà de les funcionalitats i integracions necessàries."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Feu botigues online?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No oferim el servei de creació de botigues online."
+          }
         }
       ]
     }
+  ]
+}
     </script>
 
     <link rel="icon" href="../favicon.svg" type="image/svg+xml">
@@ -262,7 +286,7 @@
                     <div class="bg-kodia-bg-dark text-white border border-kodia-black p-8 md:p-12">
                         <p class="font-display-lg text-6xl md:text-7xl font-black mb-6">Des de 900 €</p>
                         <p class="font-body-lg text-body-lg text-white/80">
-                            Manteniment: <span class="font-bold text-white">des de 40 €/mes</span>
+                            Manteniment opcional: <span class="font-bold text-white">des de 40 €/mes sense IVA</span>
                         </p>
                     </div>
                 </div>
@@ -272,20 +296,55 @@
         <section class="bg-kodia-gray py-section-padding px-margin-edge border-t border-kodia-black/10" aria-labelledby="faq-heading">
             <div class="max-w-3xl">
                 <h2 id="faq-heading" class="font-headline-lg text-headline-lg mb-12">Preguntes freqüents</h2>
-                <div class="space-y-10">
-                    <article>
-                        <h3 class="font-headline-lg text-2xl font-bold mb-3">Quant costa una web a mida a Girona?</h3>
-                        <p class="font-body-lg text-body-lg">El desenvolupament web a mida a Girona comença des de 900 €. El pressupost final depèn del CMS, el sistema de reserves, les integracions i les funcionalitats. El manteniment comença des de 40 €/mes.</p>
-                    </article>
-                    <article>
-                        <h3 class="font-headline-lg text-2xl font-bold mb-3">Què inclou la programació web a mida?</h3>
-                        <p class="font-body-lg text-body-lg">Inclou anàlisi del projecte, disseny a mida, programació, adaptació mòbil, SEO bàsic i publicació. No partim de plantilles: desenvolupem només les funcionalitats que el negoci necessita.</p>
-                    </article>
-                    <article>
-                        <h3 class="font-headline-lg text-2xl font-bold mb-3">Quan necessito una web a mida i no una web corporativa?</h3>
-                        <p class="font-body-lg text-body-lg">Quan el projecte necessita CMS personalitzat, reserves, contingut dinàmic, APIs o automatitzacions. Si només cal presentar l'empresa, una web corporativa (des de 600 €) sol ser suficient.</p>
-                    </article>
+                <!-- faq-list:start -->
+                <div class="faq-list">
+                    <details class="faq-item">
+                        <summary class="faq-item__summary">
+                            <span class="faq-item__question">Quan necessito una web a mida?</span>
+                            <span class="material-symbols-outlined faq-item__icon" aria-hidden="true">expand_more</span>
+                        </summary>
+                        <div class="faq-item__panel">
+                            <p class="font-body-lg text-body-lg">Quan el projecte necessita funcions que van més enllà d'una web informativa, com ara reserves, un gestor de continguts personalitzat, contingut dinàmic, integracions o automatitzacions. Primer estudiem què necessites i després et preparem una proposta ajustada al projecte.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-item__summary">
+                            <span class="faq-item__question">Podeu fer una web amb reserves o connectada amb altres eines?</span>
+                            <span class="material-symbols-outlined faq-item__icon" aria-hidden="true">expand_more</span>
+                        </summary>
+                        <div class="faq-item__panel">
+                            <p class="font-body-lg text-body-lg">Sí. Podem estudiar sistemes de reserves, integracions amb altres eines i funcionalitats específiques. Abans de donar-te un preu, revisarem què necessites exactament.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-item__summary">
+                            <span class="faq-item__question">Puc gestionar jo mateix els continguts?</span>
+                            <span class="material-symbols-outlined faq-item__icon" aria-hidden="true">expand_more</span>
+                        </summary>
+                        <div class="faq-item__panel">
+                            <p class="font-body-lg text-body-lg">Si necessites modificar continguts habitualment, podem estudiar una solució amb gestor de continguts. Explica'ns què vols poder editar i et proposarem l'opció adequada per al projecte.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-item__summary">
+                            <span class="faq-item__question">Quant costa una web a mida?</span>
+                            <span class="material-symbols-outlined faq-item__icon" aria-hidden="true">expand_more</span>
+                        </summary>
+                        <div class="faq-item__panel">
+                            <p class="font-body-lg text-body-lg">Els projectes web a mida comencen a 900 € sense IVA. El manteniment és opcional i comença a 40 €/mes, sense IVA. El pressupost final dependrà de les funcionalitats i integracions necessàries.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-item__summary">
+                            <span class="faq-item__question">Feu botigues online?</span>
+                            <span class="material-symbols-outlined faq-item__icon" aria-hidden="true">expand_more</span>
+                        </summary>
+                        <div class="faq-item__panel">
+                            <p class="font-body-lg text-body-lg">No oferim el servei de creació de botigues online.</p>
+                        </div>
+                    </details>
                 </div>
+<!-- faq-list:end -->
             </div>
         </section>
     </main>

@@ -26,7 +26,7 @@ module.exports = {
         'inverse-surface': '#2f3131',
         'primary-fixed-dim': '#c8c6c5',
         secondary: '#FF9933',
-        'secondary-accessible': '#C24E00',
+        'secondary-accessible': '#FF9933',
         surface: '#f9f9f9',
         'surface-bright': '#f9f9f9',
         'surface-tint': '#5f5e5e',

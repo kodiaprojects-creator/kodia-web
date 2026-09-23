@@ -21,72 +21,76 @@
 
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@graph": [
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "@id": "https://www.kodia.cat/projectes/#page",
+      "url": "https://www.kodia.cat/projectes/",
+      "name": "Projectes web a Girona | Portfolio — KODIA",
+      "inLanguage": "ca",
+      "isPartOf": {
+        "@id": "https://www.kodia.cat/#website"
+      },
+      "about": {
+        "@id": "https://www.kodia.cat/#business"
+      },
+      "mainEntity": {
+        "@type": "ItemList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Vetfar",
+            "url": "https://vetfar.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Nivell A — Acadèmia d'Oposicions",
+            "url": "https://nivellaoposicions.cat/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Eleus Brand",
+            "url": "https://www.eleusbrand.com/"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.kodia.cat/projectes/#faq",
+      "mainEntity": [
         {
-          "@type": "CollectionPage",
-          "@id": "https://www.kodia.cat/projectes/#page",
-          "url": "https://www.kodia.cat/projectes/",
-          "name": "Projectes web a Girona | Portfolio — KODIA",
-          "inLanguage": "ca",
-          "isPartOf": { "@id": "https://www.kodia.cat/#website" },
-          "about": { "@id": "https://www.kodia.cat/#business" },
-          "mainEntity": {
-            "@type": "ItemList",
-            "itemListElement": [
-              {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Vetfar",
-                "url": "https://vetfar.com/"
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Nivell A — Acadèmia d'Oposicions",
-                "url": "https://nivellaoposicions.cat/"
-              },
-              {
-                "@type": "ListItem",
-                "position": 3,
-                "name": "Eleus Brand",
-                "url": "https://www.eleusbrand.com/"
-              }
-            ]
+          "@type": "Question",
+          "name": "Quins projectes de disseny web heu fet a Girona?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Al portfolio hi ha Vetfar (One Page per a una empresa de farratge), Nivell A (web corporativa per a una acadèmia d'oposicions) i Eleus Brand (One Page per a una associació). Treballem des de Girona per a negocis de Catalunya."
           }
         },
         {
-          "@type": "FAQPage",
-          "@id": "https://www.kodia.cat/projectes/#faq",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "Quins projectes de disseny web heu fet a Girona?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Al portfolio hi ha Vetfar (One Page per a una empresa de farratge), Nivell A (web corporativa per a una acadèmia d'oposicions) i Eleus Brand (One Page per a una associació). Treballem des de Girona per a negocis de Catalunya."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Feu servir el mateix disseny per a tots els clients?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "No. Cada web es construeix des de zero segons els objectius, el públic i el sector del negoci. No adaptem una plantilla a tots els projectes."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Puc veure un projecte similar al meu?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Explica'ns el negoci a la pàgina de contacte i et proposem l'enfocament que encaixa: One Page, web corporativa o web a mida, amb exemples del mateix tipus de projecte."
-              }
-            }
-          ]
+          "@type": "Question",
+          "name": "Feu servir el mateix disseny per a tots els clients?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Cada web es construeix des de zero segons els objectius, el públic i el sector del negoci. No adaptem una plantilla a tots els projectes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Puc veure un projecte similar al meu?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Explica'ns el negoci a la pàgina de contacte i et proposem l'enfocament que encaixa: One Page, web corporativa o web a mida, amb exemples del mateix tipus de projecte."
+          }
         }
       ]
     }
+  ]
+}
     </script>
 
     <link rel="icon" href="../favicon.svg" type="image/svg+xml">
@@ -269,20 +273,37 @@
         <section class="bg-white py-section-padding px-margin-edge border-t border-kodia-black/10" aria-labelledby="faq-heading">
             <div class="max-w-3xl">
                 <h2 id="faq-heading" class="font-headline-lg text-headline-lg mb-12">Preguntes freqüents</h2>
-                <div class="space-y-10">
-                    <article>
-                        <h3 class="font-headline-lg text-2xl font-bold mb-3">Quins projectes de disseny web heu fet a Girona?</h3>
-                        <p class="font-body-lg text-body-lg">Al portfolio hi ha Vetfar (One Page per a una empresa de farratge), Nivell A (web corporativa per a una acadèmia d'oposicions) i Eleus Brand (One Page per a una associació). Treballem des de Girona per a negocis de Catalunya.</p>
-                    </article>
-                    <article>
-                        <h3 class="font-headline-lg text-2xl font-bold mb-3">Feu servir el mateix disseny per a tots els clients?</h3>
-                        <p class="font-body-lg text-body-lg">No. Cada web es construeix des de zero segons els objectius, el públic i el sector del negoci. No adaptem una plantilla a tots els projectes.</p>
-                    </article>
-                    <article>
-                        <h3 class="font-headline-lg text-2xl font-bold mb-3">Puc veure un projecte similar al meu?</h3>
-                        <p class="font-body-lg text-body-lg">Explica'ns el negoci a la pàgina de contacte i et proposem l'enfocament que encaixa: One Page, web corporativa o web a mida, amb exemples del mateix tipus de projecte.</p>
-                    </article>
+                <!-- faq-list:start -->
+                <div class="faq-list">
+                    <details class="faq-item">
+                        <summary class="faq-item__summary">
+                            <span class="faq-item__question">Quins projectes de disseny web heu fet a Girona?</span>
+                            <span class="material-symbols-outlined faq-item__icon" aria-hidden="true">expand_more</span>
+                        </summary>
+                        <div class="faq-item__panel">
+                            <p class="font-body-lg text-body-lg">Al portfolio hi ha Vetfar (One Page per a una empresa de farratge), Nivell A (web corporativa per a una acadèmia d'oposicions) i Eleus Brand (One Page per a una associació). Treballem des de Girona per a negocis de Catalunya.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-item__summary">
+                            <span class="faq-item__question">Feu servir el mateix disseny per a tots els clients?</span>
+                            <span class="material-symbols-outlined faq-item__icon" aria-hidden="true">expand_more</span>
+                        </summary>
+                        <div class="faq-item__panel">
+                            <p class="font-body-lg text-body-lg">No. Cada web es construeix des de zero segons els objectius, el públic i el sector del negoci. No adaptem una plantilla a tots els projectes.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-item__summary">
+                            <span class="faq-item__question">Puc veure un projecte similar al meu?</span>
+                            <span class="material-symbols-outlined faq-item__icon" aria-hidden="true">expand_more</span>
+                        </summary>
+                        <div class="faq-item__panel">
+                            <p class="font-body-lg text-body-lg">Explica'ns el negoci a la pàgina de contacte i et proposem l'enfocament que encaixa: One Page, web corporativa o web a mida, amb exemples del mateix tipus de projecte.</p>
+                        </div>
+                    </details>
                 </div>
+<!-- faq-list:end -->
             </div>
         </section>
     </main>

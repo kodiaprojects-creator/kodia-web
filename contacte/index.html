@@ -21,65 +21,76 @@
 
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@graph": [
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ContactPage",
+      "@id": "https://www.kodia.cat/contacte/#page",
+      "url": "https://www.kodia.cat/contacte/",
+      "name": "Contacte | KODIA",
+      "inLanguage": "ca",
+      "isPartOf": {
+        "@id": "https://www.kodia.cat/#website"
+      },
+      "about": {
+        "@type": [
+          "ProfessionalService",
+          "LocalBusiness"
+        ],
+        "@id": "https://www.kodia.cat/#business",
+        "name": "KODIA",
+        "url": "https://www.kodia.cat/",
+        "email": "hola@kodia.cat",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Girona",
+          "addressRegion": "Catalunya",
+          "addressCountry": "ES"
+        },
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Girona"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Catalunya"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.kodia.cat/contacte/#faq",
+      "mainEntity": [
         {
-          "@type": "ContactPage",
-          "@id": "https://www.kodia.cat/contacte/#page",
-          "url": "https://www.kodia.cat/contacte/",
-          "name": "Contacte | KODIA",
-          "inLanguage": "ca",
-          "isPartOf": { "@id": "https://www.kodia.cat/#website" },
-          "about": {
-            "@type": ["ProfessionalService", "LocalBusiness"],
-            "@id": "https://www.kodia.cat/#business",
-            "name": "KODIA",
-            "url": "https://www.kodia.cat/",
-            "email": "hola@kodia.cat",
-            "address": {
-              "@type": "PostalAddress",
-              "addressLocality": "Girona",
-              "addressRegion": "Catalunya",
-              "addressCountry": "ES"
-            },
-            "areaServed": [
-              { "@type": "City", "name": "Girona" },
-              { "@type": "AdministrativeArea", "name": "Catalunya" }
-            ]
+          "@type": "Question",
+          "name": "On sou? Com contactar amb KODIA a Girona?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "KODIA és un estudi de disseny web a Girona. Treballem amb negocis de Girona i Catalunya, en català i castellà. Escriu a hola@kodia.cat o omple el formulari d'aquesta pàgina."
           }
         },
         {
-          "@type": "FAQPage",
-          "@id": "https://www.kodia.cat/contacte/#faq",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "On sou? Com contactar amb KODIA a Girona?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "KODIA és un estudi de disseny web a Girona. Treballem amb negocis de Girona i Catalunya, en català i castellà. Escriu a hola@kodia.cat o omple el formulari d'aquesta pàgina."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Quant trigueu a respondre?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Responem en dies laborables amb una proposta d'enfocament (One Page, web corporativa o web a mida) i el pas següent, sense compromís."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "He de saber quin tipus de web vull abans d'escriure?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "No. Si no ho tens clar, marca «No ho sé» al formulari o demana la revisió digital gratuïta. T'ajudem a triar la solució que tingui més sentit per al negoci."
-              }
-            }
-          ]
+          "@type": "Question",
+          "name": "Quant trigueu a respondre?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Responem en dies laborables amb una proposta d'enfocament (One Page, web corporativa o web a mida) i el pas següent, sense compromís."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "He de saber quin tipus de web vull abans d'escriure?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Si no ho tens clar, marca «No ho sé» al formulari o demana la revisió digital gratuïta. T'ajudem a triar la solució que tingui més sentit per al negoci."
+          }
         }
       ]
     }
+  ]
+}
     </script>
 
     <link rel="icon" href="../favicon.svg" type="image/svg+xml">
@@ -253,20 +264,37 @@
         <section class="bg-white py-section-padding px-margin-edge border-t border-kodia-black/10" aria-labelledby="faq-heading">
             <div class="max-w-3xl">
                 <h2 id="faq-heading" class="font-headline-lg text-headline-lg mb-12">Preguntes freqüents</h2>
-                <div class="space-y-10">
-                    <article>
-                        <h3 class="font-headline-lg text-2xl font-bold mb-3">On sou? Com contactar amb KODIA a Girona?</h3>
-                        <p class="font-body-lg text-body-lg">KODIA és un estudi de disseny web a Girona. Treballem amb negocis de Girona i Catalunya, en català i castellà. Escriu a hola@kodia.cat o omple el formulari d'aquesta pàgina.</p>
-                    </article>
-                    <article>
-                        <h3 class="font-headline-lg text-2xl font-bold mb-3">Quant trigueu a respondre?</h3>
-                        <p class="font-body-lg text-body-lg">Responem en dies laborables amb una proposta d'enfocament (One Page, web corporativa o web a mida) i el pas següent, sense compromís.</p>
-                    </article>
-                    <article>
-                        <h3 class="font-headline-lg text-2xl font-bold mb-3">He de saber quin tipus de web vull abans d'escriure?</h3>
-                        <p class="font-body-lg text-body-lg">No. Si no ho tens clar, marca «No ho sé» al formulari o demana la revisió digital gratuïta. T'ajudem a triar la solució que tingui més sentit per al negoci.</p>
-                    </article>
+                <!-- faq-list:start -->
+                <div class="faq-list">
+                    <details class="faq-item">
+                        <summary class="faq-item__summary">
+                            <span class="faq-item__question">On sou? Com contactar amb KODIA a Girona?</span>
+                            <span class="material-symbols-outlined faq-item__icon" aria-hidden="true">expand_more</span>
+                        </summary>
+                        <div class="faq-item__panel">
+                            <p class="font-body-lg text-body-lg">KODIA és un estudi de disseny web a Girona. Treballem amb negocis de Girona i Catalunya, en català i castellà. Escriu a hola@kodia.cat o omple el formulari d'aquesta pàgina.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-item__summary">
+                            <span class="faq-item__question">Quant trigueu a respondre?</span>
+                            <span class="material-symbols-outlined faq-item__icon" aria-hidden="true">expand_more</span>
+                        </summary>
+                        <div class="faq-item__panel">
+                            <p class="font-body-lg text-body-lg">Responem en dies laborables amb una proposta d'enfocament (One Page, web corporativa o web a mida) i el pas següent, sense compromís.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-item__summary">
+                            <span class="faq-item__question">He de saber quin tipus de web vull abans d'escriure?</span>
+                            <span class="material-symbols-outlined faq-item__icon" aria-hidden="true">expand_more</span>
+                        </summary>
+                        <div class="faq-item__panel">
+                            <p class="font-body-lg text-body-lg">No. Si no ho tens clar, marca «No ho sé» al formulari o demana la revisió digital gratuïta. T'ajudem a triar la solució que tingui més sentit per al negoci.</p>
+                        </div>
+                    </details>
                 </div>
+<!-- faq-list:end -->
             </div>
         </section>
     </main>

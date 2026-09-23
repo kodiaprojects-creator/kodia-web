@@ -21,24 +21,90 @@
 
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
+  "@context": "https://schema.org",
+  "@graph": [
+    {
       "@type": "Service",
       "@id": "https://www.kodia.cat/web-one-page/#service",
       "name": "Web One Page a Girona",
       "serviceType": "Disseny de Web One Page",
       "description": "Web One Page a mida a Girona per a autònoms i petits negocis. Disseny, textos, mòbil i publicació. Oferta actual des de 300 €.",
       "url": "https://www.kodia.cat/web-one-page/",
-      "provider": { "@id": "https://www.kodia.cat/#business" },
+      "provider": {
+        "@id": "https://www.kodia.cat/#business"
+      },
       "areaServed": [
-        { "@type": "City", "name": "Girona" },
-        { "@type": "AdministrativeArea", "name": "Catalunya" }
+        {
+          "@type": "City",
+          "name": "Girona"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Catalunya"
+        }
       ],
       "offers": {
         "@type": "Offer",
         "price": "300",
         "priceCurrency": "EUR"
       }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.kodia.cat/web-one-page/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Una Web One Page és suficient per al meu negoci?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí, si podem explicar tota la informació important en una sola pàgina clara i ben organitzada. Si tens molts serveis o necessites desenvolupar diferents temes amb més detall, t'ho direm i et proposarem una estructura amb diverses pàgines."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Què inclou una Web One Page?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Inclou l'estructura del contingut, la redacció i adaptació dels textos, disseny a mida, adaptació al mòbil, SEO bàsic, publicació i tres rondes de canvis."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quant costa una Web One Page?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "L'oferta actual és de 300 € sense IVA. El manteniment és opcional i costa 15 €/mes, sense IVA. Abans de començar t'explicarem què inclou el pressupost del teu projecte."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quant trigueu a fer una Web One Page?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Habitualment, entre 7 i 10 dies un cop tenim la informació i el material necessaris per començar. Et confirmarem el calendari previst abans d'iniciar el projecte."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Podeu fer la web si encara no tinc els textos?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. T'ajudem a ordenar la informació i a redactar o adaptar els textos. Per fer-ho, necessitarem que ens expliquis bé el negoci, els serveis i què vols transmetre."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Una Web One Page pot sortir a Google?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. La web inclou SEO bàsic, però no et podem garantir una posició concreta als resultats de cerca. Si vols treballar diversos serveis o temes amb contingut propi, pot convenir-te una web amb pàgines separades."
+          }
+        }
+      ]
     }
+  ]
+}
     </script>
 
     <link rel="icon" href="../favicon.svg" type="image/svg+xml">
@@ -273,8 +339,9 @@
                     <p class="font-display-lg text-5xl md:text-6xl line-through text-kodia-black/40 mb-12">450 €</p>
                     <p class="font-label-mono text-sm uppercase tracking-widest mb-4 text-kodia-black">Oferta actual</p>
                     <p class="font-display-lg text-[80px] md:text-[120px] leading-none font-black text-kodia-black mb-8">300 €</p>
+                    <p class="font-label-mono text-sm uppercase tracking-widest mb-4 text-kodia-black/70">Sense IVA</p>
                     <p class="font-body-lg text-body-lg mb-12">
-                        Manteniment: <span class="font-bold">15 €/mes</span>
+                        Manteniment opcional: <span class="font-bold">15 €/mes sense IVA</span>
                     </p>
                     <button type="button" class="bg-kodia-bg-dark text-white px-10 py-5 font-bold uppercase tracking-widest hover:translate-x-2 hover:-translate-y-2 transition-transform shadow-[6px_6px_0px_#0F0F0F]">
                         Vull una Web One Page
@@ -300,6 +367,70 @@
                         Treballem l'ordre de la informació, els missatges i les crides a l'acció perquè una persona entengui ràpidament què fas, per què confiar en tu i com contactar-te.
                     </p>
                 </div>
+            </div>
+        </section>
+
+        <section class="bg-white py-section-padding px-margin-edge border-t border-kodia-black/10" aria-labelledby="faq-heading">
+            <div class="max-w-3xl">
+                <h2 id="faq-heading" class="font-headline-lg text-headline-lg mb-12">Preguntes freqüents</h2>
+                <!-- faq-list:start -->
+                <div class="faq-list">
+                    <details class="faq-item">
+                        <summary class="faq-item__summary">
+                            <span class="faq-item__question">Una Web One Page és suficient per al meu negoci?</span>
+                            <span class="material-symbols-outlined faq-item__icon" aria-hidden="true">expand_more</span>
+                        </summary>
+                        <div class="faq-item__panel">
+                            <p class="font-body-lg text-body-lg">Sí, si podem explicar tota la informació important en una sola pàgina clara i ben organitzada. Si tens molts serveis o necessites desenvolupar diferents temes amb més detall, t'ho direm i et proposarem una estructura amb diverses pàgines.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-item__summary">
+                            <span class="faq-item__question">Què inclou una Web One Page?</span>
+                            <span class="material-symbols-outlined faq-item__icon" aria-hidden="true">expand_more</span>
+                        </summary>
+                        <div class="faq-item__panel">
+                            <p class="font-body-lg text-body-lg">Inclou l'estructura del contingut, la redacció i adaptació dels textos, disseny a mida, adaptació al mòbil, SEO bàsic, publicació i tres rondes de canvis.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-item__summary">
+                            <span class="faq-item__question">Quant costa una Web One Page?</span>
+                            <span class="material-symbols-outlined faq-item__icon" aria-hidden="true">expand_more</span>
+                        </summary>
+                        <div class="faq-item__panel">
+                            <p class="font-body-lg text-body-lg">L'oferta actual és de 300 € sense IVA. El manteniment és opcional i costa 15 €/mes, sense IVA. Abans de començar t'explicarem què inclou el pressupost del teu projecte.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-item__summary">
+                            <span class="faq-item__question">Quant trigueu a fer una Web One Page?</span>
+                            <span class="material-symbols-outlined faq-item__icon" aria-hidden="true">expand_more</span>
+                        </summary>
+                        <div class="faq-item__panel">
+                            <p class="font-body-lg text-body-lg">Habitualment, entre 7 i 10 dies un cop tenim la informació i el material necessaris per començar. Et confirmarem el calendari previst abans d'iniciar el projecte.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-item__summary">
+                            <span class="faq-item__question">Podeu fer la web si encara no tinc els textos?</span>
+                            <span class="material-symbols-outlined faq-item__icon" aria-hidden="true">expand_more</span>
+                        </summary>
+                        <div class="faq-item__panel">
+                            <p class="font-body-lg text-body-lg">Sí. T'ajudem a ordenar la informació i a redactar o adaptar els textos. Per fer-ho, necessitarem que ens expliquis bé el negoci, els serveis i què vols transmetre.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-item__summary">
+                            <span class="faq-item__question">Una Web One Page pot sortir a Google?</span>
+                            <span class="material-symbols-outlined faq-item__icon" aria-hidden="true">expand_more</span>
+                        </summary>
+                        <div class="faq-item__panel">
+                            <p class="font-body-lg text-body-lg">Sí. La web inclou SEO bàsic, però no et podem garantir una posició concreta als resultats de cerca. Si vols treballar diversos serveis o temes amb contingut propi, pot convenir-te una web amb pàgines separades.</p>
+                        </div>
+                    </details>
+                </div>
+<!-- faq-list:end -->
             </div>
         </section>
 
