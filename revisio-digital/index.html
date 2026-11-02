@@ -96,59 +96,19 @@
     <link rel="apple-touch-icon" href="../apple-touch-icon.png" sizes="180x180">
     <link rel="preload" href="/fonts/hanken-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/css/kodia.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap"></noscript>
 </head>
 <body class="bg-kodia-bg text-kodia-black font-body-md selection:bg-secondary selection:text-white overflow-x-hidden">
 
     <!-- TopNavBar -->
-    <header class="sticky top-0 w-full z-50 bg-background border-b border-primary" data-site-header>
-        <div class="flex justify-between items-center px-margin-edge py-gutter max-w-full mx-auto">
-            <a href="../" class="font-headline-lg text-headline-lg-mobile md:text-headline-lg font-black tracking-tighter text-primary shrink-0">KODIA</a>
-            <nav class="items-center gap-8" aria-label="Navegació principal" data-nav-desktop>
-                <div class="relative" data-nav-dropdown>
-                    <button type="button" id="nav-serveis-btn" class="flex items-center gap-1 text-on-surface font-medium hover:text-secondary-accessible transition-colors duration-150 py-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary-accessible focus-visible:ring-offset-2" aria-expanded="false" aria-haspopup="true" aria-controls="nav-serveis-menu" data-nav-dropdown-trigger>
-                        Serveis
-                        <span class="material-symbols-outlined text-base" aria-hidden="true">expand_more</span>
-                    </button>
-                    <div id="nav-serveis-menu" class="nav-dropdown absolute left-0 top-full pt-2" role="menu" aria-labelledby="nav-serveis-btn" data-nav-dropdown-menu>
-                        <div class="bg-background border border-primary shadow-sm py-2 min-w-[220px]">
-                            <a href="../web-one-page/" class="nav-dropdown__link" role="menuitem">Web One Page</a>
-                            <a href="../web-corporativa/" class="nav-dropdown__link" role="menuitem">Web corporativa</a>
-                            <a href="../web-a-mida/" class="nav-dropdown__link" role="menuitem">Web a mida</a>
-                        </div>
-                    </div>
-                </div>
-                <a class="text-on-surface font-medium hover:text-secondary-accessible transition-colors duration-150 py-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary-accessible focus-visible:ring-offset-2" href="../projectes/">Projectes</a>
-                <a class="text-on-surface font-medium hover:text-secondary-accessible transition-colors duration-150 py-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary-accessible focus-visible:ring-offset-2" href="../preus-pagina-web/">Preus</a>
-                <a class="text-secondary-accessible font-bold border-b-2 border-secondary hover:text-secondary-accessible transition-colors duration-150 py-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary-accessible focus-visible:ring-offset-2" href="../revisio-digital/">Revisió digital</a>
-                <a class="text-on-surface font-medium hover:text-secondary-accessible transition-colors duration-150 py-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary-accessible focus-visible:ring-offset-2" href="../contacte/">Contacte</a>
-            </nav>
-            <div class="flex items-center gap-3">
-                <a href="../contacte/" class="bg-kodia-bg-dark text-on-primary px-6 py-3 font-label-mono text-label-mono hover:bg-secondary hover:text-kodia-black transition-colors duration-150 uppercase tracking-widest" data-nav-cta-desktop>
-                    Explica'ns el teu projecte
-                </a>
-                <button type="button" class="items-center justify-center w-12 h-12 border border-primary text-primary hover:bg-kodia-gray transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary-accessible" aria-expanded="false" aria-controls="nav-mobile-menu" data-nav-mobile-toggle>
-                    <span class="sr-only">Obrir menú de navegació</span>
-                    <span class="material-symbols-outlined text-2xl" data-nav-icon-menu aria-hidden="true">menu</span>
-                    <span class="material-symbols-outlined text-2xl hidden" data-nav-icon-close aria-hidden="true">close</span>
-                </button>
-            </div>
-        </div>
-        <nav id="nav-mobile-menu" class="nav-mobile hidden border-t border-primary bg-background px-margin-edge py-6" aria-label="Navegació mòbil" data-nav-mobile-menu>
-            <div class="space-y-1">
-                <p class="font-label-mono text-xs uppercase tracking-widest text-kodia-black/50 px-1 py-2">Serveis</p>
-                <a href="../web-one-page/" class="nav-mobile__sublink">Web One Page</a>
-                <a href="../web-corporativa/" class="nav-mobile__sublink">Web corporativa</a>
-                <a href="../web-a-mida/" class="nav-mobile__sublink">Web a mida</a>
-                <a href="../projectes/" class="nav-mobile__link">Projectes</a>
-                <a href="../preus-pagina-web/" class="nav-mobile__link">Preus</a>
-                <a href="../revisio-digital/" class="nav-mobile__link">Revisió digital</a>
-                <a href="../contacte/" class="nav-mobile__link">Contacte</a>
-                <a href="../contacte/" class="nav-mobile__cta">Explica'ns el teu projecte</a>
-            </div>
-        </nav>
-    </header>
+<header class="site-nav" data-site-header>
+<div class="wrap">
+ <a class="logo" href="/">KODIA<i>.</i></a>
+ <ul>
+  <li><a href="/projectes/">Feines fetes</a></li><li><a href="/preus-pagina-web/">Preus</a></li><li><a href="/#proces">Com treballem</a></li><li><a href="/#preguntes">Preguntes</a></li>
+ </ul>
+ <a class="btn" href="/contacte/"><span class="mb">Pressupost</span><span class="dk">Demana pressupost</span></a>
+</div>
+</header>
 
     <main>
         <!-- Hero -->
@@ -170,14 +130,14 @@
                     </div>
                     <a href="#formulari" class="inline-flex items-center gap-3 bg-kodia-bg-dark text-white px-10 py-5 font-bold uppercase tracking-widest hover:translate-x-2 hover:-translate-y-2 transition-transform shadow-[6px_6px_0px_white]">
                         Demana la revisió digital gratuïta
-                        <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+                        <svg class="icon-svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false" ><path fill="currentColor" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
                     </a>
                 </div>
                 <div class="lg:col-span-5 hidden lg:flex flex-col items-center justify-center mt-12 lg:mt-0">
                     <div class="w-full max-w-xs border-2 border-kodia-black bg-white p-6 transform rotate-3 shadow-[12px_12px_0px_rgba(15,15,15,0.15)] relative">
                         <div class="flex items-center justify-between border-b border-kodia-black pb-3 mb-4">
                             <span class="font-label-mono text-[10px] uppercase tracking-widest">Informe KODIA</span>
-                            <span class="material-symbols-outlined text-secondary-accessible text-xl" aria-hidden="true">description</span>
+                            <svg class="icon-svg text-secondary-accessible text-xl" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false" ><path fill="currentColor" d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
                         </div>
                         <div class="space-y-3 mb-6">
                             <div class="h-2 bg-kodia-gray w-full border border-kodia-black/10"></div>
@@ -205,7 +165,7 @@
                             </div>
                         </div>
                         <span class="absolute -top-4 -left-4 bg-kodia-bg-dark text-white p-2">
-                            <span class="material-symbols-outlined" aria-hidden="true">edit</span>
+                            <svg class="icon-svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false" ><path fill="currentColor" d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04a1.003 1.003 0 0 0 0-1.41l-2.34-2.34a1.003 1.003 0 0 0-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg>
                         </span>
                     </div>
                     <p class="font-label-mono text-sm mt-10 -rotate-3 text-kodia-black/80">100% Gratuït · Sense compromís</p>
@@ -218,28 +178,28 @@
             <h2 class="font-headline-lg text-headline-lg mb-16">Què analitzem?</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl">
                 <div class="bg-kodia-gray border border-kodia-black/10 p-8 flex flex-col gap-4">
-                    <span class="material-symbols-outlined text-kodia-black text-3xl" aria-hidden="true">public</span>
+                    <svg class="icon-svg text-kodia-black text-3xl" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false" ><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
                     <div>
                         <h3 class="font-headline-lg text-2xl font-bold mb-3">Web</h3>
                         <p class="font-body-md">Claredat, estructura, imatge i facilitat de contacte.</p>
                     </div>
                 </div>
                 <div class="bg-kodia-gray border border-kodia-black/10 p-8 flex flex-col gap-4">
-                    <span class="material-symbols-outlined text-kodia-black text-3xl" aria-hidden="true">share</span>
+                    <svg class="icon-svg text-kodia-black text-3xl" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false" ><path fill="currentColor" d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11A2.99 2.99 0 0 0 18 7.91c1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92-1.31-2.92-2.92-2.92z"/></svg>
                     <div>
                         <h3 class="font-headline-lg text-2xl font-bold mb-3">Xarxes socials</h3>
                         <p class="font-body-md">Coherència, activitat i presència general.</p>
                     </div>
                 </div>
                 <div class="bg-kodia-gray border border-kodia-black/10 p-8 flex flex-col gap-4">
-                    <span class="material-symbols-outlined text-kodia-black text-3xl" aria-hidden="true">location_on</span>
+                    <svg class="icon-svg text-kodia-black text-3xl" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false" ><path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>
                     <div>
                         <h3 class="font-headline-lg text-2xl font-bold mb-3">Google Business</h3>
                         <p class="font-body-md">Informació, visibilitat i optimització bàsica.</p>
                     </div>
                 </div>
                 <div class="bg-secondary/30 border border-kodia-black/10 p-8 flex flex-col gap-4">
-                    <span class="material-symbols-outlined text-kodia-black text-3xl" aria-hidden="true">trending_up</span>
+                    <svg class="icon-svg text-kodia-black text-3xl" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false" ><path fill="currentColor" d="m16 6 2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6h-6z"/></svg>
                     <div>
                         <h3 class="font-headline-lg text-2xl font-bold mb-3">Captació</h3>
                         <p class="font-body-md">Com estàs aconseguint clients i quines oportunitats detectem.</p>
@@ -331,7 +291,7 @@
                         </div>
                         <button type="submit" class="w-full md:w-auto bg-kodia-bg-dark text-white px-10 py-5 font-bold uppercase tracking-widest hover:bg-secondary hover:text-kodia-black transition-colors inline-flex items-center justify-center gap-3">
                             Demana la revisió digital gratuïta
-                            <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+                            <svg class="icon-svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false" ><path fill="currentColor" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
                         </button>
                         <p class="font-body-md mt-4" data-form-status hidden></p>
                     </form>
@@ -347,7 +307,7 @@
                     <details class="faq-item">
                         <summary class="faq-item__summary">
                             <span class="faq-item__question">La revisió digital és de veritat gratuïta?</span>
-                            <span class="material-symbols-outlined faq-item__icon" aria-hidden="true">expand_more</span>
+                            <svg class="icon-svg faq-item__icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
                         </summary>
                         <div class="faq-item__panel">
                             <p class="font-body-lg text-body-lg">Sí. Analitzem web, xarxes socials, Google Business i captació, i t'enviem un informe amb oportunitats de millora. No hi ha compromís de contractar un projecte.</p>
@@ -356,7 +316,7 @@
                     <details class="faq-item">
                         <summary class="faq-item__summary">
                             <span class="faq-item__question">Què rebré després de demanar la revisió?</span>
-                            <span class="material-symbols-outlined faq-item__icon" aria-hidden="true">expand_more</span>
+                            <svg class="icon-svg faq-item__icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
                         </summary>
                         <div class="faq-item__panel">
                             <p class="font-body-lg text-body-lg">Un resum clar de punts forts, problemes detectats i oportunitats prioritzades. No és un audit tècnic de desenes de pàgines: és accionable per decidir el següent pas.</p>
@@ -365,7 +325,7 @@
                     <details class="faq-item">
                         <summary class="faq-item__summary">
                             <span class="faq-item__question">Serveix si encara no tinc web?</span>
-                            <span class="material-symbols-outlined faq-item__icon" aria-hidden="true">expand_more</span>
+                            <svg class="icon-svg faq-item__icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
                         </summary>
                         <div class="faq-item__panel">
                             <p class="font-body-lg text-body-lg">Sí. Si no tens web, mirem presència a Google, xarxes i com et troben els clients, i et diem si et convé una One Page, una web corporativa o un desenvolupament a mida.</p>
@@ -374,7 +334,7 @@
                     <details class="faq-item">
                         <summary class="faq-item__summary">
                             <span class="faq-item__question">No sé per què la meva web no m'ajuda a aconseguir clients. La podeu revisar?</span>
-                            <span class="material-symbols-outlined faq-item__icon" aria-hidden="true">expand_more</span>
+                            <svg class="icon-svg faq-item__icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
                         </summary>
                         <div class="faq-item__panel">
                             <p class="font-body-lg text-body-lg">Sí. Amb la revisió digital gratuïta analitzem la claredat i l'estructura de la web, la facilitat de contacte i altres aspectes de la teva presència digital. Després t'enviem un informe breu amb els problemes detectats i les millores que prioritzaríem. No tens cap compromís de contractar-nos.</p>
@@ -387,49 +347,14 @@
     </main>
 
     <!-- Footer -->
-    <footer id="contacte" class="bg-kodia-bg-dark text-on-primary py-section-padding px-margin-edge border-t border-primary">
-        <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter w-full">
-            <div class="md:col-span-4 flex flex-col justify-between">
-                <div>
-                    <div class="font-display-lg text-display-lg font-black text-on-primary mb-6">KODIA</div>
-                    <p class="font-body-md text-white/70 max-w-xs">© 2026 KODIA.cat — Studio for technical precision and artisanal soul. Disseny web honest des de Girona.</p>
-                </div>
-                <div class="flex gap-4 mt-12">
-                    <a class="text-white/70 hover:text-white transition-all duration-200" href="#">Instagram</a>
-                    <a class="text-white/70 hover:text-white transition-all duration-200" href="#">LinkedIn</a>
-                    <a class="text-white/70 hover:text-white transition-all duration-200" href="#">Behance</a>
-                </div>
-            </div>
-            <div class="md:col-span-2">
-                <p class="footer-heading">Serveis</p>
-                <ul class="space-y-4">
-                    <li><a class="text-white/70 hover:text-white transition-all" href="../web-one-page/">Web One Page</a></li>
-                    <li><a class="text-white/70 hover:text-white transition-all" href="../web-corporativa/">Web Corporativa</a></li>
-                    <li><a class="text-white/70 hover:text-white transition-all" href="../web-a-mida/">Web a Mida</a></li>
-                    <li><a class="text-white/70 hover:text-white transition-all" href="./">Revisió Digital</a></li>
-                </ul>
-            </div>
-            <div class="md:col-span-2">
-                <p class="footer-heading">KODIA</p>
-                <ul class="space-y-4">
-                    <li><a class="text-white/70 hover:text-white transition-all" href="../projectes/">Projectes</a></li>
-                    <li><a class="text-white/70 hover:text-white transition-all" href="#">Manifest</a></li>
-                    <li><a class="text-white/70 hover:text-white transition-all" href="#">Privadesa</a></li>
-                    <li><a class="text-white/70 hover:text-white transition-all" href="#">TOS</a></li>
-                </ul>
-            </div>
-            <div class="md:col-span-4">
-                <p class="footer-heading">Contacte</p>
-                <p class="font-headline-lg text-3xl mb-8">
-                    <a href="mailto:hola@kodia.cat" class="hover:text-secondary-accessible transition-colors">hola@kodia.cat</a>
-                </p>
-                <div class="bg-kodia-dark-gray p-6 border border-white/10">
-                    <p class="font-label-mono text-xs uppercase text-white/50 mb-2">Location</p>
-                    <p class="font-body-md">Girona, Catalunya</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+<footer class="site-footer">
+<div class="wrap">
+ <div><a class="logo" href="/">KODIA<i>.</i></a><p style="margin:10px 0 0">Webs per a autònoms, oficis i comerços. Des de Girona, per a tot Catalunya.</p></div>
+ <nav aria-label="Peu"><a href="/projectes/">Feines fetes</a><a href="/preus-pagina-web/">Preus</a><a href="/web-one-page/">Web One Page</a><a href="/web-corporativa/">Web corporativa</a><a href="/web-a-mida/">Web a mida</a><a href="/revisio-digital/">Revisió digital</a><a href="/contacte/">Contacte</a></nav>
+ <div><a href="mailto:info@kodia.cat">info@kodia.cat</a></div>
+ <div class="legal"><span>© 2026 Kodia</span><a href="/avis-legal">Avís legal</a><a href="/politica-de-privacitat">Política de privacitat</a><a href="/politica-de-galetes">Política de galetes</a></div>
+</div>
+</footer>
 
     <script src="../js/nav.js" defer></script>
     <script src="../js/form.js" defer></script>

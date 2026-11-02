@@ -1,0 +1,462 @@
+{
+  "_llegeix-me": "Textos definitius de la portada nova de kodia.cat (2/11/2026). Cada bloc té \"publicar\": true o false. Tot el que té publicar=false NO pot sortir a l'HTML publicat (ni visible ni en comentaris): s'amaga la frase o l'element sencer. Per publicar-lo, l'Enric ha de confirmar la dada i canviar-ho a true.",
+  "config": {
+    "emailContacte": {
+      "valor": "info@kodia.cat",
+      "mostrar": true,
+      "nota": "Constant única: si mostrar=false, desapareixen la línia «Prefereixes el correu?» i el correu del peu. El JSON-LD conserva l'email."
+    },
+    "tempsResposta": {
+      "valor": "1 dia laborable",
+      "publicar": true,
+      "estat": "confirmat"
+    },
+    "preusSenseIVA": true
+  },
+  "seo": {
+    "title": "Pàgines web per a autònoms i comerços a Girona i Catalunya | KODIA",
+    "description": "Webs a preu tancat per a autònoms, oficis i comerços. Des de 300 €, amb domini i allotjament inclosos. Una sola persona t'atén de principi a fi.",
+    "ogTitle": "KODIA | La web del teu negoci, a preu tancat",
+    "ogDescription": "Webs per a autònoms, oficis i comerços de Catalunya. Des de 300 €, domini i allotjament inclosos.",
+    "nota": "Canonical, og:url, og:image (og-kodia.jpg), og:locale ca_ES i el JSON-LD actual es mantenen. Al JSON-LD només es pot actualitzar la description perquè coincideixi."
+  },
+  "nav": {
+    "logo": "KODIA.",
+    "enllacos": [
+      {
+        "text": "Feines fetes",
+        "portada": "#feines",
+        "altresPagines": "/projectes/"
+      },
+      {
+        "text": "Preus",
+        "portada": "#preus",
+        "altresPagines": "/preus-pagina-web/"
+      },
+      {
+        "text": "Com treballem",
+        "portada": "#proces",
+        "altresPagines": "/#proces"
+      },
+      {
+        "text": "Preguntes",
+        "portada": "#preguntes",
+        "altresPagines": "/#preguntes"
+      }
+    ],
+    "cta": {
+      "textEscriptori": "Demana pressupost",
+      "textMobil": "Pressupost",
+      "portada": "#contacte",
+      "altresPagines": "/contacte/"
+    }
+  },
+  "hero": {
+    "eyebrow": "Autònoms, oficis i comerços · Catalunya",
+    "h1": "La web del teu negoci, a preu tancat i sense intermediaris.",
+    "h1Destacat": "a preu tancat",
+    "lead": "Per a lampistes, reformes, botigues i qualsevol negoci que vulgui que el trobin i el truquin. **Una sola persona t'atén de principi a fi:** qui et respon és qui dissenya i programa la teva web.",
+    "ctaPrincipal": {
+      "text": "Explica'm el teu negoci →",
+      "href": "#contacte"
+    },
+    "ctaSecundari": {
+      "text": "Mira feines fetes",
+      "href": "#feines"
+    },
+    "tiquet": {
+      "titol": "Pressupost tipus",
+      "files": [
+        {
+          "etiqueta": "Web des de",
+          "valor": "300 € + IVA",
+          "publicar": true
+        },
+        {
+          "etiqueta": "Termini",
+          "valor": "7–10 dies",
+          "publicar": false,
+          "pendent": "Termini total: confirmar-lo i des de quan compta"
+        },
+        {
+          "etiqueta": "Domini i allotjament",
+          "valor": "Inclosos",
+          "publicar": true
+        },
+        {
+          "etiqueta": "Resposta",
+          "valor": "1 dia laborable",
+          "publicar": true
+        }
+      ]
+    },
+    "imatge": {
+      "escriptori": "assets/projecte-nivell-a-portada-escriptori-960x600.webp",
+      "mobil": "assets/projecte-nivell-a-portada-mobil-300x650.webp",
+      "alt": "Portada de la web de Nivell A Oposicions en escriptori",
+      "altMobil": "La mateixa web en mòbil",
+      "peu": "Feina real: Nivell A Oposicions, en escriptori i mòbil.",
+      "nota": "És l'LCP probable: sense lazy, amb fetchpriority=high, width i height."
+    }
+  },
+  "unaPersona": {
+    "eyebrow": "Com és treballar amb Kodia",
+    "h2": "Una sola persona. De principi a fi.",
+    "punts": [
+      {
+        "titol": "Parles sempre amb qui fa la feina",
+        "text": "Sense comercials ni passar d'un departament a l'altre. Qui et respon el correu és qui fa la web."
+      },
+      {
+        "titol": "Preu tancat abans de començar",
+        "text": "Saps què inclou, què no inclou i quan estarà llesta. Sense sorpreses a la factura."
+      },
+      {
+        "titol": "Textos pensats per als teus clients",
+        "text": "Què fas, on treballes i com et poden contactar, explicat de manera clara. Sense paraules d'agència."
+      },
+      {
+        "titol": "Després de publicar, no et quedes sol",
+        "text": "El manteniment inclou domini, allotjament i incidències. Amb el pla Creixement, també canvis cada mes."
+      }
+    ]
+  },
+  "feines": {
+    "eyebrow": "Feines fetes",
+    "h2": "Webs reals, de negocis reals.",
+    "intro": "Cada web es fa des de zero per al negoci que la fa servir.",
+    "casos": [
+      {
+        "nom": "Nivell A Oposicions",
+        "destacat": true,
+        "meta": "Formació · Web + landing d'anuncis",
+        "text": "Acadèmia d'oposicions a Catalunya. Web per presentar els cursos i una landing ràpida per als anuncis de Google, perquè qui hi arriba demani informació.",
+        "resultat": {
+          "etiqueta": "Landing d'anuncis · Lighthouse mòbil",
+          "valor": "De 79 a +90",
+          "publicar": true
+        },
+        "url": "https://nivellaoposicions.cat/",
+        "textEnllac": "nivellaoposicions.cat ↗",
+        "imatge": "assets/projecte-nivell-a-landing-escriptori-960x600.webp",
+        "alt": "Captura de la landing d'anuncis de Nivell A (auxiliar administratiu)"
+      },
+      {
+        "nom": "Vetfar",
+        "meta": "Farratge i alfals · One Page",
+        "text": "Empresa de farratge, palla i alfals. Productes clars i un botó per demanar preu directament.",
+        "resultat": {
+          "etiqueta": "Resultat",
+          "valor": null,
+          "publicar": false,
+          "pendent": "Dada real de resultat de Vetfar"
+        },
+        "url": "https://vetfar.com/",
+        "textEnllac": "vetfar.com ↗",
+        "imatge": "assets/projecte-vetfar-escriptori-960x600.webp",
+        "alt": "Captura de vetfar.com"
+      },
+      {
+        "nom": "Eleus",
+        "meta": "Associació · One Page",
+        "text": "Associació dedicada a la lluita contra el càncer. Un missatge fort i objectius clars en una sola pàgina.",
+        "resultat": {
+          "etiqueta": "Resultat",
+          "valor": null,
+          "publicar": false,
+          "pendent": "Dada real de resultat d'Eleus"
+        },
+        "url": "https://www.eleusbrand.com/",
+        "textEnllac": "eleusbrand.com ↗",
+        "imatge": "assets/projecte-eleus-escriptori-960x600.webp",
+        "alt": "Captura de eleusbrand.com"
+      }
+    ]
+  },
+  "testimonis": {
+    "publicar": false,
+    "estat": "Secció desactivada. Queda al codi com a bloc desactivat (sense text inventat) i es reactiva amb un sol canvi quan hi hagi testimonis reals amb permís.",
+    "items": [
+      {
+        "negoci": "Nivell A Oposicions",
+        "text": null,
+        "autor": null
+      },
+      {
+        "negoci": "Vetfar",
+        "text": null,
+        "autor": null
+      },
+      {
+        "negoci": "Eleus",
+        "text": null,
+        "autor": null
+      }
+    ]
+  },
+  "preus": {
+    "eyebrow": "Plans i preus",
+    "h2": "Un preu per fer-la. Una quota perquè funcioni.",
+    "intro": "Tria el tipus de web i, si és corporativa, el manteniment. Totes les quotes inclouen domini i allotjament. Preus sense IVA.",
+    "onePage": {
+      "eyebrow": "Web d'una pàgina",
+      "nom": "One Page",
+      "perAQui": "Per a autònoms i oficis que necessiten que els trobin i els contactin.",
+      "alta": "300 €",
+      "manteniment": "20 €/mes",
+      "inclou": [
+        "Tot el negoci en una sola pàgina",
+        "Textos, disseny i adaptació a mòbil",
+        "SEO bàsic perquè Google et trobi",
+        "3 rondes de canvis abans de publicar",
+        "Domini, allotjament i incidències"
+      ],
+      "cta": "Vull una One Page"
+    },
+    "corporativa": {
+      "eyebrow": "Web de diverses pàgines",
+      "nom": "Corporativa",
+      "perAQui": "Per a botigues i negocis amb més serveis, horaris o productes per explicar.",
+      "alta": "600 €",
+      "inclou": [
+        "Portada i fins a 4 pàgines interiors",
+        "Textos, disseny, mòbil i SEO bàsic",
+        "3 rondes de canvis abans de publicar"
+      ],
+      "triaManteniment": "I tria el manteniment:",
+      "manteniments": [
+        {
+          "nom": "Essencial",
+          "preu": "30 €/mes",
+          "inclou": [
+            "Domini i allotjament",
+            "Incidències i suport"
+          ]
+        },
+        {
+          "nom": "Creixement",
+          "preu": "45 €/mes",
+          "etiqueta": "Per créixer",
+          "inclou": [
+            "Tot el de l'Essencial",
+            "Canvis cada mes",
+            "SEO local",
+            "Informe mensual"
+          ]
+        }
+      ],
+      "cta": "Vull una Corporativa"
+    },
+    "aMida": "Necessites reserves, gestor de continguts o connectar-la amb altres eines? [Ho parlem i et faig un pressupost a mida](#contacte)."
+  },
+  "proces": {
+    "eyebrow": "Com treballem",
+    "h2": "Del primer correu a la web publicada.",
+    "total": {
+      "text": "Total: 7–10 dies des que tinc el teu material.",
+      "publicar": false,
+      "pendent": "Confirmar el termini total i des de quan compta"
+    },
+    "passos": [
+      {
+        "titol": "M'expliques el teu negoci",
+        "text": "Omples el formulari. Et responc amb les primeres preguntes.",
+        "termini": "1 dia laborable",
+        "publicarTermini": true
+      },
+      {
+        "titol": "Proposta tancada",
+        "text": "Què inclou, què no, preu i data de lliurament. Pagues el 50 % per començar.",
+        "termini": null,
+        "publicarTermini": false
+      },
+      {
+        "titol": "Recollim el material",
+        "text": "Fotos, serveis, horaris i el que diferencia el teu negoci. T'ajudo amb els textos.",
+        "termini": null,
+        "publicarTermini": false
+      },
+      {
+        "titol": "Veus la web abans que ningú",
+        "text": "Amb un enllaç de prova privat. Tens 3 rondes de canvis.",
+        "termini": null,
+        "publicarTermini": false
+      },
+      {
+        "titol": "La publiquem",
+        "text": "M'ocupo del domini, el servidor i que tot funcioni. Pagues el 50 % restant.",
+        "termini": null,
+        "publicarTermini": false
+      }
+    ],
+    "garanties": {
+      "titol": "Per escrit, abans de començar",
+      "items": [
+        "Pressupost tancat, sense sorpreses.",
+        "El domini és a nom teu.",
+        "3 rondes de canvis incloses.",
+        "Si un dia marxes, et dono els arxius de la web.",
+        "Resposta en 1 dia laborable."
+      ]
+    }
+  },
+  "faq": {
+    "eyebrow": "Preguntes",
+    "h2": "El que acostumes a voler saber.",
+    "items": [
+      {
+        "q": "No tinc textos ni fotos. És un problema?",
+        "a": "No. T'ajudo a escriure els textos a partir del que m'expliques, i et dic quines fotos fan falta."
+      },
+      {
+        "q": "Com es paga?",
+        "a": "El 50 % en començar i el 50 % en acabar. La quota mensual comença quan la web està publicada."
+      },
+      {
+        "q": "Què inclou la quota mensual?",
+        "a": "Sempre: domini, allotjament i incidències. El pla Creixement hi afegeix canvis cada mes, SEO local i un informe mensual. Les seccions o funcions noves es pressuposten a part."
+      },
+      {
+        "q": "Ja tinc web. Me la podeu millorar?",
+        "a": "Sí. Posa l'adreça al formulari i et dic què canviaria i quant costaria."
+      },
+      {
+        "q": "I si un dia vull canviar de proveïdor?",
+        "a": "El domini és teu i et dono els arxius de la web. Només necessitaràs un allotjament propi."
+      }
+    ]
+  },
+  "contacte": {
+    "eyebrow": "Demana pressupost",
+    "h2": "Explica'm el teu negoci i et dic què necessites.",
+    "intro": "Sense compromís. Et respondrà la mateixa persona que farà la teva web.",
+    "liniaCorreu": "Prefereixes el correu? {emailContacte}",
+    "camps": [
+      {
+        "name": "nom",
+        "label": "Nom",
+        "type": "text",
+        "autocomplete": "given-name",
+        "placeholder": "Ex.: Marta",
+        "obligatori": true,
+        "error": "Escriu el teu nom."
+      },
+      {
+        "name": "empresa",
+        "label": "Negoci",
+        "type": "text",
+        "autocomplete": "organization",
+        "placeholder": "Ex.: Reformes Pujol",
+        "obligatori": true,
+        "error": "Escriu el nom del teu negoci."
+      },
+      {
+        "name": "email",
+        "label": "Correu electrònic",
+        "type": "email",
+        "autocomplete": "email",
+        "inputmode": "email",
+        "placeholder": "tu@correu.cat",
+        "obligatori": true,
+        "error": "Escriu un correu vàlid, per exemple nom@domini.cat."
+      },
+      {
+        "name": "necessitat",
+        "label": "Què necessites?",
+        "type": "textarea",
+        "placeholder": "Ex.: Soc lampista a Figueres i vull una web amb els meus serveis. Si ja tens web, posa'n l'adreça.",
+        "obligatori": true,
+        "error": "Explica'ns en una frase què necessites."
+      }
+    ],
+    "honeypot": "website (camp ocult actual, s'ha de mantenir)",
+    "privacitat": {
+      "font": "legal/textos-formulari.md (exacte, no es pot reescriure)",
+      "casella": "He llegit i accepto la [política de privacitat](/politica-de-privacitat).",
+      "input": "<input type=\"checkbox\" name=\"privacitat\" value=\"acceptada\" required> (obligatòria i sense marcar per defecte)",
+      "informacioBasica": "**Protecció de dades.** Responsable: Enric Corominas Gratacós (Kodia). Finalitat: respondre la teva consulta i, si ho demanes, enviar-te un pressupost. Legitimació: la teva sol·licitud i el teu consentiment. Destinataris: no cedim les dades a ningú, llevat d'obligació legal; els proveïdors d'allotjament i correu les tracten per compte nostre, alguns als EUA amb garanties adequades. Drets: accés, rectificació, supressió, oposició, limitació i portabilitat, escrivint a info@kodia.cat. Més informació a la [política de privacitat](/politica-de-privacitat).",
+      "posicio": "Sota el botó i la promesa de resposta, a 12,5 px."
+    },
+    "boto": "Envia i demana pressupost →",
+    "botoEnviant": "Enviant…",
+    "promesa": "Et responc en 1 dia laborable",
+    "confirmacio": {
+      "titol": "Fet, {nom}! He rebut el teu missatge.",
+      "text": "Et respondré en 1 dia laborable al correu que m'has deixat. Si no el veus, mira la carpeta de correu brossa."
+    },
+    "errorEnviament": "No s'ha pogut enviar. Torna-ho a provar o escriu a {emailContacte}. El que has escrit no s'ha esborrat.",
+    "errorPrivacitat": "Has d'acceptar la política de privacitat per enviar-lo."
+  },
+  "peu": {
+    "descripcio": "Webs per a autònoms, oficis i comerços. Des de Girona, per a tot Catalunya.",
+    "enllacos": [
+      {
+        "text": "Feines fetes",
+        "href": "/projectes/"
+      },
+      {
+        "text": "Preus",
+        "href": "/preus-pagina-web/"
+      },
+      {
+        "text": "Web One Page",
+        "href": "/web-one-page/"
+      },
+      {
+        "text": "Web corporativa",
+        "href": "/web-corporativa/"
+      },
+      {
+        "text": "Web a mida",
+        "href": "/web-a-mida/"
+      },
+      {
+        "text": "Revisió digital",
+        "href": "/revisio-digital/"
+      },
+      {
+        "text": "Contacte",
+        "href": "/contacte/"
+      }
+    ],
+    "legal": [
+      {
+        "text": "Avís legal",
+        "href": "/avis-legal"
+      },
+      {
+        "text": "Política de privacitat",
+        "href": "/politica-de-privacitat"
+      },
+      {
+        "text": "Política de galetes",
+        "href": "/politica-de-galetes"
+      }
+    ],
+    "copyright": "© 2026 Kodia",
+    "fora": "Res d'Instagram, LinkedIn, Behance, Manifest, TOS ni cap enllaç a «#». Cap telèfon ni WhatsApp."
+  },
+  "legal": {
+    "font": "legal/ (carpeta d'en Jimmy: .md i fragments .html <article class=\"legal-page\">). No es reescriuen.",
+    "pagines": [
+      {
+        "ruta": "/avis-legal",
+        "fitxer": "legal/avis-legal.html",
+        "publicar": true
+      },
+      {
+        "ruta": "/politica-de-privacitat",
+        "fitxer": "legal/politica-de-privacitat.html",
+        "publicar": true
+      },
+      {
+        "ruta": "/politica-de-galetes",
+        "fitxer": "legal/politica-de-galetes.html",
+        "publicar": true,
+        "condicio": "Només és certa si el web no carrega Google Fonts ni cap eina de seguiment"
+      }
+    ],
+    "regla": "Si una pàgina conté qualsevol marcador [... PENDENT ...], no es publica a producció. Està prohibit inventar o completar dades fiscals o de proveïdors.",
+    "robots": "<meta name=\"robots\" content=\"noindex, follow\"> a les tres"
+  }
+}

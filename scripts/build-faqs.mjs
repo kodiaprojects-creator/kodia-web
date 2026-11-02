@@ -26,7 +26,7 @@ function renderFaqList(items) {
       '                    <details class="faq-item">',
       '                        <summary class="faq-item__summary">',
       `                            <span class="faq-item__question">${escapeHtml(item.question)}</span>`,
-      '                            <span class="material-symbols-outlined faq-item__icon" aria-hidden="true">expand_more</span>',
+      '                            <svg class="icon-svg faq-item__icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>',
       '                        </summary>',
       '                        <div class="faq-item__panel">',
       `                            <p class="font-body-lg text-body-lg">${answerInner}</p>`,

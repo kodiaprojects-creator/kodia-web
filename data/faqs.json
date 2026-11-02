@@ -206,29 +206,6 @@
           "answer": "Explica'ns el negoci a la pàgina de contacte i et proposem l'enfocament que encaixa: One Page, web corporativa o web a mida, amb exemples del mateix tipus de projecte."
         }
       ]
-    },
-    {
-      "key": "home",
-      "file": "index.html",
-      "canonical": "https://www.kodia.cat/",
-      "includeSchema": false,
-      "items": [
-        {
-          "question": "Quant costa fer una pàgina web?",
-          "answer": "T'expliquem els preus d'orientació i què pot fer variar el pressupost a la pàgina de preus.",
-          "answerHtml": "T'expliquem els preus d'orientació i què pot fer variar el pressupost a la pàgina de <a href=\"/preus-pagina-web/\" class=\"underline underline-offset-4 hover:text-secondary-accessible\">preus</a>."
-        },
-        {
-          "question": "Quin tipus de web necessito?",
-          "answer": "Depèn de si necessites una One Page, una web corporativa o una web a mida. Mira els serveis i et direm què encaixa millor.",
-          "answerHtml": "Depèn de si necessites una <a href=\"/web-one-page/\" class=\"underline underline-offset-4 hover:text-secondary-accessible\">One Page</a>, una <a href=\"/web-corporativa/\" class=\"underline underline-offset-4 hover:text-secondary-accessible\">web corporativa</a> o una <a href=\"/web-a-mida/\" class=\"underline underline-offset-4 hover:text-secondary-accessible\">web a mida</a>. Mira els serveis i et direm què encaixa millor."
-        },
-        {
-          "question": "Què passa després de publicar-la?",
-          "answer": "Pots contractar un manteniment opcional. T'ho expliquem a la secció de manteniment.",
-          "answerHtml": "Pots contractar un manteniment opcional. T'ho expliquem a la secció de <a href=\"/preus-pagina-web/#manteniment\" class=\"underline underline-offset-4 hover:text-secondary-accessible\">manteniment</a>."
-        }
-      ]
     }
   ]
 }
