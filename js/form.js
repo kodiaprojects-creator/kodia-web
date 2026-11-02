@@ -25,19 +25,24 @@ function initContactForms() {
         function validatePortada() {
             clearFieldErrors();
             const errors = [];
-            const nom = form.querySelector('[name="nom"]');
-            const empresa = form.querySelector('[name="empresa"]');
-            const email = form.querySelector('[name="email"]');
-            const necessitat = form.querySelector('[name="necessitat"]');
-            const privacitat = form.querySelector('[name="privacitat"]');
-
-            if (!nom?.value.trim()) errors.push('nom');
-            if (!empresa?.value.trim()) errors.push('empresa');
-            if (!email?.value.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim())) {
-                errors.push('email');
-            }
-            if (!necessitat?.value.trim()) errors.push('necessitat');
-            if (!privacitat?.checked) errors.push('privacitat');
+            form.querySelectorAll('[data-field]').forEach((wrap) => {
+                const name = wrap.getAttribute('data-field');
+                const input = wrap.querySelector('input, textarea, select');
+                if (!input) return;
+                if (input.type === 'checkbox') {
+                    if (input.required && !input.checked) errors.push(name);
+                    return;
+                }
+                if (!input.required && !wrap.hasAttribute('data-required')) return;
+                const val = (input.value || '').trim();
+                if (!val) {
+                    errors.push(name);
+                    return;
+                }
+                if (input.type === 'email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val)) {
+                    errors.push(name);
+                }
+            });
 
             let first = null;
             errors.forEach((name) => {

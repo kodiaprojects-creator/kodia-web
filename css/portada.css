@@ -311,3 +311,18 @@ body.kodia-portada .contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap
 body.kodia-portada footer .wrap{grid-template-columns:1.2fr 1fr 1fr}
 body.kodia-portada footer .legal{grid-column:1/-1}
 }
+/* Interiors: fil d'Ariadna i variants */
+body.kodia-portada .crumbs { font: 600 13px/1.4 var(--mono); color: var(--mut); margin: 0 0 8px; }
+body.kodia-portada .crumbs ol { list-style: none; display: flex; flex-wrap: wrap; gap: 6px 10px; margin: 0; padding: 0; }
+body.kodia-portada .crumbs li:not(:last-child)::after { content: "›"; margin-left: 10px; color: var(--line); }
+body.kodia-portada .crumbs a { text-decoration: none; color: var(--ink2); }
+body.kodia-portada .crumbs a:hover { color: var(--or2); }
+body.kodia-portada .page-hero { padding: 28px 0 40px; }
+body.kodia-portada .page-hero .lead { margin-top: 14px; }
+body.kodia-portada .plans-single { max-width: 520px; }
+body.kodia-portada .cta-final { border-top: 0; }
+body.kodia-portada .albaran { list-style: none; margin: 0; padding: 0; }
+body.kodia-portada .albaran li { padding: 12px 0; border-bottom: 1px dashed var(--line); display: grid; gap: 4px; }
+body.kodia-portada .albaran li b { color: var(--ink); }
+body.kodia-portada .muni-grid { display: flex; flex-wrap: wrap; gap: 8px 14px; margin: 0; padding: 0; list-style: none; }
+body.kodia-portada .muni-grid li { font: 600 14px var(--mono); padding: 6px 10px; border: 1px solid var(--line); border-radius: 4px; background: var(--card); }
