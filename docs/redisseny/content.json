@@ -15,7 +15,7 @@
   },
   "seo": {
     "title": "Pàgines web per a autònoms i comerços a Girona i Catalunya | KODIA",
-    "description": "Webs a preu tancat per a autònoms, oficis i comerços. Des de 300 €, amb domini i allotjament inclosos. Una sola persona t'atén de principi a fi.",
+    "description": "Webs a preu tancat per a autònoms, oficis i comerços. Des de 300 €, i manteniment opcional amb domini i allotjament. Una sola persona t'atén de principi a fi.",
     "ogTitle": "KODIA | La web del teu negoci, a preu tancat",
     "ogDescription": "Webs per a autònoms, oficis i comerços de Catalunya. Des de 300 €, domini i allotjament inclosos.",
     "nota": "Canonical, og:url, og:image (og-kodia.jpg), og:locale ca_ES i el JSON-LD actual es mantenen. Al JSON-LD només es pot actualitzar la description perquè coincideixi."
@@ -75,12 +75,11 @@
         {
           "etiqueta": "Termini",
           "valor": "7–10 dies",
-          "publicar": false,
-          "pendent": "Termini total: confirmar-lo i des de quan compta"
+          "publicar": true
         },
         {
           "etiqueta": "Domini i allotjament",
-          "valor": "Inclosos",
+          "valor": "Inclosos al manteniment",
           "publicar": true
         },
         {
@@ -117,7 +116,7 @@
       },
       {
         "titol": "Després de publicar, no et quedes sol",
-        "text": "El manteniment inclou domini, allotjament i incidències. Amb el pla Creixement, també canvis cada mes."
+        "text": "El manteniment inclou domini, allotjament, incidències i fins a 3 petits canvis al mes. Amb el pla Creixement, també SEO local i un informe mensual."
       }
     ]
   },
@@ -197,7 +196,7 @@
   "preus": {
     "eyebrow": "Plans i preus",
     "h2": "Un preu per fer-la. Una quota perquè funcioni.",
-    "intro": "Tria el tipus de web i, si és corporativa, el manteniment. Totes les quotes inclouen domini i allotjament. Preus sense IVA.",
+    "intro": "Tria el tipus de web i, si vols, el manteniment. Tots els manteniments inclouen domini, allotjament i fins a 3 petits canvis al mes. Preus sense IVA.",
     "onePage": {
       "eyebrow": "Web d'una pàgina",
       "nom": "One Page",
@@ -209,9 +208,10 @@
         "Textos, disseny i adaptació a mòbil",
         "SEO bàsic perquè Google et trobi",
         "3 rondes de canvis abans de publicar",
-        "Domini, allotjament i incidències"
+        "Manteniment: domini, allotjament, incidències i fins a 3 petits canvis al mes"
       ],
-      "cta": "Vull una One Page"
+      "cta": "Vull una One Page",
+      "mantenimentEtiqueta": "Manteniment opcional"
     },
     "corporativa": {
       "eyebrow": "Web de diverses pàgines",
@@ -223,14 +223,15 @@
         "Textos, disseny, mòbil i SEO bàsic",
         "3 rondes de canvis abans de publicar"
       ],
-      "triaManteniment": "I tria el manteniment:",
+      "triaManteniment": "I tria el manteniment (opcional):",
       "manteniments": [
         {
           "nom": "Essencial",
           "preu": "30 €/mes",
           "inclou": [
             "Domini i allotjament",
-            "Incidències i suport"
+            "Incidències i suport",
+            "Fins a 3 petits canvis al mes"
           ]
         },
         {
@@ -239,8 +240,7 @@
           "etiqueta": "Per créixer",
           "inclou": [
             "Tot el de l'Essencial",
-            "Canvis cada mes",
-            "SEO local",
+            "SEO local: cada mes, revisió de Search Console i ajust d'una pàgina",
             "Informe mensual"
           ]
         }
@@ -253,9 +253,8 @@
     "eyebrow": "Com treballem",
     "h2": "Del primer correu a la web publicada.",
     "total": {
-      "text": "Total: 7–10 dies des que tinc el teu material.",
-      "publicar": false,
-      "pendent": "Confirmar el termini total i des de quan compta"
+      "text": "Total: 7–10 dies per a una One Page i unes dues setmanes per a una Corporativa, des que tinc el teu material.",
+      "publicar": true
     },
     "passos": [
       {
@@ -310,11 +309,11 @@
       },
       {
         "q": "Com es paga?",
-        "a": "El 50 % en començar i el 50 % en acabar. La quota mensual comença quan la web està publicada."
+        "a": "El 50 % en començar i el 50 % en acabar. Si contractes el manteniment, la quota comença quan la web està publicada."
       },
       {
-        "q": "Què inclou la quota mensual?",
-        "a": "Sempre: domini, allotjament i incidències. El pla Creixement hi afegeix canvis cada mes, SEO local i un informe mensual. Les seccions o funcions noves es pressuposten a part."
+        "q": "Què inclou el manteniment? És obligatori?",
+        "a": "És opcional. Inclou sempre domini, allotjament, incidències i fins a 3 petits canvis al mes (una imatge, un text, el logotip). El pla Creixement hi afegeix SEO local (cada mes reviso Search Console i ajusto els títols i els textos d'una pàgina) i un informe mensual. Les seccions o funcions noves es pressuposten a part."
       },
       {
         "q": "Ja tinc web. Me la podeu millorar?",
