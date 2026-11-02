@@ -43,56 +43,13 @@ def paragraphs(text: str) -> str:
 
 
 def site_nav(active: str | None = None) -> str:
-    nav = CONTENT["nav"]
-    links = []
-    for l in nav["enllacos"]:
-        href = l["altresPagines"]
-        links.append(f'<li><a href="{href}">{escape(l["text"])}</a></li>')
-    cta = nav["cta"]["altresPagines"]
-    return f'''<header class="nav site-nav" data-site-header>
-<div class="wrap">
- <a class="logo" href="/">KODIA<i>.</i></a>
- <ul>{"".join(links)}</ul>
- <a class="btn" href="{cta}"><span class="mb">{escape(nav["cta"]["textMobil"])}</span><span class="dk">{escape(nav["cta"]["textEscriptori"])}</span></a>
-</div>
-</header>'''
+    """Llegeix el parcial compartit (sense sincronitzar home-hrefs). Preferiu sync:chrome."""
+    return (ROOT / "partials" / "header.html").read_text()
 
 
 def site_footer() -> str:
-    peu = CONTENT["peu"]
-    cols = peu.get("columnes")
-    legal = "".join(f'<a href="{escape(l["href"])}">{escape(l["text"])}</a>' for l in peu["legal"])
-    email_block = f'<div><a href="mailto:{EMAIL}">{EMAIL}</a></div>' if SHOW_EMAIL else "<div></div>"
-    if cols:
-        def col(title, items):
-            links = "".join(f'<a href="{escape(i["href"])}">{escape(i["text"])}</a>' for i in items)
-            return f'<div class="foot-col"><p class="foot-h">{escape(title)}</p><nav>{links}</nav></div>'
-
-        mid = (
-            col("Serveis", cols["serveis"])
-            + col("Per a qui", cols["perAQui"])
-            + col("Zones", cols["zones"])
-        )
-        extra = "".join(f'<a href="{escape(i["href"])}">{escape(i["text"])}</a>' for i in cols.get("extra", []))
-        return f'''<footer class="site-footer">
-<div class="wrap">
- <div><a class="logo" href="/">KODIA<i>.</i></a><p style="margin:10px 0 0">{escape(peu["descripcio"])}</p>
- <nav class="foot-extra" aria-label="Enllaços">{extra}</nav>
- {email_block}
- </div>
- <div class="foot-cols">{mid}</div>
- <div class="legal"><span>{escape(peu["copyright"])}</span>{legal}</div>
-</div>
-</footer>'''
-    links = "".join(f'<a href="{escape(l["href"])}">{escape(l["text"])}</a>' for l in peu["enllacos"])
-    return f'''<footer class="site-footer">
-<div class="wrap">
- <div><a class="logo" href="/">KODIA<i>.</i></a><p style="margin:10px 0 0">{escape(peu["descripcio"])}</p></div>
- <nav aria-label="Peu">{links}</nav>
- {email_block}
- <div class="legal"><span>{escape(peu["copyright"])}</span>{legal}</div>
-</div>
-</footer>'''
+    """Llegeix el parcial compartit. Preferiu sync:chrome."""
+    return (ROOT / "partials" / "footer.html").read_text()
 
 
 def breadcrumb(items: list[tuple[str, str | None]]) -> str:
