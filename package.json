@@ -5,8 +5,10 @@
   "scripts": {
     "build:css": "tailwindcss -i ./css/input.css -o ./css/kodia.css --minify",
     "build:faqs": "node scripts/build-faqs.mjs",
+    "sync:chrome": "node scripts/sync-chrome.mjs",
+    "check:links": "node scripts/check-links.mjs",
     "watch:css": "tailwindcss -i ./css/input.css -o ./css/kodia.css --watch",
-    "build": "npm run build:faqs && npm run build:css"
+    "build": "npm run sync:chrome && npm run build:faqs && npm run build:css"
   },
   "dependencies": {
     "resend": "^4.0.0"

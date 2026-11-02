@@ -1,5 +1,5 @@
 {
-  "buildCommand": "npm run build:css",
+  "buildCommand": "npm run sync:chrome && npm run build:css",
   "outputDirectory": ".",
   "headers": [
     {
