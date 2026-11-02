@@ -96,7 +96,8 @@
       "altMobil": "La mateixa web en mòbil",
       "peu": "Feina real: Nivell A Oposicions, en escriptori i mòbil.",
       "nota": "És l'LCP probable: sense lazy, amb fetchpriority=high, width i height."
-    }
+    },
+    "leadHtml": "Per a <a class=\"lnk\" href=\"/web-per-a-oficis/\">lampistes, reformes</a>, <a class=\"lnk\" href=\"/web-per-a-comercos/\">botigues</a> i qualsevol negoci que vulgui que el trobin i el truquin. **Una sola persona t'atén de principi a fi:** qui et respon és qui dissenya i programa la teva web."
   },
   "unaPersona": {
     "eyebrow": "Com és treballar amb Kodia",
@@ -421,19 +422,81 @@
     "legal": [
       {
         "text": "Avís legal",
-        "href": "/avis-legal"
+        "href": "/avis-legal/"
       },
       {
         "text": "Política de privacitat",
-        "href": "/politica-de-privacitat"
+        "href": "/politica-de-privacitat/"
       },
       {
         "text": "Política de galetes",
-        "href": "/politica-de-galetes"
+        "href": "/politica-de-galetes/"
       }
     ],
     "copyright": "© 2026 Kodia",
-    "fora": "Res d'Instagram, LinkedIn, Behance, Manifest, TOS ni cap enllaç a «#». Cap telèfon ni WhatsApp."
+    "fora": "Res d'Instagram, LinkedIn, Behance, Manifest, TOS ni cap enllaç a «#». Cap telèfon ni WhatsApp.",
+    "columnes": {
+      "serveis": [
+        {
+          "text": "Web One Page",
+          "href": "/web-one-page/"
+        },
+        {
+          "text": "Web corporativa",
+          "href": "/web-corporativa/"
+        },
+        {
+          "text": "Manteniment web",
+          "href": "/manteniment-web/"
+        },
+        {
+          "text": "Web a mida",
+          "href": "/web-a-mida/"
+        },
+        {
+          "text": "Revisió digital",
+          "href": "/revisio-digital/"
+        },
+        {
+          "text": "Preus",
+          "href": "/preus-pagina-web/"
+        }
+      ],
+      "perAQui": [
+        {
+          "text": "Autònoms",
+          "href": "/web-per-a-autonoms/"
+        },
+        {
+          "text": "Comerços",
+          "href": "/web-per-a-comercos/"
+        },
+        {
+          "text": "Oficis",
+          "href": "/web-per-a-oficis/"
+        }
+      ],
+      "zones": [
+        {
+          "text": "Banyoles i Pla de l'Estany",
+          "href": "/disseny-web-banyoles/"
+        },
+        {
+          "text": "Girona",
+          "href": "/disseny-web-girona/"
+        }
+      ],
+      "extra": [
+        {
+          "text": "Feines fetes",
+          "href": "/projectes/"
+        },
+        {
+          "text": "Contacte",
+          "href": "/contacte/"
+        }
+      ]
+    }
   },
   "legal": {
     "font": "legal/ (carpeta d'en Jimmy: .md i fragments .html <article class=\"legal-page\">). No es reescriuen.",
