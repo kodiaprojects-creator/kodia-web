@@ -20,6 +20,24 @@
         ],
         "createdAt": "2026-11-18T18:37:28.122Z",
         "reason": "Agent: approved home type scale; manifesto-title is intentional display copy, not a flat heading stack"
+      },
+      {
+        "rule": "marquee",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-18T18:41:29.183Z",
+        "reason": "User requested seamless infinite ticker loop on home"
+      },
+      {
+        "rule": "marquee",
+        "value": "*",
+        "files": [
+          "assets/styles.css"
+        ],
+        "createdAt": "2026-11-18T18:41:29.201Z",
+        "reason": "User requested seamless infinite ticker loop on home"
       }
     ]
   }

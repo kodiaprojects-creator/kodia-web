@@ -1,5 +1,40 @@
 gsap.registerPlugin(ScrollTrigger);
 
+function setupTicker() {
+  const track = document.querySelector('.ticker-track');
+  let source = track?.querySelector('.ticker-group');
+  if (!track || !source) return;
+
+  if (!track.dataset.seed) {
+    track.dataset.seed = source.innerHTML;
+  }
+  const seed = track.dataset.seed;
+
+  track.querySelectorAll('.ticker-group').forEach((group, i) => {
+    if (i > 0) group.remove();
+  });
+  source = track.querySelector('.ticker-group');
+  source.innerHTML = seed;
+
+  // Amplia el primer bloc fins a cobrir com a mínim l'ample de la finestra.
+  let guard = 0;
+  while (source.scrollWidth < window.innerWidth && guard < 12) {
+    source.insertAdjacentHTML('beforeend', seed);
+    guard += 1;
+  }
+
+  const clone = source.cloneNode(true);
+  clone.setAttribute('aria-hidden', 'true');
+  track.appendChild(clone);
+}
+
+setupTicker();
+let tickerResizeTimer;
+window.addEventListener('resize', () => {
+  clearTimeout(tickerResizeTimer);
+  tickerResizeTimer = setTimeout(setupTicker, 150);
+});
+
 const menu = document.querySelector('.menu');
 const navEl = document.querySelector('.navlinks');
 
