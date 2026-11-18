@@ -11,6 +11,15 @@
         ],
         "createdAt": "2026-11-18T18:11:07.344Z",
         "reason": "Agent: H1 is intentional eyebrow label; display title is .page-hero-title per prior user request"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-18T18:37:28.122Z",
+        "reason": "Agent: approved home type scale; manifesto-title is intentional display copy, not a flat heading stack"
       }
     ]
   }
