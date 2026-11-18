@@ -319,3 +319,5 @@ body[data-page="projects"] .concept-visual .poster,
 body[data-page="projects"] .concept-visual .searchcard{position:relative;width:min(100%,420px);box-shadow:0 18px 38px rgba(32,33,31,.16)}
 body[data-page="projects"] .concept-visual .poster{background:var(--orange);color:var(--ink);min-height:280px;padding:28px;display:flex;flex-direction:column;justify-content:space-between}
 @media(max-width:760px){body[data-page="projects"] .concept-row,body[data-page="projects"] .concept-row:nth-child(even){grid-template-columns:1fr}body[data-page="projects"] .concept-row:nth-child(even) .concept-visual{order:0}body[data-page="projects"] .concept-visual{min-height:220px;padding:18px}}
+
+/* Projectes amagats temporalment (contingut conservat; treure aquesta regla per tornar-los a mostrar) */body[data-page="home"] #projectes,.navlinks a[href*="projectes"],.footer nav a[href*="projectes"],a.service-link[href*="projectes"]{display:none!important}
