@@ -1,4 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="KODIA">
-  <rect width="32" height="32" fill="#222222"/>
-  <path fill="#FF9933" d="M8 6h5.2v8.1L19.8 6H26l-8.2 9.4L26 26h-6.3l-6.5-8.2V26H8V6z"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Kodia">
+  <rect width="32" height="32" fill="#20211F"/>
+  <text x="5.5" y="24.5" font-family="Arial Black, Arial, Helvetica, sans-serif" font-size="22" font-weight="800" letter-spacing="-1.2" fill="#FAF9F6">k</text>
+  <rect x="20.5" y="21.5" width="5.2" height="5.2" fill="#fcb333"/>
 </svg>
