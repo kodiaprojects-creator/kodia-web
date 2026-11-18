@@ -1,50 +1,26 @@
 {
-  "buildCommand": "npm run sync:chrome && npm run build:css",
+  "buildCommand": "echo 'Static v12 — no CSS build'",
   "outputDirectory": ".",
-  "headers": [
-    {
-      "source": "/fonts/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
-        }
-      ]
-    },
-    {
-      "source": "/css/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=604800, stale-while-revalidate=86400"
-        }
-      ]
-    },
-    {
-      "source": "/js/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=604800, stale-while-revalidate=86400"
-        }
-      ]
-    },
-    {
-      "source": "/images/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=2592000, stale-while-revalidate=86400"
-        }
-      ]
-    }
-  ],
   "trailingSlash": true,
   "redirects": [
+    { "source": "/index.html", "destination": "/", "permanent": true },
+    { "source": "/disseny-web-girona/", "destination": "/serveis/disseny-web/", "permanent": true },
+    { "source": "/disseny-web-banyoles/", "destination": "/serveis/disseny-web/", "permanent": true },
+    { "source": "/manteniment-web/", "destination": "/serveis/disseny-web/#manteniment", "permanent": false },
+    { "source": "/web-one-page/", "destination": "/serveis/disseny-web/", "permanent": true },
+    { "source": "/web-corporativa/", "destination": "/serveis/disseny-web/", "permanent": true },
+    { "source": "/web-a-mida/", "destination": "/serveis/disseny-web/", "permanent": true },
+    { "source": "/preus-pagina-web/", "destination": "/serveis/disseny-web/", "permanent": true },
+    { "source": "/web-per-a-autonoms/", "destination": "/serveis/disseny-web/", "permanent": true },
+    { "source": "/web-per-a-comercos/", "destination": "/serveis/disseny-web/", "permanent": true },
+    { "source": "/web-per-a-oficis/", "destination": "/serveis/disseny-web/", "permanent": true }
+  ],
+  "headers": [
     {
-      "source": "/index.html",
-      "destination": "/",
-      "permanent": true
+      "source": "/assets/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=604800, stale-while-revalidate=86400" }
+      ]
     }
   ]
 }
