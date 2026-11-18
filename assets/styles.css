@@ -256,7 +256,7 @@ body[data-page="projects"] .project-meta .round{color:var(--paper);border-color:
 /* Text-only service hero (no stock art / no hero eyebrow) */
 body[data-page] .page-hero.page-hero-text.wrap{grid-template-columns:minmax(0,1fr);max-width:none}
 body[data-page] .page-hero.page-hero-text > div{max-width:min(92ch,100%)}
-body[data-page] .page-hero.page-hero-text h1{max-width:18ch}
+body[data-page] .page-hero.page-hero-text .page-hero-title{max-width:18ch}
 body[data-page] .page-hero.page-hero-text .page-intro{max-width:68ch}
 .options-assist{margin-top:42px;padding-top:34px;border-top:1px solid #cbc9c0;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:18px 28px}
 .options-assist p{margin:0;max-width:42ch;font-size:clamp(20px,2.4vw,28px);font-weight:600;letter-spacing:-.035em;line-height:1.2;color:var(--ink)}
@@ -268,3 +268,54 @@ body[data-page="web"] .service-page-row p{margin-bottom:0}
 body[data-page="web"] .faq-list details a{color:var(--orange);text-decoration:underline;text-underline-offset:3px}.faq-list details p + p{margin-top:12px}
 .options-assist-actions{display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px}
 .maintenance-note{margin:14px 0 0;max-width:52ch;color:var(--muted);font-size:15px}
+.project-meta .project-blurb{margin-top:10px;max-width:36ch;color:var(--muted);font-size:14px;line-height:1.45;font-weight:400}
+body[data-page="projects"] .project-meta .project-blurb{color:#c9c9c2}
+body[data-page="social"] .contact-panel .pill,body[data-page="seo"] .contact-panel .pill{background:var(--orange);border-color:var(--orange);color:var(--ink)}body[data-page="social"] .contact-panel .pill:hover,body[data-page="seo"] .contact-panel .pill:hover{background:var(--paper);border-color:var(--paper);color:var(--ink)}
+
+/* Page hero: H1 as eyebrow label, display title as .page-hero-title */
+body[data-page] .page-hero h1.eyebrow{display:flex;gap:12px;align-items:flex-start;margin:0 0 18px;max-width:none;padding:0;font:400 11px/1.5 "Courier New",monospace;letter-spacing:.09em;text-transform:uppercase;color:#f2f0e8;font-weight:400;line-height:1.5}
+body[data-page] .page-hero h1.eyebrow:before{content:"";width:7px;height:7px;background:var(--orange);margin-top:4px;flex:none}
+body[data-page] .page-hero .page-hero-title{margin:0;font-size:clamp(46px,5.7vw,84px);line-height:.98;letter-spacing:-.045em;max-width:11ch;font-weight:700;color:var(--paper)}
+@media(max-width:600px){body[data-page] .page-hero .page-hero-title{font-size:clamp(42px,12vw,64px);max-width:12ch;line-height:1;letter-spacing:-.04em}}
+
+/* Align service pages with disseny-web composition (page-scoped) */
+body[data-page="social"] main>.page-body:nth-of-type(3),
+body[data-page="seo"] main>.page-body:nth-of-type(4),
+body[data-page="agency"] main>.page-body:nth-of-type(2){background:var(--ink);color:var(--paper)}
+body[data-page="social"] main>.page-body:nth-of-type(3) .page-lead p,
+body[data-page="seo"] main>.page-body:nth-of-type(4) .page-lead p,
+body[data-page="agency"] main>.page-body:nth-of-type(2) .page-lead p{color:#deded8}
+body[data-page="social"] main>.page-body:nth-of-type(3) .faq-list details,
+body[data-page="seo"] main>.page-body:nth-of-type(4) .faq-list details{border-color:#696a64}
+body[data-page="social"] main>.page-body:nth-of-type(3) .faq-list summary,
+body[data-page="seo"] main>.page-body:nth-of-type(4) .faq-list summary{color:var(--paper)}
+body[data-page="social"] main>.page-body:nth-of-type(3) .faq-list details p,
+body[data-page="seo"] main>.page-body:nth-of-type(4) .faq-list details p{color:#deded8}
+body[data-page="social"] main>.page-body:nth-of-type(3) .faq-list summary:after,
+body[data-page="seo"] main>.page-body:nth-of-type(4) .faq-list summary:after{color:var(--orange)}
+body[data-page="social"] main>.page-body:nth-of-type(3) .notice,
+body[data-page="seo"] main>.page-body:nth-of-type(4) .notice{background:#2a2b28;color:#deded8;border-left-color:var(--orange)}
+body[data-page="agency"] .contact-panel .pill,
+body[data-page="projects"] .contact-panel .pill,
+body[data-page="contact"] .contact-panel .pill{background:var(--orange);border-color:var(--orange);color:var(--ink)}
+body[data-page] .page-hero.page-hero-text .eyebrow{display:flex;gap:12px;align-items:flex-start;margin:0 0 18px;font:400 11px/1.5 "Courier New",monospace;letter-spacing:.09em;text-transform:uppercase;color:#f2f0e8}
+body[data-page] .page-hero.page-hero-text .eyebrow:before{content:"";width:7px;height:7px;background:var(--orange);margin-top:4px;flex:none}
+body[data-page] .service-page-row > div:empty{display:none}
+@media(min-width:761px){body[data-page] .service-page-row:has(> div:empty){grid-template-columns:48px minmax(0,1fr)}}
+body[data-page="projects"] .concepts-shell{background:var(--paper);color:var(--ink)}
+body[data-page="projects"] .concept-row{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(24px,4vw,56px);align-items:center;padding:clamp(36px,6vw,72px) 0;border-top:1px solid #cbc9c0}
+body[data-page="projects"] .concept-row:last-child{border-bottom:1px solid #cbc9c0}
+body[data-page="projects"] .concept-row:nth-child(even){grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr)}
+body[data-page="projects"] .concept-row:nth-child(even) .concept-visual{order:2}
+body[data-page="projects"] .concept-visual{min-height:280px;display:flex;align-items:center;justify-content:center;padding:28px;background:#e7e4dc}
+body[data-page="projects"] .concept-row:nth-child(2) .concept-visual{background:#30312e}
+body[data-page="projects"] .concept-copy .num{display:inline-block;margin:10px 0 14px;font:12px "Courier New",monospace;color:var(--muted)}
+body[data-page="projects"] .concept-copy h3{font-size:clamp(28px,3.5vw,48px);font-weight:600;margin-bottom:16px;max-width:16ch}
+body[data-page="projects"] .concept-copy p{color:var(--muted);max-width:48ch;margin-bottom:12px}
+body[data-page="projects"] .concept-copy .eyebrow{display:flex;gap:10px;align-items:flex-start;margin:0 0 6px;font:400 11px/1.5 "Courier New",monospace;letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+body[data-page="projects"] .concept-copy .eyebrow:before{content:"";width:7px;height:7px;background:var(--orange);margin-top:4px;flex:none}
+body[data-page="projects"] .concept-visual .mini-browser,
+body[data-page="projects"] .concept-visual .poster,
+body[data-page="projects"] .concept-visual .searchcard{position:relative;width:min(100%,420px);box-shadow:0 18px 38px rgba(32,33,31,.16)}
+body[data-page="projects"] .concept-visual .poster{background:var(--orange);color:var(--ink);min-height:280px;padding:28px;display:flex;flex-direction:column;justify-content:space-between}
+@media(max-width:760px){body[data-page="projects"] .concept-row,body[data-page="projects"] .concept-row:nth-child(even){grid-template-columns:1fr}body[data-page="projects"] .concept-row:nth-child(even) .concept-visual{order:0}body[data-page="projects"] .concept-visual{min-height:220px;padding:18px}}

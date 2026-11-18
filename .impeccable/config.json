@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "disseny-web/index.html"
+        ],
+        "createdAt": "2026-11-18T18:11:07.344Z",
+        "reason": "Agent: H1 is intentional eyebrow label; display title is .page-hero-title per prior user request"
+      }
+    ]
+  }
+}
