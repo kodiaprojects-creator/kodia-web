@@ -23,12 +23,23 @@ function row(label, value) {
 }
 
 function buildContactEmail(data) {
-  const tipusLabels = {
+  const serveiLabels = {
+    'disseny-web': 'Disseny web',
+    seo: 'SEO',
+    'xarxes-socials': 'Xarxes socials',
     'one-page': 'One Page',
     corporativa: 'Corporativa',
     'a-mida': 'A mida',
     'no-ho-se': 'No ho sé',
   };
+
+  const servei =
+    serveiLabels[data.servei] ||
+    serveiLabels[data.tipus] ||
+    data.servei ||
+    data.tipus ||
+    '';
+  const missatge = data.missatge || data.necessitat || '';
 
   const subject = `Nou contacte: ${data.nom || 'Sense nom'} — ${data.empresa || 'Sense empresa'}`;
   const html = `
@@ -40,8 +51,8 @@ function buildContactEmail(data) {
         ${row('Email', data.email)}
         ${row('Telèfon', data.telefon)}
         ${row('Web', data.web)}
-        ${row('Tipus de projecte', tipusLabels[data.tipus] || data.tipus)}
-        ${row('Necessitat', data.necessitat)}
+        ${row('Què necessita', servei)}
+        ${row('Missatge', missatge)}
       </table>
     </div>
   `;
@@ -91,8 +102,12 @@ export default async function handler(req, res) {
       return res.status(400).json({ error: 'Falten camps obligatoris' });
     }
 
-    if (formType === 'contacte' && !data.necessitat) {
-      return res.status(400).json({ error: 'Falten camps obligatoris' });
+    if (formType === 'contacte') {
+      const servei = (data.servei || data.tipus || '').trim();
+      const missatge = (data.missatge || data.necessitat || '').trim();
+      if (!servei || !missatge) {
+        return res.status(400).json({ error: 'Falten camps obligatoris' });
+      }
     }
 
     if (formType === 'revisio-digital' && (!data.web || !data.context || !data.objectiu)) {

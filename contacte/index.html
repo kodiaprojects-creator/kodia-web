@@ -1,4 +1,4 @@
-<!doctype html><html lang="ca"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#20211F"><meta name="description" content="Vols parlar d’una web, de xarxes socials o de SEO? Explica’ns què necessites i quin és el punt de partida del projecte."><title>Contacte KODIA | Parlem del teu projecte</title><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="stylesheet" href="../assets/styles.css?v=20261119e"><script defer src="../assets/gsap.min.js?v=20261118r"></script><script defer src="../assets/ScrollTrigger.min.js?v=20261118r"></script><script defer src="../assets/site.js?v=20261118r"></script><script defer src="../assets/form.js?v=20261119e"></script></head><body data-page="contact"><a class="skip" href="#main">Salta al contingut</a><header class="nav wrap"><a href="../" class="logo" aria-label="Kodia, inici">kodia<span></span></a><button class="menu" type="button" aria-expanded="false" aria-controls="navigation" aria-label="Obre el menú"><span class="menu-icon" aria-hidden="true"></span></button><nav class="navlinks" id="navigation" aria-label="Principal"><a href="../disseny-web/">Disseny web</a><a href="../xarxes-socials/">Xarxes socials</a><a href="../posicionament-seo/">SEO</a><a href="../projectes/">Projectes</a><a href="../agencia/">KODIA</a><a class="pill" href="./">Parlem? <span class="arrow">↗</span></a></nav></header>
+<!doctype html><html lang="ca"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#20211F"><meta name="description" content="Vols parlar d’una web, de xarxes socials o de SEO? Explica’ns què necessites i quin és el punt de partida del projecte."><title>Contacte KODIA | Parlem del teu projecte</title><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="stylesheet" href="../assets/styles.css?v=20261119g"><script defer src="../assets/gsap.min.js?v=20261118r"></script><script defer src="../assets/ScrollTrigger.min.js?v=20261118r"></script><script defer src="../assets/site.js?v=20261118r"></script><script defer src="../assets/form.js?v=20261119g"></script></head><body data-page="contact"><a class="skip" href="#main">Salta al contingut</a><header class="nav wrap"><a href="../" class="logo" aria-label="Kodia, inici">kodia<span></span></a><button class="menu" type="button" aria-expanded="false" aria-controls="navigation" aria-label="Obre el menú"><span class="menu-icon" aria-hidden="true"></span></button><nav class="navlinks" id="navigation" aria-label="Principal"><a href="../disseny-web/">Disseny web</a><a href="../xarxes-socials/">Xarxes socials</a><a href="../posicionament-seo/">SEO</a><a href="../projectes/">Projectes</a><a href="../agencia/">KODIA</a><a class="pill" href="./">Parlem? <span class="arrow">↗</span></a></nav></header>
 <main id="main">
 <header class="page-hero page-hero-text wrap">
 <div>
@@ -39,10 +39,22 @@
 <p class="field-error" id="email-error" role="alert">Escriu un correu vàlid, per exemple nom@domini.cat.</p>
 </div>
 
-<div class="f" data-field="necessitat">
-<label for="c-necessitat">Què necessites?</label>
-<textarea id="c-necessitat" name="necessitat" required placeholder="Ex.: Necessito una web nova amb els meus serveis. Si ja tens web, posa’n l’adreça." aria-describedby="necessitat-error"></textarea>
-<p class="field-error" id="necessitat-error" role="alert">Explica’ns en una frase què necessites.</p>
+<div class="f" data-field="servei">
+<label for="c-servei">Què necessites?</label>
+<select id="c-servei" name="servei" required aria-describedby="servei-error">
+<option value="">Tria una opció</option>
+<option value="disseny-web">Disseny web</option>
+<option value="seo">SEO</option>
+<option value="xarxes-socials">Xarxes socials</option>
+<option value="no-ho-se">No ho sé</option>
+</select>
+<p class="field-error" id="servei-error" role="alert">Tria què necessites.</p>
+</div>
+
+<div class="f" data-field="missatge">
+<label for="c-missatge">Missatge</label>
+<textarea id="c-missatge" name="missatge" required placeholder="Explica’ns una mica més: objectiu, terminis o l’adreça del web actual, si en tens." aria-describedby="missatge-error"></textarea>
+<p class="field-error" id="missatge-error" role="alert">Escriu un missatge breu.</p>
 </div>
 
 <div class="chk-wrap" data-field="privacitat">
