@@ -351,3 +351,33 @@ body[data-page="home"] .teaser-art.teaser-shot{background-size:cover;background-
 body[data-page="home"] .teaser-art.teaser-shot b,body[data-page="home"] .teaser-art.teaser-shot i{display:none}
 body[data-page="projects"] .concept-copy .service-link{display:inline-flex;align-items:center;gap:8px;margin-top:10px;font-weight:700;text-decoration:underline;text-underline-offset:3px}
 
+/* Contact form (Resend) */
+body[data-page="contact"] .inline-link{text-decoration:underline;text-underline-offset:3px}
+body[data-page="contact"] .contact-form{max-width:560px;margin-top:8px;display:grid;gap:18px}
+body[data-page="contact"] .contact-form .f{display:grid;gap:7px}
+body[data-page="contact"] .contact-form label{font:400 12px/1.4 "Courier New",monospace;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+body[data-page="contact"] .contact-form input[type="text"],
+body[data-page="contact"] .contact-form input[type="email"],
+body[data-page="contact"] .contact-form textarea{width:100%;border:1px solid #cbc9c0;background:var(--paper);color:var(--ink);padding:14px 16px;font:16px/1.45 Arial,Helvetica,sans-serif;border-radius:0}
+body[data-page="contact"] .contact-form textarea{min-height:140px;resize:vertical}
+body[data-page="contact"] .contact-form input:focus,
+body[data-page="contact"] .contact-form textarea:focus{outline:3px solid var(--ink);outline-offset:2px}
+body[data-page="contact"] .contact-form .field-error{display:none;margin:0;color:#93000a;font-size:14px;max-width:none}
+body[data-page="contact"] .contact-form .is-invalid .field-error{display:block}
+body[data-page="contact"] .contact-form .is-invalid input,
+body[data-page="contact"] .contact-form .is-invalid textarea{border-color:#93000a}
+body[data-page="contact"] .contact-form .chk-wrap{display:grid;gap:8px}
+body[data-page="contact"] .contact-form .chk{display:flex;gap:12px;align-items:flex-start;font-size:15px;line-height:1.45;color:var(--ink);cursor:pointer}
+body[data-page="contact"] .contact-form .chk input{width:18px;height:18px;margin-top:2px;flex:none;accent-color:var(--ink)}
+body[data-page="contact"] .contact-form .chk a{text-decoration:underline;text-underline-offset:3px}
+body[data-page="contact"] .contact-form .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0;pointer-events:none}
+body[data-page="contact"] .contact-form .pill{justify-self:start;border:0;cursor:pointer}
+body[data-page="contact"] .contact-form .pill[disabled]{opacity:.65;cursor:wait}
+body[data-page="contact"] .contact-form .promise{margin:0;color:var(--muted);font-size:14px}
+body[data-page="contact"] .contact-form .form-info-dades{margin:4px 0 0;font-size:12.5px;line-height:1.5;color:var(--muted);max-width:62ch}
+body[data-page="contact"] .contact-form .form-info-dades a{text-decoration:underline;text-underline-offset:2px}
+body[data-page="contact"] .form-status{margin:0;font-size:15px}
+body[data-page="contact"] .form-success{max-width:560px;padding:28px 0;border-top:1px solid var(--line)}
+body[data-page="contact"] .form-success h3{font-size:clamp(28px,4vw,42px);margin:0 0 12px;max-width:16ch}
+body[data-page="contact"] .form-success p{color:var(--muted);margin:0;max-width:48ch}
+

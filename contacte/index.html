@@ -1,31 +1,60 @@
-<!doctype html><html lang="ca"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#20211F"><meta name="description" content="Vols parlar d’una web, de xarxes socials o de SEO? Explica’ns què necessites i quin és el punt de partida del projecte."><title>Contacte KODIA | Parlem del teu projecte</title><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="stylesheet" href="../assets/styles.css?v=20261119b"><script defer src="../assets/gsap.min.js?v=20261118r"></script><script defer src="../assets/ScrollTrigger.min.js?v=20261118r"></script><script defer src="../assets/site.js?v=20261118r"></script></head><body data-page="contact"><a class="skip" href="#main">Salta al contingut</a><header class="nav wrap"><a href="../" class="logo" aria-label="Kodia, inici">kodia<span></span></a><button class="menu" type="button" aria-expanded="false" aria-controls="navigation" aria-label="Obre el menú"><span class="menu-icon" aria-hidden="true"></span></button><nav class="navlinks" id="navigation" aria-label="Principal"><a href="../disseny-web/">Disseny web</a><a href="../xarxes-socials/">Xarxes socials</a><a href="../posicionament-seo/">SEO</a><a href="../projectes/">Projectes</a><a href="../agencia/">KODIA</a><a class="pill" href="./">Parlem? <span class="arrow">↗</span></a></nav></header><main id="main">
+<!doctype html><html lang="ca"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#20211F"><meta name="description" content="Vols parlar d’una web, de xarxes socials o de SEO? Explica’ns què necessites i quin és el punt de partida del projecte."><title>Contacte KODIA | Parlem del teu projecte</title><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="stylesheet" href="../assets/styles.css?v=20261119e"><script defer src="../assets/gsap.min.js?v=20261118r"></script><script defer src="../assets/ScrollTrigger.min.js?v=20261118r"></script><script defer src="../assets/site.js?v=20261118r"></script><script defer src="../assets/form.js?v=20261119e"></script></head><body data-page="contact"><a class="skip" href="#main">Salta al contingut</a><header class="nav wrap"><a href="../" class="logo" aria-label="Kodia, inici">kodia<span></span></a><button class="menu" type="button" aria-expanded="false" aria-controls="navigation" aria-label="Obre el menú"><span class="menu-icon" aria-hidden="true"></span></button><nav class="navlinks" id="navigation" aria-label="Principal"><a href="../disseny-web/">Disseny web</a><a href="../xarxes-socials/">Xarxes socials</a><a href="../posicionament-seo/">SEO</a><a href="../projectes/">Projectes</a><a href="../agencia/">KODIA</a><a class="pill" href="./">Parlem? <span class="arrow">↗</span></a></nav></header>
+<main id="main">
 <header class="page-hero page-hero-text wrap">
 <div>
 <div class="eyebrow">01 / Contacte</div>
 <h1>Explica’ns què necessites resoldre</h1>
-<p class="page-intro">Tens una web per crear o renovar, vols ordenar les xarxes o necessites treballar el SEO? Explica’ns què tens entre mans i què t’agradaria resoldre.</p>
-<div class="page-cta"><a class="pill dark" href="#contact-details">Com començar <span class="arrow">↓</span></a></div>
+<p class="page-intro">Tens una web per crear o renovar, vols ordenar les xarxes o necessites treballar el SEO? Explica’ns què tens entre mans. Sense compromís.</p>
+<div class="page-cta"><a class="pill dark" href="#formulari">Omple el formulari <span class="arrow">↓</span></a></div>
 </div>
 </header>
 
-<section class="page-body wrap">
+<section class="page-body wrap" id="formulari">
 <div class="page-lead reveal">
-<div class="eyebrow">01 / Canal</div>
+<div class="eyebrow">01 / Formulari</div>
 <div>
-<h2>Ara mateix no podem rebre consultes aquí</h2>
-<p>El formulari i el canal de contacte d’aquesta pàgina encara no estan connectats. No s’hi envien missatges i no simularem un enviament.</p>
+<h2>Escriu-nos i et respondrem</h2>
+<p>Et respondrem en 1 dia laborable al correu que ens deixis. Prefereixes el correu? <a class="inline-link" href="mailto:info@kodia.cat">info@kodia.cat</a></p>
 </div>
 </div>
 
-<div class="contact-panel" id="contact-details">
-<div>
-<div class="eyebrow">KODIA / Contacte</div>
-<h2>Pas següent</h2>
+<form class="contact-form reveal" action="/api/contact" method="post" data-contact-form="contacte" data-validate="true" data-success-title="Fet, {nom}! Hem rebut el teu missatge." data-success-text="Et respondrem en 1 dia laborable al correu que ens has deixat. Si no el veus, mira la carpeta de correu brossa." data-error-send="No s’ha pogut enviar. Torna-ho a provar o escriu a info@kodia.cat. El que has escrit no s’ha esborrat." data-error-privacy="Has d’acceptar la política de privacitat per enviar-lo." data-submitting-label="Enviant…">
+<input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+<div class="f" data-field="nom">
+<label for="c-nom">Nom</label>
+<input type="text" id="c-nom" name="nom" required autocomplete="given-name" placeholder="Ex.: Marta" aria-describedby="nom-error">
+<p class="field-error" id="nom-error" role="alert">Escriu el teu nom.</p>
 </div>
-<div>
-<p>Mentrestant, pots revisar els serveis i tornar quan el canal estigui actiu.</p>
-<p style="margin-top:18px"><a class="pill" href="../disseny-web/">Veure disseny web <span class="arrow">↗</span></a></p>
+
+<div class="f" data-field="empresa">
+<label for="c-empresa">Negoci</label>
+<input type="text" id="c-empresa" name="empresa" required autocomplete="organization" placeholder="Ex.: Reformes Pujol" aria-describedby="empresa-error">
+<p class="field-error" id="empresa-error" role="alert">Escriu el nom del teu negoci.</p>
 </div>
+
+<div class="f" data-field="email">
+<label for="c-email">Correu electrònic</label>
+<input type="email" id="c-email" name="email" required autocomplete="email" inputmode="email" placeholder="tu@correu.cat" aria-describedby="email-error">
+<p class="field-error" id="email-error" role="alert">Escriu un correu vàlid, per exemple nom@domini.cat.</p>
 </div>
+
+<div class="f" data-field="necessitat">
+<label for="c-necessitat">Què necessites?</label>
+<textarea id="c-necessitat" name="necessitat" required placeholder="Ex.: Necessito una web nova amb els meus serveis. Si ja tens web, posa’n l’adreça." aria-describedby="necessitat-error"></textarea>
+<p class="field-error" id="necessitat-error" role="alert">Explica’ns en una frase què necessites.</p>
+</div>
+
+<div class="chk-wrap" data-field="privacitat">
+<label class="chk"><input type="checkbox" name="privacitat" value="acceptada" required aria-describedby="privacitat-error"><span>He llegit i accepto la <a href="../politica-de-privacitat/">política de privacitat</a>.</span></label>
+<p class="field-error" id="privacitat-error" role="alert">Has d’acceptar la política de privacitat per enviar-lo.</p>
+</div>
+
+<button class="pill dark" type="submit">Envia la consulta <span class="arrow">↗</span></button>
+<p class="promise">Et respondrem en 1 dia laborable</p>
+<p class="form-status" data-form-status hidden></p>
+<p class="form-info-dades"><strong>Protecció de dades.</strong> Responsable: Enric Corominas Gratacós (Kodia). Finalitat: respondre la teva consulta i, si ho demanes, enviar-te un pressupost. Legitimació: la teva sol·licitud i el teu consentiment. Destinataris: no cedim les dades a ningú, llevat d’obligació legal; els proveïdors d’allotjament i correu les tracten per compte nostre, alguns als EUA amb garanties adequades. Drets: accés, rectificació, supressió, oposició, limitació i portabilitat, escrivint a <a href="mailto:info@kodia.cat">info@kodia.cat</a>. Més informació a la <a href="../politica-de-privacitat/">política de privacitat</a>.</p>
+</form>
 </section>
-</main><footer class="footer wrap"><div class="footer-top"><a class="logo" href="../" aria-label="Kodia, torna a l’inici">kodia<span></span></a><nav aria-label="Peu de pàgina"><a href="../disseny-web/">Serveis</a><a href="../disseny-web/#manteniment">Manteniment web</a><a href="../projectes/">Projectes</a><a href="../agencia/">KODIA</a><a href="./">Contacte ↗</a></nav></div><div class="footer-bottom"><span>© Kodia · Girona</span><nav class="footer-legal" aria-label="Informació legal"><a href="../avis-legal/">Avís legal</a><a href="../politica-de-privacitat/">Privacitat</a><a href="../politica-de-galetes/">Galetes</a></nav></div></footer><div class="progress" aria-hidden="true"></div></body></html>
+</main>
+<footer class="footer wrap"><div class="footer-top"><a class="logo" href="../" aria-label="Kodia, torna a l’inici">kodia<span></span></a><nav aria-label="Peu de pàgina"><a href="../disseny-web/">Serveis</a><a href="../disseny-web/#manteniment">Manteniment web</a><a href="../projectes/">Projectes</a><a href="../agencia/">KODIA</a><a href="./">Contacte ↗</a></nav></div><div class="footer-bottom"><span>© Kodia · Girona</span><nav class="footer-legal" aria-label="Informació legal"><a href="../avis-legal/">Avís legal</a><a href="../politica-de-privacitat/">Privacitat</a><a href="../politica-de-galetes/">Galetes</a></nav></div></footer><div class="progress" aria-hidden="true"></div></body></html>

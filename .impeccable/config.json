@@ -47,6 +47,15 @@
         ],
         "createdAt": "2026-11-19T14:02:04.760Z",
         "reason": "Agent: site-wide page-hero uses numbered eyebrow label as established pattern"
+      },
+      {
+        "rule": "hero-eyebrow-chip",
+        "value": "*",
+        "files": [
+          "contacte/index.html"
+        ],
+        "createdAt": "2026-11-19T14:12:07.381Z",
+        "reason": "Agent: site-wide page-hero numbered eyebrow pattern"
       }
     ]
   }
